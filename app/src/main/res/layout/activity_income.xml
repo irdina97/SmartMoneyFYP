@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#74FF9800"
+    tools:context=".Income">
+
+    <ImageButton
+        android:id="@+id/btnIncome"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/circle_button"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/btnReward"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/income"
+        tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded" />
+
+    <ImageButton
+        android:id="@+id/btnReward"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/circle_button"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/reward"
+        tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded" />
+
+    <ImageButton
+        android:id="@+id/btnSale"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/circle_button"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/btnIncome"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sale"
+        tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded" />
+
+    <ImageButton
+        android:id="@+id/btnRefund"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/circle_button"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSaving"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/refunds"
+        tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded" />
+
+    <ImageButton
+        android:id="@+id/btnSaving"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/circle_button"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/btnSale"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/saving"
+        tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded" />
+
+    <ImageButton
+        android:id="@+id/btnAdd"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/circle_button"
+        android:tint="#1B1818"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvIncome"
+        app:srcCompat="@android:drawable/ic_input_add"
+        tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/tvIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Income"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReward"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvReward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Reward"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tvIncome"
+        app:layout_constraintTop_toBottomOf="@+id/btnIncome"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvSale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Sale"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tvReward"
+        app:layout_constraintTop_toBottomOf="@+id/btnSale"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvSaving"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="Saving"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tvSale"
+        app:layout_constraintTop_toBottomOf="@+id/btnSaving"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvRefund"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="Refund"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tvSaving"
+        app:layout_constraintTop_toBottomOf="@+id/btnRefund"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="409dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="444dp"
+        android:layout_marginEnd="32dp"
+        android:background="@android:color/holo_orange_light"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,LabelFor,MissingConstraints,TextFields" />
+
+    <com.example.smartmoney.MyKeyboard
+        android:id="@+id/keyboard"
+        android:layout_width="413dp"
+        android:layout_height="195dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="539dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
