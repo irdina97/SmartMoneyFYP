@@ -11,24 +11,24 @@
         android:id="@+id/tvGame"
         android:layout_width="54dp"
         android:layout_height="17dp"
-        android:layout_marginStart="34dp"
+        android:layout_marginStart="36dp"
         android:text="Game"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton6"
+        app:layout_constraintTop_toBottomOf="@+id/btnGame"
         tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded,SmallSp" />
 
     <TextView
         android:id="@+id/tvSport"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="37dp"
         android:text="Sport"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/tvFood"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton8"
+        app:layout_constraintTop_toBottomOf="@+id/btnSport"
         tools:ignore="HardcodedText,MissingConstraints" />
 
     <TextView
@@ -40,31 +40,31 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/tvSport"
-        app:layout_constraintTop_toBottomOf="@+id/buttonShopping"
+        app:layout_constraintTop_toBottomOf="@+id/btnShopping"
         tools:ignore="HardcodedText,MissingConstraints" />
 
     <TextView
         android:id="@+id/tvPet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="27dp"
+        android:layout_marginStart="28dp"
         android:text="Pet"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/tvTransport"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton9"
+        app:layout_constraintTop_toBottomOf="@+id/btnPet"
         tools:ignore="HardcodedText,MissingConstraints" />
 
     <TextView
         android:id="@+id/tvFood"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="22dp"
+        android:layout_marginStart="20dp"
         android:text="Food"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/tvGame"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton7"
+        app:layout_constraintTop_toBottomOf="@+id/btnFood"
         tools:ignore="HardcodedText,MissingConstraints" />
 
     <TextView
@@ -76,23 +76,23 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton10"
+        app:layout_constraintTop_toBottomOf="@+id/btnTransport"
         tools:ignore="HardcodedText,MissingConstraints" />
 
     <TextView
         android:id="@+id/tvTravel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
+        android:layout_marginStart="26dp"
         android:text="Travel"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/tvShopping"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        app:layout_constraintTop_toBottomOf="@+id/btnTravel"
         tools:ignore="HardcodedText,MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/btnAddEx"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="16dp"
@@ -100,46 +100,46 @@
         android:background="@drawable/circle_button"
         android:contentDescription="add"
         android:tint="#1B1818"
-        app:layout_constraintStart_toEndOf="@+id/imageButton9"
+        app:layout_constraintStart_toEndOf="@+id/btnPet"
         app:layout_constraintTop_toTopOf="@+id/tvSport"
         app:srcCompat="@android:drawable/ic_input_add"
         tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
 
     <ImageButton
-        android:id="@+id/buttonShopping"
+        android:id="@+id/btnShopping"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/circle_button"
         android:contentDescription="shopping"
         android:scaleType="fitCenter"
-        app:layout_constraintStart_toEndOf="@+id/imageButton8"
+        app:layout_constraintStart_toEndOf="@+id/btnSport"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/shopping"
         tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/btnTravel"
         android:layout_width="55dp"
         android:layout_height="55dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/circle_button"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/buttonShopping"
+        app:layout_constraintStart_toEndOf="@+id/btnShopping"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/travel"
         tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded" />
 
     <ImageButton
-        android:id="@+id/imageButton6"
+        android:id="@+id/btnGame"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/circle_button"
         android:contentDescription="entertainment"
         android:scaleType="fitCenter"
@@ -149,36 +149,36 @@
         tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
 
     <ImageButton
-        android:id="@+id/imageButton7"
+        android:id="@+id/btnFood"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/circle_button"
         android:contentDescription="food"
         android:scaleType="fitCenter"
-        app:layout_constraintStart_toEndOf="@+id/imageButton6"
+        app:layout_constraintStart_toEndOf="@+id/btnGame"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/food"
         tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
 
+
     <ImageButton
-        android:id="@+id/imageButton8"
+        android:id="@+id/btnSport"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/circle_button"
         android:contentDescription="sport"
         android:scaleType="fitCenter"
-        app:layout_constraintStart_toEndOf="@+id/imageButton7"
+        app:layout_constraintStart_toEndOf="@+id/btnFood"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/sport"
         tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
 
-
     <ImageButton
-        android:id="@+id/imageButton9"
+        android:id="@+id/btnPet"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="16dp"
@@ -186,13 +186,13 @@
         android:background="@drawable/circle_button"
         android:contentDescription="pet"
         android:scaleType="fitCenter"
-        app:layout_constraintStart_toEndOf="@+id/imageButton10"
+        app:layout_constraintStart_toEndOf="@+id/btnTransport"
         app:layout_constraintTop_toTopOf="@+id/tvFood"
         app:srcCompat="@drawable/pet"
         tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
 
     <ImageButton
-        android:id="@+id/imageButton10"
+        android:id="@+id/btnTransport"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="28dp"
@@ -201,32 +201,43 @@
         android:contentDescription="transport"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton6"
+        app:layout_constraintTop_toBottomOf="@+id/btnGame"
         app:srcCompat="@drawable/transport"
         tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="409dp"
-        android:layout_height="71dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="444dp"
-        android:layout_marginEnd="32dp"
-        android:background="@android:color/holo_orange_light"
-        android:padding="5dp"
+    <TextView
+        android:id="@+id/Expenses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="EXPENSES"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="Autofill,LabelFor,MissingConstraints,RtlHardcoded,TextFields" />
+        tools:ignore="HardcodedText" />
 
-    <com.example.smartmoney.MyKeyboard
-        android:id="@+id/keyboard"
-        android:layout_width="413dp"
-        android:layout_height="195dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-1dp" />
+    <!-- <EditText
+         android:id="@+id/editText"
+         android:layout_width="409dp"
+         android:layout_height="71dp"
+         android:layout_marginStart="32dp"
+         android:layout_marginTop="444dp"
+         android:layout_marginEnd="32dp"
+         android:background="@android:color/holo_orange_light"
+         android:padding="5dp"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         tools:ignore="Autofill,LabelFor,MissingConstraints,RtlHardcoded,TextFields" />
+
+     <com.example.smartmoney.MyKeyboard
+         android:id="@+id/keyboard"
+         android:layout_width="413dp"
+         android:layout_height="195dp"
+         android:orientation="vertical"
+         app:layout_constraintBottom_toBottomOf="parent"
+         tools:ignore="MissingConstraints"
+         tools:layout_editor_absoluteX="-1dp" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,6 +12,9 @@ public class Income extends AppCompatActivity {
 
     private ImageButton btnIncome;
     private ImageButton btnReward;
+    private ImageButton btnSale;
+    private ImageButton btnRefund;
+    private ImageButton btnSaving;
 
 
     @Override
@@ -30,6 +33,33 @@ public class Income extends AppCompatActivity {
 
         ImageButton btnReward = findViewById(R.id.btnReward);
         btnReward.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Income.this, CalcFYP.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton btnSale = findViewById(R.id.btnSale);
+        btnSale.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Income.this, CalcFYP.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton btnRefund = findViewById(R.id.btnRefund);
+        btnRefund.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Income.this, CalcFYP.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton btnSaving = findViewById(R.id.btnSaving);
+        btnSaving.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Income.this, CalcFYP.class);

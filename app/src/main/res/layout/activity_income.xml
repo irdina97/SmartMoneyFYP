@@ -12,35 +12,35 @@
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/circle_button"
+        android:focusable="true"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toEndOf="@+id/btnReward"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/income"
-        tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded"
-        android:focusable="true"/>
+        tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded" />
 
     <ImageButton
         android:id="@+id/btnReward"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/circle_button"
+        android:focusable="true"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/reward"
-        tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded"
-        android:focusable="true"/>
+        tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded" />
 
     <ImageButton
         android:id="@+id/btnSale"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/circle_button"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toEndOf="@+id/btnIncome"
@@ -53,7 +53,7 @@
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="18dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/circle_button"
         android:scaleType="fitCenter"
@@ -68,7 +68,7 @@
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/circle_button"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toEndOf="@+id/btnSale"
@@ -85,12 +85,12 @@
         android:background="@drawable/circle_button"
         android:tint="#1B1818"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tvIncome"
+        app:layout_constraintTop_toTopOf="@+id/Expenses"
         app:srcCompat="@android:drawable/ic_input_add"
         tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded" />
 
     <TextView
-        android:id="@+id/tvIncome"
+        android:id="@+id/Expenses"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
@@ -149,29 +149,40 @@
         app:layout_constraintTop_toBottomOf="@+id/btnRefund"
         tools:ignore="HardcodedText,MissingConstraints" />
 
-   <!-- <EditText
-        android:id="@+id/editText"
-        android:layout_width="409dp"
-        android:layout_height="71dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="444dp"
-        android:layout_marginEnd="32dp"
-        android:background="@android:color/holo_orange_light"
-        android:padding="5dp"
+    <TextView
+        android:id="@+id/Income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="INCOME"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="Autofill,LabelFor,MissingConstraints,TextFields" />
+        tools:ignore="HardcodedText" />
 
-    <com.example.smartmoney.MyKeyboard
-        android:id="@+id/keyboard"
-        android:layout_width="413dp"
-        android:layout_height="195dp"
-        android:orientation="vertical"
-        tools:ignore="MissingConstraints"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="-1dp"
-        tools:layout_editor_absoluteY="539dp" />-->
+    <!-- <EditText
+         android:id="@+id/editText"
+         android:layout_width="409dp"
+         android:layout_height="71dp"
+         android:layout_marginStart="32dp"
+         android:layout_marginTop="444dp"
+         android:layout_marginEnd="32dp"
+         android:background="@android:color/holo_orange_light"
+         android:padding="5dp"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         tools:ignore="Autofill,LabelFor,MissingConstraints,TextFields" />
+
+     <com.example.smartmoney.MyKeyboard
+         android:id="@+id/keyboard"
+         android:layout_width="413dp"
+         android:layout_height="195dp"
+         android:orientation="vertical"
+         tools:ignore="MissingConstraints"
+         app:layout_constraintBottom_toBottomOf="parent"
+         tools:layout_editor_absoluteX="-1dp"
+         tools:layout_editor_absoluteY="539dp" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -51,15 +51,6 @@ public class CalcFYP extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calc_fyp);
 
-       /* Button date = findViewById(R.id.btnDate);
-        date.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(CalcFYP.this, Calendar.class);
-                startActivity(intent);
-            }
-        }); */
-
         selectDate = findViewById(R.id.btnDate);
         date = findViewById(R.id.tvSelectedDate);
 
