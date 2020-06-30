@@ -18,7 +18,8 @@
         app:layout_constraintStart_toEndOf="@+id/btnReward"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/income"
-        tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded" />
+        tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded"
+        android:focusable="true"/>
 
     <ImageButton
         android:id="@+id/btnReward"
@@ -31,7 +32,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/reward"
-        tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded" />
+        tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded"
+        android:focusable="true"/>
 
     <ImageButton
         android:id="@+id/btnSale"
@@ -91,8 +93,20 @@
         android:id="@+id/tvIncome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="26dp"
         android:text="Income"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tvReward"
+        app:layout_constraintTop_toBottomOf="@+id/btnIncome"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvReward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="Reward"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -100,22 +114,10 @@
         tools:ignore="HardcodedText,MissingConstraints" />
 
     <TextView
-        android:id="@+id/tvReward"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:text="Reward"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textSize="14sp"
-        app:layout_constraintStart_toEndOf="@+id/tvIncome"
-        app:layout_constraintTop_toBottomOf="@+id/btnIncome"
-        tools:ignore="HardcodedText,MissingConstraints" />
-
-    <TextView
         android:id="@+id/tvSale"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
+        android:layout_marginStart="110dp"
         android:text="Sale"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="14sp"
@@ -147,7 +149,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btnRefund"
         tools:ignore="HardcodedText,MissingConstraints" />
 
-    <EditText
+   <!-- <EditText
         android:id="@+id/editText"
         android:layout_width="409dp"
         android:layout_height="71dp"
@@ -169,7 +171,7 @@
         tools:ignore="MissingConstraints"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="-1dp"
-        tools:layout_editor_absoluteY="539dp" />
+        tools:layout_editor_absoluteY="539dp" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

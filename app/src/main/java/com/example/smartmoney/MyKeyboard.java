@@ -13,6 +13,7 @@ import android.view.View;
 
 public class MyKeyboard extends LinearLayout implements View.OnClickListener {
 
+
     private SparseArray<String> keyValues = new SparseArray<>();
     private InputConnection inputConnection;
 
@@ -32,41 +33,41 @@ public class MyKeyboard extends LinearLayout implements View.OnClickListener {
 
     private void init(Context context, AttributeSet attrs) {
         LayoutInflater.from(context).inflate(R.layout.keyboard, this, true);
-        Button button1 = findViewById(R.id.button_1);
+        Button button1 = findViewById(R.id.btn_1);
         button1.setOnClickListener(this);
-        Button button2 = findViewById(R.id.button_2);
+        Button button2 = findViewById(R.id.btn_2);
         button2.setOnClickListener(this);
-        Button button3 = findViewById(R.id.button_3);
+        Button button3 = findViewById(R.id.btn_3);
         button3.setOnClickListener(this);
-        Button button4 = findViewById(R.id.button_4);
+        Button button4 = findViewById(R.id.btn_4);
         button4.setOnClickListener(this);
-        Button button5 = findViewById(R.id.button_5);
+        Button button5 = findViewById(R.id.btn_5);
         button5.setOnClickListener(this);
-        Button button6 = findViewById(R.id.button_6);
+        Button button6 = findViewById(R.id.btn_6);
         button6.setOnClickListener(this);
-        Button button7 = findViewById(R.id.button_7);
+        Button button7 = findViewById(R.id.btn_7);
         button7.setOnClickListener(this);
-        Button button8 = findViewById(R.id.button_8);
+        Button button8 = findViewById(R.id.btn_8);
         button8.setOnClickListener(this);
-        Button button9 = findViewById(R.id.button_9);
+        Button button9 = findViewById(R.id.btn_9);
         button9.setOnClickListener(this);
-        Button button0 = findViewById(R.id.button_0);
+        Button button0 = findViewById(R.id.btn_0);
         button0.setOnClickListener(this);
-        Button buttonDelete = findViewById(R.id.button_delete);
+        Button buttonDelete = findViewById(R.id.btn_delete);
         buttonDelete.setOnClickListener(this);
-        Button buttonDone = findViewById(R.id.button_done);
+        Button buttonDone = findViewById(R.id.btn_done);
         buttonDone.setOnClickListener(this);
 
-        keyValues.put(R.id.button_1, "1");
-        keyValues.put(R.id.button_2, "2");
-        keyValues.put(R.id.button_3, "3");
-        keyValues.put(R.id.button_4, "4");
-        keyValues.put(R.id.button_5, "5");
-        keyValues.put(R.id.button_6, "6");
-        keyValues.put(R.id.button_7, "7");
-        keyValues.put(R.id.button_8, "9");
-        keyValues.put(R.id.button_0, "0");
-        keyValues.put(R.id.button_done, "\n");
+        keyValues.put(R.id.btn_1, "1");
+        keyValues.put(R.id.btn_2, "2");
+        keyValues.put(R.id.btn_3, "3");
+        keyValues.put(R.id.btn_4, "4");
+        keyValues.put(R.id.btn_5, "5");
+        keyValues.put(R.id.btn_6, "6");
+        keyValues.put(R.id.btn_7, "7");
+        keyValues.put(R.id.btn_8, "9");
+        keyValues.put(R.id.btn_0, "0");
+        keyValues.put(R.id.btn_done, "\n");
     }
 
     @Override
@@ -74,7 +75,7 @@ public class MyKeyboard extends LinearLayout implements View.OnClickListener {
         if (inputConnection == null)
             return;
 
-        if (v.getId() == R.id.button_delete) {
+        if (v.getId() == R.id.btn_delete) {
             CharSequence selectedText = inputConnection.getSelectedText(0);
 
             if (TextUtils.isEmpty(selectedText)) {

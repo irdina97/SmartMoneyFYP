@@ -41,13 +41,12 @@
                 app:layout_gravity="fill"
                 app:layout_row="0"
                 app:layout_rowWeight="1"
-                tools:ignore="KeyboardInaccessibleWidget">
+                android:focusable="true">
 
                 <TextView
                     android:id="@+id/text"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:clickable="true"
                     android:text="Income"
                     android:textAlignment="center"
                     tools:ignore="HardcodedText" />
