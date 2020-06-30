@@ -13,6 +13,7 @@ public class Income extends AppCompatActivity {
     private ImageButton btnIncome;
     private ImageButton btnReward;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

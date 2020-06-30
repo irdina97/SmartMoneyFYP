@@ -16,7 +16,6 @@ public class Calendar extends AppCompatActivity {
     Button selectDate;
     DatePickerDialog datePickerDialog;
     TextView date;
-    //CalendarView calendarView;
     int year;
     int month;
     int dayOfMonth;
