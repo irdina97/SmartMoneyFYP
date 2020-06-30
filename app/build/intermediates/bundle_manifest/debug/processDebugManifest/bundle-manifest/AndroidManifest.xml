@@ -17,6 +17,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.smartmoney.CalcFYP" />
         <activity android:name="com.example.smartmoney.Calculator" />
         <activity android:name="com.example.smartmoney.Login" />
         <activity android:name="com.example.smartmoney.Chart" />

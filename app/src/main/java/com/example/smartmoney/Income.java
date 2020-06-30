@@ -11,6 +11,7 @@ import android.widget.ImageButton;
 public class Income extends AppCompatActivity {
 
     private ImageButton btnIncome;
+    private ImageButton btnReward;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +22,7 @@ public class Income extends AppCompatActivity {
         btnIncome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Income.this, Calculator.class);
+                Intent intent = new Intent(Income.this, CalcFYP.class);
                 startActivity(intent);
             }
         });
@@ -30,7 +31,7 @@ public class Income extends AppCompatActivity {
         btnReward.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Income.this, Calculator.class);
+                Intent intent = new Intent(Income.this, CalcFYP.class);
                 startActivity(intent);
             }
         });
