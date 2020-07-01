@@ -25,64 +25,63 @@
 17-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:10:9-54
 18        android:supportsRtl="true"
 18-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:11:9-35
-19        android:testOnly="true"
-20        android:theme="@style/AppTheme" >
-20-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:12:9-40
+19        android:theme="@style/AppTheme" >
+19-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:12:9-40
+20        <activity android:name="com.example.smartmoney.ListExpenses" />
+20-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:14:9-49
+20-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:14:19-47
 21        <activity android:name="com.example.smartmoney.CalcFYP" />
-21-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:14:9-54
-21-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:14:19-42
-22        <activity android:name="com.example.smartmoney.Calculator" />
-22-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:15:9-48
-22-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:15:19-45
-23        <activity android:name="com.example.smartmoney.Login" />
-23-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:16:9-43
-23-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:16:19-40
-24        <activity android:name="com.example.smartmoney.Chart" />
-24-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:17:9-43
-24-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:17:19-40
-25        <activity android:name="com.example.smartmoney.Calendar" />
-25-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:18:9-46
-25-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:18:19-43
-26        <activity android:name="com.example.smartmoney.Expenses" />
-26-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:19:9-46
-26-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:19:19-43
-27        <activity android:name="com.example.smartmoney.Income" />
-27-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:20:9-44
-27-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:20:19-41
-28        <!--
-29 <activity android:name=".ListExpenses" />
-30
-31  <activity android:name=".ScanCodeActivity" />
-32        // <activity android:name=".ScanQR" />
-33        -->
-34        <activity
-34-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:27:9-35:20
-35            android:name="com.example.smartmoney.MainActivity"
-35-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:28:13-41
-36            android:theme="@style/AppTheme.NoActionBar" >
-36-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:29:13-56
-37            <intent-filter>
-37-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:30:13-34:29
-38                <action android:name="android.intent.action.MAIN" />
-38-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:31:17-69
-38-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:31:25-66
-39
-40                <category android:name="android.intent.category.LAUNCHER" />
-40-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:33:17-77
-40-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:33:27-74
-41            </intent-filter>
-42        </activity>
-43
-44        <provider
-44-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
-45            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-45-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
-46            android:authorities="com.example.smartmoney.lifecycle-process"
-46-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
-47            android:exported="false"
-47-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
-48            android:multiprocess="true" />
-48-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
-49    </application>
-50
-51</manifest>
+21-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:15:9-45
+21-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:15:19-42
+22        <activity android:name="com.example.smartmoney.Login" />
+22-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:16:9-43
+22-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:16:19-40
+23        <activity android:name="com.example.smartmoney.Chart" />
+23-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:17:9-43
+23-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:17:19-40
+24        <activity android:name="com.example.smartmoney.Calendar" />
+24-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:18:9-46
+24-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:18:19-43
+25        <activity android:name="com.example.smartmoney.Expenses" />
+25-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:19:9-46
+25-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:19:19-43
+26        <activity android:name="com.example.smartmoney.Income" />
+26-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:20:9-44
+26-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:20:19-41
+27        <!--
+28 <activity android:name=".ListExpenses" />
+29
+30  <activity android:name=".ScanCodeActivity" />
+31        // <activity android:name=".ScanQR" />
+32        -->
+33        <activity
+33-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:27:9-35:20
+34            android:name="com.example.smartmoney.MainActivity"
+34-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:28:13-41
+35            android:theme="@style/AppTheme.NoActionBar" >
+35-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:29:13-56
+36            <intent-filter>
+36-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:30:13-34:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:31:17-69
+37-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:31:25-66
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:33:17-77
+39-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:33:27-74
+40            </intent-filter>
+41        </activity>
+42
+43        <provider
+43-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+44            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+44-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+45            android:authorities="com.example.smartmoney.lifecycle-process"
+45-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+46            android:exported="false"
+46-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+47            android:multiprocess="true" />
+47-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+48    </application>
+49
+50</manifest>

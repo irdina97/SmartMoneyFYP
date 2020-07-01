@@ -16,10 +16,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.smartmoney.ListExpenses" />
         <activity android:name="com.example.smartmoney.CalcFYP" />
-        <activity android:name="com.example.smartmoney.Calculator" />
         <activity android:name="com.example.smartmoney.Login" />
         <activity android:name="com.example.smartmoney.Chart" />
         <activity android:name="com.example.smartmoney.Calendar" />

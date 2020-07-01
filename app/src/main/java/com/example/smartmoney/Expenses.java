@@ -17,6 +17,7 @@ public class Expenses extends AppCompatActivity {
     private ImageButton btnSport;
     private ImageButton btnPet;
     private ImageButton btnTransport;
+    private ImageButton btnAddEx;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,6 +83,15 @@ public class Expenses extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Expenses.this, CalcFYP.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton btnAddEx = findViewById(R.id.btnAddEx);
+        btnTransport.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Expenses.this, ListExpenses.class);
                 startActivity(intent);
             }
         });

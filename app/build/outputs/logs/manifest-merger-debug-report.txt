@@ -94,14 +94,14 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\US
 		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:7:9-35
 	android:theme
 		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:12:9-40
+activity#com.example.smartmoney.ListExpenses
+ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:14:9-49
+	android:name
+		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:14:19-47
 activity#com.example.smartmoney.CalcFYP
-ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:14:9-54
+ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:15:9-45
 	android:name
-		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:14:19-42
-activity#com.example.smartmoney.Calculator
-ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:15:9-48
-	android:name
-		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:15:19-45
+		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:15:19-42
 activity#com.example.smartmoney.Login
 ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:16:9-43
 	android:name
