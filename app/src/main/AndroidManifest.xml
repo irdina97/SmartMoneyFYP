@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.smartmoney">
 
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
-        <activity android:name=".ScanCodeActivity"/>
+        <activity android:name=".ChartIncome"></activity>
+        <activity android:name=".ScanCodeActivity" />
         <activity android:name=".ScanQR" />
         <activity android:name=".ListExpenses" />
         <activity android:name=".CalcFYP" />
@@ -21,7 +23,6 @@
         <activity android:name=".Calendar" />
         <activity android:name=".Expenses" />
         <activity android:name=".Income" />
-
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">

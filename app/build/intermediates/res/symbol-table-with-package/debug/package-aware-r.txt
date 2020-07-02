@@ -1576,6 +1576,7 @@ id all
 id always
 id async
 id auto
+id background_progressbar
 id barrier
 id beginning
 id blocking
@@ -1641,7 +1642,6 @@ id btn_done
 id btn_minus
 id btn_plus
 id btn_scan
-id button
 id button2
 id buttonPanel
 id buttonclose
@@ -1705,6 +1705,7 @@ id fixed
 id forever
 id fragment_container
 id fragment_container_view_tag
+id frameLayout
 id ghost_view
 id ghost_view_holder
 id gone
@@ -1780,6 +1781,7 @@ id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id number_of_calories
 id off
 id on
 id outline
@@ -1841,6 +1843,7 @@ id src_in
 id src_over
 id standard
 id start
+id stats_progressbar
 id status_bar_latest_event_content
 id stretch
 id submenuarrow
@@ -1863,6 +1866,10 @@ id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView
+id textView3
+id textView4
+id textView5
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter
@@ -1987,6 +1994,7 @@ layout abc_tooltip
 layout activity_calc_fyp
 layout activity_calendar
 layout activity_chart
+layout activity_chart_income
 layout activity_expenses
 layout activity_income
 layout activity_list_expenses

@@ -1276,6 +1276,10 @@
         "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-2\\files-2.1\\c9fbe60407e0b0302c1b8a5800cf7ad8\\core-1.3.0\\res\\layout-v21\\notification_action.xml"
     },
     {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\SmartMoneyFYP\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_chart_income.xml.flat",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\SmartMoneyFYP\\app\\src\\main\\res\\layout\\activity_chart_income.xml"
+    },
+    {
         "merged": "C:\\Users\\USER\\AndroidStudioProjects\\SmartMoneyFYP\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_calendar_vertical.xml.flat",
         "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-2\\files-2.1\\5d52d9573d8a8f70a8462cc8f8a42ce9\\material-1.1.0\\res\\layout\\mtrl_calendar_vertical.xml"
     },
@@ -2752,12 +2756,12 @@
         "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-2\\files-2.1\\5d52d9573d8a8f70a8462cc8f8a42ce9\\material-1.1.0\\res\\anim\\design_snackbar_in.xml"
     },
     {
-        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\SmartMoneyFYP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_popupmenu_background.xml.flat",
-        "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-2\\files-2.1\\5d52d9573d8a8f70a8462cc8f8a42ce9\\material-1.1.0\\res\\drawable\\mtrl_popupmenu_background.xml"
-    },
-    {
         "merged": "C:\\Users\\USER\\AndroidStudioProjects\\SmartMoneyFYP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_scan.png.flat",
         "source": "C:\\Users\\USER\\AndroidStudioProjects\\SmartMoneyFYP\\app\\src\\main\\res\\drawable\\scan.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\SmartMoneyFYP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_popupmenu_background.xml.flat",
+        "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-2\\files-2.1\\5d52d9573d8a8f70a8462cc8f8a42ce9\\material-1.1.0\\res\\drawable\\mtrl_popupmenu_background.xml"
     },
     {
         "merged": "C:\\Users\\USER\\AndroidStudioProjects\\SmartMoneyFYP\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_popup_menu_item_layout.xml.flat",
