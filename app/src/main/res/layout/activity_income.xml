@@ -76,18 +76,6 @@
         app:srcCompat="@drawable/saving"
         tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded" />
 
-    <ImageButton
-        android:id="@+id/btnAdd"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/circle_button"
-        android:tint="#1B1818"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/Expenses"
-        app:srcCompat="@android:drawable/ic_input_add"
-        tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded" />
 
     <ImageButton
         android:id="@+id/btnScanQR"
@@ -97,10 +85,12 @@
         android:background="@drawable/circle_button"
         android:contentDescription="transport"
         android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.686"
         app:srcCompat="@drawable/scan"
-        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded"
-        tools:layout_editor_absoluteY="362dp" />
+        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
 
     <TextView
         android:id="@+id/Expenses"
@@ -130,11 +120,11 @@
         android:id="@+id/tvSale"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="110dp"
+        android:layout_marginStart="32dp"
         android:text="Sale"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="14sp"
-        app:layout_constraintStart_toEndOf="@+id/tvReward"
+        app:layout_constraintStart_toEndOf="@+id/Expenses"
         app:layout_constraintTop_toBottomOf="@+id/btnSale"
         tools:ignore="HardcodedText,MissingConstraints" />
 
@@ -142,7 +132,7 @@
         android:id="@+id/tvSaving"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="38dp"
         android:text="Saving"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="14sp"
@@ -172,6 +162,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="300dp"
+        android:gravity="center"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
 
     <!-- <EditText
          android:id="@+id/editText"

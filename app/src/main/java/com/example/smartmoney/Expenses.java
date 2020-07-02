@@ -20,17 +20,18 @@ public class Expenses extends AppCompatActivity {
     private ImageButton btnPet;
     private ImageButton btnTransport;
     private ImageButton btnAddEx;
-    private ImageButton btnScanQR;
 
     @SuppressLint("StaticFieldLeak")
     public static TextView resultTextView; //scan result
+    ImageButton btnScanQR;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_expenses);
 
-        resultTextView = findViewById(R.id.result_text);
+        resultTextView = findViewById(R.id.result_text); //scan result
+        btnScanQR = findViewById(R.id.btnScanQR);
 
         ImageButton btnShopping = findViewById(R.id.btnShopping);
         btnShopping.setOnClickListener(new View.OnClickListener() {

@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.ImageButton;
 
 
-
 public class ListExpenses extends AppCompatActivity {
 
     private ImageButton btnGuitar;
@@ -36,6 +35,7 @@ public class ListExpenses extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(ListExpenses.this, CalcFYP.class);
                 startActivity(intent);
+
             }
         });
 
@@ -147,4 +147,5 @@ public class ListExpenses extends AppCompatActivity {
             }
         });
     }
+
 }

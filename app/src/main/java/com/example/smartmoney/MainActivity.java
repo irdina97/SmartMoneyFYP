@@ -15,7 +15,6 @@ import androidx.cardview.widget.CardView;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-//import com.example.smartmoney.R;
 import com.google.android.material.navigation.NavigationView;
 
 
