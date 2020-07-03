@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TextView;
 
+import java.util.Objects;
+
 public class CalcFYP extends AppCompatActivity {
 
     private Button one;
@@ -50,6 +52,7 @@ public class CalcFYP extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calc_fyp);
+        Objects.requireNonNull(getSupportActionBar()).setTitle("Calculator");
 
         selectDate = findViewById(R.id.btnDate);
         date = findViewById(R.id.tvSelectedDate);

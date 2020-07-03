@@ -152,16 +152,6 @@
         app:layout_constraintTop_toBottomOf="@+id/btnRefund"
         tools:ignore="HardcodedText,MissingConstraints" />
 
-    <TextView
-        android:id="@+id/Income"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="INCOME"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/result_text"

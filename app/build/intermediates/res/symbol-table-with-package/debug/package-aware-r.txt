@@ -1517,7 +1517,6 @@ id BOTTOM_START
 id CTRL
 id Expenses
 id FUNCTION
-id Income
 id META
 id SHIFT
 id SYM

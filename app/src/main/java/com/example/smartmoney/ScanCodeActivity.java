@@ -10,6 +10,8 @@ import android.os.Bundle;
 
 import com.google.zxing.Result;
 
+import java.util.Objects;
+
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
 public class ScanCodeActivity extends AppCompatActivity implements ZXingScannerView.ResultHandler {
@@ -22,6 +24,7 @@ public class ScanCodeActivity extends AppCompatActivity implements ZXingScannerV
         super.onCreate(savedInstanceState);
         ScannerView = new ZXingScannerView(this);
         setContentView(ScannerView);
+        Objects.requireNonNull(getSupportActionBar()).setTitle("Scan");
 
     }
 

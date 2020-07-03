@@ -22,10 +22,6 @@
         <activity android:name="com.example.smartmoney.CategoryFragment" />
         <activity android:name="com.example.smartmoney.SettingsFragment" />
         <activity android:name="com.example.smartmoney.ChartFragment" />
-        <activity
-            android:name="com.example.smartmoney.NavigationComponent"
-            android:label="@string/title_activity_navigation_component"
-            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="com.example.smartmoney.ChartIncome" />
         <activity android:name="com.example.smartmoney.ScanCodeActivity" />
         <activity android:name="com.example.smartmoney.ScanQR" />

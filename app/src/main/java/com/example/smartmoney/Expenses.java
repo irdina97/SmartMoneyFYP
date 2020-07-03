@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import java.util.Objects;
+
 public class Expenses extends AppCompatActivity {
 
     private ImageButton btnShopping;
@@ -29,6 +31,7 @@ public class Expenses extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_expenses);
+        Objects.requireNonNull(getSupportActionBar()).setTitle("Expenses");
 
         resultTextView = findViewById(R.id.result_text); //scan result
         btnScanQR = findViewById(R.id.btnScanQR);
