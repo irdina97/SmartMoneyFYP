@@ -32,6 +32,7 @@ public class Expenses extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_expenses);
         Objects.requireNonNull(getSupportActionBar()).setTitle("Expenses");
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         resultTextView = findViewById(R.id.result_text); //scan result
         btnScanQR = findViewById(R.id.btnScanQR);

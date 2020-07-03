@@ -23,16 +23,24 @@
         <activity android:name="com.example.smartmoney.CategoryFragment" />
         <activity android:name="com.example.smartmoney.SettingsFragment" />
         <activity android:name="com.example.smartmoney.ChartFragment" />
-        <activity android:name="com.example.smartmoney.ChartIncome" />
+        <activity
+            android:name="com.example.smartmoney.ChartIncome"
+            android:parentActivityName="com.example.smartmoney.MainActivity" />
         <activity android:name="com.example.smartmoney.ScanCodeActivity" />
         <activity android:name="com.example.smartmoney.ScanQR" />
-        <activity android:name="com.example.smartmoney.ListExpenses" />
+        <activity
+            android:name="com.example.smartmoney.ListExpenses"
+            android:parentActivityName="com.example.smartmoney.Expenses" />
         <activity android:name="com.example.smartmoney.CalcFYP" />
         <activity android:name="com.example.smartmoney.Login" />
         <activity android:name="com.example.smartmoney.Chart" />
         <activity android:name="com.example.smartmoney.Calendar" />
-        <activity android:name="com.example.smartmoney.Expenses" />
-        <activity android:name="com.example.smartmoney.Income" />
+        <activity
+            android:name="com.example.smartmoney.Expenses"
+            android:parentActivityName="com.example.smartmoney.MainActivity" />
+        <activity
+            android:name="com.example.smartmoney.Income"
+            android:parentActivityName="com.example.smartmoney.MainActivity" />
         <activity
             android:name="com.example.smartmoney.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" >

@@ -13,5 +13,6 @@ public class ChartIncome extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chart_income);
         Objects.requireNonNull(getSupportActionBar()).setTitle("Chart");
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
     }
 }

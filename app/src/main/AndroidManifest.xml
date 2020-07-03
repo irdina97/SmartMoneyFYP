@@ -16,16 +16,20 @@
         <activity android:name=".CategoryFragment"/>
         <activity android:name=".SettingsFragment" />
         <activity android:name=".ChartFragment" />
-        <activity android:name=".ChartIncome" />
+        <activity android:name=".ChartIncome"
+            android:parentActivityName=".MainActivity"/>
         <activity android:name=".ScanCodeActivity" />
         <activity android:name=".ScanQR" />
-        <activity android:name=".ListExpenses" />
+        <activity android:name=".ListExpenses"
+            android:parentActivityName=".Expenses"/>
         <activity android:name=".CalcFYP" />
         <activity android:name=".Login" />
         <activity android:name=".Chart" />
         <activity android:name=".Calendar" />
-        <activity android:name=".Expenses" />
-        <activity android:name=".Income" />
+        <activity android:name=".Expenses"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Income"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">

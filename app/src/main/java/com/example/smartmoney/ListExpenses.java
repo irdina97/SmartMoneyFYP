@@ -34,6 +34,7 @@ public class ListExpenses extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_expenses);
         Objects.requireNonNull(getSupportActionBar()).setTitle("Expenses List");
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         ImageButton btnGuitar = findViewById(R.id.btnGuitar);
         ImageButton btnPiano = findViewById(R.id.btnPiano);
@@ -70,44 +71,68 @@ public class ListExpenses extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnGuitar:
-                Intent intent = new Intent(ListExpenses.this, CalcFYP.class);
+                Intent intent = new Intent(ListExpenses.this, Expenses.class);
                 startActivity(intent);
                 Toast.makeText(this, "Guitar is clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnPiano:
+                Intent intent1 = new Intent(ListExpenses.this, Expenses.class);
+                startActivity(intent1);
                 Toast.makeText(this, "Piano is clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnArt:
+                Intent intent2 = new Intent(ListExpenses.this, Expenses.class);
+                startActivity(intent2);
                 Toast.makeText(this, "Art is clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnSocial:
+                Intent intent3 = new Intent(ListExpenses.this, Expenses.class);
+                startActivity(intent3);
                 Toast.makeText(this, "Social is clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnHealth:
+                Intent intent4 = new Intent(ListExpenses.this, Expenses.class);
+                startActivity(intent4);
                 Toast.makeText(this, "Health is clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnBeauty:
+                Intent intent5 = new Intent(ListExpenses.this, Expenses.class);
+                startActivity(intent5);
                 Toast.makeText(this, "Beauty is clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnGift:
+                Intent intent6 = new Intent(ListExpenses.this, Expenses.class);
+                startActivity(intent6);
                 Toast.makeText(this, "Gift is clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnBook:
+                Intent intent7 = new Intent(ListExpenses.this, Expenses.class);
+                startActivity(intent7);
                 Toast.makeText(this, "Book is clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnEducation:
+                Intent intent8 = new Intent(ListExpenses.this, Expenses.class);
+                startActivity(intent8);
                 Toast.makeText(this, "Education is clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnBill:
+                Intent intent9 = new Intent(ListExpenses.this, Expenses.class);
+                startActivity(intent9);
                 Toast.makeText(this, "Bill is clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnElectronic:
+                Intent intent10 = new Intent(ListExpenses.this, Expenses.class);
+                startActivity(intent10);
                 Toast.makeText(this, "Electronic is clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnPhone:
+                Intent intent11 = new Intent(ListExpenses.this, Expenses.class);
+                startActivity(intent11);
                 Toast.makeText(this, "Phone is clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnHome:
+                Intent intent12 = new Intent(ListExpenses.this, Expenses.class);
+                startActivity(intent12);
                 Toast.makeText(this, "Home is clicked", Toast.LENGTH_SHORT).show();
                 break;
         }
