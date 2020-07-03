@@ -3,12 +3,11 @@ package com.example.smartmoney;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.TextView;
+
 
 import java.util.Objects;
 
@@ -20,9 +19,6 @@ public class Income extends AppCompatActivity {
     private ImageButton btnRefund;
     private ImageButton btnSaving;
 
-    @SuppressLint("StaticFieldLeak")
-    public static TextView resultTextView; //scan result
-    ImageButton btnScanQR;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,17 +27,6 @@ public class Income extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).setTitle("Income");
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
-        resultTextView = findViewById(R.id.result_text); //scan result
-        btnScanQR = findViewById(R.id.btnScanQR);
-
-        btnScanQR.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), ScanCodeActivity.class));
-
-
-            }
-        });
 
         ImageButton btnIncome = findViewById(R.id.btnIncome);
         btnIncome.setOnClickListener(new View.OnClickListener() {

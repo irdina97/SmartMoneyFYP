@@ -37,6 +37,14 @@ public class Expenses extends AppCompatActivity {
         resultTextView = findViewById(R.id.result_text); //scan result
         btnScanQR = findViewById(R.id.btnScanQR);
 
+        btnScanQR.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), ScanCodeActivity.class));
+
+            }
+        });
+
         ImageButton btnShopping = findViewById(R.id.btnShopping);
         btnShopping.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -109,13 +117,13 @@ public class Expenses extends AppCompatActivity {
             }
         });
 
-        btnScanQR.setOnClickListener(new View.OnClickListener() {
+        /*btnScanQR.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), ScanCodeActivity.class));
 
             }
-        });
+        });*/
 
     }
 }

@@ -27,24 +27,12 @@
 
     <!-- The text that goes in a center of the chart -->
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Income Chart"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/background_progressbar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="HardcodedText,UnknownIdInLayout" />
-
     <ProgressBar
         android:id="@+id/background_progressbar"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="300dp"
         android:layout_height="300dp"
+        android:layout_marginBottom="400dp"
         android:indeterminate="false"
         android:max="100"
         android:progress="100"
@@ -61,6 +49,7 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="300dp"
         android:layout_height="300dp"
+        android:layout_marginBottom="400dp"
         android:indeterminate="false"
         android:max="100"
         android:progress="75"
@@ -76,6 +65,7 @@
         android:id="@+id/number_of_calories"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="240dp"
         android:text="1500/2000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -90,17 +80,21 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
         android:text="Income"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/number_of_calories"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/background_progressbar"
         app:layout_constraintVertical_bias="1.0"
-        tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="172dp" />
+        tools:ignore="HardcodedText,MissingConstraints" />
 
     <FrameLayout
         android:layout_width="361dp"
         android:layout_height="247dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="160dp"
         android:background="#FFF"
         android:elevation="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
