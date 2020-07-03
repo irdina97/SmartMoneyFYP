@@ -17,19 +17,29 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
 
-import java.util.Objects;
+
 
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout drawer;
     private ImageButton btn;
+    //private ImageView profile;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+       /* profile = findViewById(R.id.profile);
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Login.class);
+                startActivity(intent);
+            }
+        }); */
 
         btn = findViewById(R.id.btn);
         btn.setOnClickListener(new View.OnClickListener() {
@@ -92,11 +102,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
     }
-
-   /* public void openCalendar(){
-        Intent intent = new Intent(MainActivity.this, Income.class);
-        startActivity(intent);
-    }*/
 
     //Navigation menu
     @Override

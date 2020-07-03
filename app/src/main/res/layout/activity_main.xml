@@ -10,8 +10,22 @@
     tools:context=".MainActivity"
     tools:openDrawer="start">
 
-    <LinearLayout
+    <!--<include
+        layout="@layout/app_bar_navigation_component"
         android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
@@ -96,42 +110,30 @@
 
         </androidx.gridlayout.widget.GridLayout>
 
-        <FrameLayout
+        <!-- <FrameLayout
             android:id="@+id/fragment_container"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent">-->
 
-            <ImageButton
-                android:id="@+id/btn"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="358dp"
-                android:layout_marginLeft="39dp"
-                android:layout_marginTop="40dp"
-                android:background="@drawable/circle_button"
-                android:clickable="true"
-                android:contentDescription="add"
-                android:focusable="true"
-                android:tint="#1B1818"
-                app:srcCompat="@android:drawable/ic_input_add"
-                tools:ignore="HardcodedText,RtlHardcoded" />
-        </FrameLayout>
+        <ImageButton
+            android:id="@+id/btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="358dp"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/circle_button"
+            android:clickable="true"
+            android:contentDescription="add"
+            android:focusable="true"
+            android:tint="#1B1818"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@android:drawable/ic_input_add"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+        <!-- </FrameLayout>-->
 
     </LinearLayout>
-
-   <!--<include
-        layout="@layout/app_bar_navigation_component"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />-->
-
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/nav_view"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:fitsSystemWindows="true"
-        app:headerLayout="@layout/nav_header"
-        app:menu="@menu/drawer_menu" />
 
 
 </androidx.drawerlayout.widget.DrawerLayout>
