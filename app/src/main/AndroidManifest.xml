@@ -13,7 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
-        <activity android:name=".ChartIncome"></activity>
+        <activity android:name=".CategoryFragment"/>
+        <activity android:name=".SettingsFragment" />
+        <activity android:name=".ChartFragment" />
+        <activity android:name=".ChartIncome" />
         <activity android:name=".ScanCodeActivity" />
         <activity android:name=".ScanQR" />
         <activity android:name=".ListExpenses" />

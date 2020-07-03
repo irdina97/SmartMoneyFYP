@@ -17,6 +17,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
 
+import java.util.Objects;
+
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -72,13 +74,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         //Toolbar
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        Objects.requireNonNull(getSupportActionBar()).setTitle("Icome");
 
         drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar,
-                R.string.navigation_draw_open, R.string.navigation_draw_close);
+                R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
@@ -101,12 +104,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.nav_piechart:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new ChartFragment()).commit();
+                Intent intent = new Intent(MainActivity.this, ChartIncome.class);
+                startActivity(intent);
+                Toast.makeText(this, "Chart", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.nav_category:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new CategoryFragment()).commit();
+                Intent intent1 = new Intent(MainActivity.this, Income.class);
+                startActivity(intent1);
+                Toast.makeText(this, "Chart", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.nav_settings:
                 Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();

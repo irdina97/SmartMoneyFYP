@@ -44,12 +44,12 @@
                 {
                     "source": "C:\\Users\\USER\\AndroidStudioProjects\\SmartMoneyFYP\\app\\src\\main\\res\\values-v21\\styles.xml",
                     "from": {
-                        "startLines": "3",
+                        "startLines": "2",
                         "startColumns": "4",
-                        "startOffsets": "59",
-                        "endLines": "7",
+                        "startOffsets": "19",
+                        "endLines": "6",
                         "endColumns": "12",
-                        "endOffsets": "286"
+                        "endOffsets": "246"
                     },
                     "to": {
                         "startLines": "16",

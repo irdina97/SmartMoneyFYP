@@ -33,9 +33,11 @@
         android:layout_height="wrap_content"
         android:text="Income Chart"
         android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/background_progressbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="HardcodedText,UnknownIdInLayout" />
 
     <ProgressBar
@@ -97,14 +99,15 @@
         tools:layout_editor_absoluteX="172dp" />
 
     <FrameLayout
-        android:layout_width="370dp"
-        android:layout_height="256dp"
+        android:layout_width="361dp"
+        android:layout_height="247dp"
         android:background="#FFF"
         android:elevation="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/background_progressbar"
+        app:layout_constraintVertical_bias="0.847"
         tools:ignore="MissingConstraints">
 
         <TextView

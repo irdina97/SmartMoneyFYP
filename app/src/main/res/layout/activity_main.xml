@@ -36,12 +36,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:clickable="true"
+                android:focusable="true"
                 app:layout_column="0"
                 app:layout_columnWeight="1"
                 app:layout_gravity="fill"
                 app:layout_row="0"
-                app:layout_rowWeight="1"
-                android:focusable="true">
+                app:layout_rowWeight="1">
 
                 <TextView
                     android:id="@+id/text"
@@ -57,12 +57,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:clickable="true"
+                android:focusable="true"
                 app:layout_column="1"
                 app:layout_columnWeight="1"
                 app:layout_gravity="fill"
                 app:layout_row="0"
-                app:layout_rowWeight="1"
-                android:focusable="true">
+                app:layout_rowWeight="1">
 
                 <TextView
                     android:id="@+id/text1"
@@ -106,25 +106,31 @@
             android:background="@drawable/circle_button"
             android:clickable="true"
             android:contentDescription="add"
+            android:focusable="true"
             android:tint="#1B1818"
             app:srcCompat="@android:drawable/ic_input_add"
-            tools:ignore="HardcodedText,RtlHardcoded"
-            android:focusable="true" />
+            tools:ignore="HardcodedText,RtlHardcoded" />
 
         <FrameLayout
             android:id="@+id/fragment_container"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
         </FrameLayout>
 
     </LinearLayout>
+
+   <!--<include
+        layout="@layout/app_bar_navigation_component"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/drawer_menu" />
 
