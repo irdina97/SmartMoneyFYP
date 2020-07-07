@@ -7,6 +7,22 @@
     android:background="#74FF9800"
     tools:context=".ListExpenses">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            tools:ignore="UnusedAttribute" />
+
+    </RelativeLayout>
+
     <TextView
         android:id="@+id/tvGuitar"
         android:layout_width="54dp"
@@ -172,13 +188,13 @@
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="80dp"
         android:background="@drawable/circle_button"
         android:contentDescription="social"
         android:scaleType="fitCenter"
+        android:src="@drawable/social"
         app:layout_constraintStart_toEndOf="@+id/btnArt"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/social"
         tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
 
     <ImageButton
@@ -186,14 +202,14 @@
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/circle_button"
         android:scaleType="fitCenter"
+        android:src="@drawable/health1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnSocial"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/health"
         tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded" />
 
     <ImageButton
@@ -201,13 +217,13 @@
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="80dp"
         android:background="@drawable/circle_button"
         android:contentDescription="entertainment"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/guitar"
+        app:srcCompat="@drawable/gutiar"
         tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
 
     <ImageButton
@@ -215,13 +231,13 @@
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="80dp"
         android:background="@drawable/circle_button"
         android:contentDescription="food"
         android:scaleType="fitCenter"
+        android:src="@drawable/piano"
         app:layout_constraintStart_toEndOf="@+id/btnGuitar"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/piano"
         tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
 
 
@@ -230,13 +246,13 @@
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="80dp"
         android:background="@drawable/circle_button"
         android:contentDescription="art"
         android:scaleType="fitCenter"
+        android:src="@drawable/art1"
         app:layout_constraintStart_toEndOf="@+id/btnPiano"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/art"
         tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
 
     <ImageButton
@@ -262,9 +278,9 @@
         android:background="@drawable/circle_button"
         android:contentDescription="transport"
         android:scaleType="fitCenter"
+        android:src="@drawable/beauty1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnGuitar"
-        app:srcCompat="@drawable/beauty"
         tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
 
 
@@ -277,9 +293,9 @@
         android:background="@drawable/circle_button"
         android:contentDescription="book"
         android:scaleType="fitCenter"
+        android:src="@drawable/book1"
         app:layout_constraintStart_toEndOf="@+id/btnGift"
         app:layout_constraintTop_toTopOf="@+id/tvArt"
-        app:srcCompat="@drawable/book"
         tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
 
     <ImageButton
@@ -291,9 +307,9 @@
         android:background="@drawable/circle_button"
         android:contentDescription="education"
         android:scaleType="fitCenter"
+        android:src="@drawable/education1"
         app:layout_constraintStart_toEndOf="@+id/btnBook"
         app:layout_constraintTop_toBottomOf="@+id/btnSocial"
-        app:srcCompat="@drawable/education"
         tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
 
     <ImageButton
@@ -306,10 +322,10 @@
         android:background="@drawable/circle_button"
         android:contentDescription="bill"
         android:scaleType="fitCenter"
+        android:src="@drawable/bill1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnEducation"
         app:layout_constraintTop_toBottomOf="@+id/btnHealth"
-        app:srcCompat="@drawable/bill"
         tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
 
     <ImageButton
@@ -321,9 +337,9 @@
         android:background="@drawable/circle_button"
         android:contentDescription="electronic"
         android:scaleType="fitCenter"
+        android:src="@drawable/electronic1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tvBeauty"
-        app:srcCompat="@drawable/electronic"
         tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
 
     <ImageButton

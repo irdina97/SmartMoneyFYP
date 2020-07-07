@@ -1,16 +1,20 @@
 
 package com.example.smartmoney;
 
+
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
 import java.util.Objects;
+
 
 public class Expenses extends AppCompatActivity {
 
@@ -27,12 +31,17 @@ public class Expenses extends AppCompatActivity {
     public static TextView resultTextView; //scan result
     ImageButton btnScanQR;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_expenses);
-        Objects.requireNonNull(getSupportActionBar()).setTitle("Expenses");
-        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("EXPENSES");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         resultTextView = findViewById(R.id.result_text); //scan result
         btnScanQR = findViewById(R.id.btnScanQR);
@@ -124,6 +133,8 @@ public class Expenses extends AppCompatActivity {
 
             }
         });*/
+
+
 
     }
 }

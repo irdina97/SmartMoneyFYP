@@ -32,14 +32,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-       /* profile = findViewById(R.id.profile);
-        profile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Login.class);
-                startActivity(intent);
-            }
-        }); */
 
         btn = findViewById(R.id.btn);
         btn.setOnClickListener(new View.OnClickListener() {
@@ -94,7 +86,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-       /* if (savedInstanceState == null) {
+      /* if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                     new ChartFragment()).commit();
             navigationView.setCheckedItem(R.id.nav_piechart);
@@ -108,8 +100,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.nav_piechart:
-                Intent intent = new Intent(MainActivity.this, ChartIncome.class);
-                startActivity(intent);
+                Intent intent13 = new Intent(MainActivity.this, ChartIncome.class);
+                startActivity(intent13);
                 Toast.makeText(this, "Chart", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.nav_category:

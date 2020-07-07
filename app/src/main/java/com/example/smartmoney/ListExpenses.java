@@ -2,6 +2,7 @@ package com.example.smartmoney;
 
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 
 import android.content.Intent;
@@ -33,8 +34,11 @@ public class ListExpenses extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_expenses);
-        Objects.requireNonNull(getSupportActionBar()).setTitle("Expenses List");
-        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("LIST EXPENSES");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         ImageButton btnGuitar = findViewById(R.id.btnGuitar);
         ImageButton btnPiano = findViewById(R.id.btnPiano);

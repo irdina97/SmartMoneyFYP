@@ -1,10 +1,11 @@
 package com.example.smartmoney;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 
-import java.util.Objects;
+
 
 public class ChartIncome extends AppCompatActivity {
 
@@ -12,7 +13,11 @@ public class ChartIncome extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chart_income);
-        Objects.requireNonNull(getSupportActionBar()).setTitle("Chart");
-        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("CHART");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
     }
 }

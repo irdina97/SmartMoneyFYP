@@ -2,6 +2,7 @@
 package com.example.smartmoney;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +10,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 
-import java.util.Objects;
+
 
 public class Income extends AppCompatActivity {
 
@@ -24,8 +25,12 @@ public class Income extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_income);
-        Objects.requireNonNull(getSupportActionBar()).setTitle("Income");
-        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("INCOME");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
 
         ImageButton btnIncome = findViewById(R.id.btnIncome);

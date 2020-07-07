@@ -5,6 +5,18 @@
     android:layout_height="match_parent"
     tools:context=".CalcFYP">
 
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            tools:ignore="UnusedAttribute" />
+
+
+
     <Button
         android:id="@+id/btnDone"
         android:layout_width="103dp"

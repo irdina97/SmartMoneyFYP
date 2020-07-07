@@ -7,6 +7,22 @@
     android:background="#74FF9800"
     tools:context=".Expenses">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:ignore="UnusedAttribute" />
+
+    </RelativeLayout>
+
     <TextView
         android:id="@+id/tvGame"
         android:layout_width="54dp"
@@ -112,7 +128,7 @@
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="80dp"
         android:background="@drawable/circle_button"
         android:contentDescription="shopping"
         android:scaleType="fitCenter"
@@ -126,7 +142,7 @@
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/circle_button"
         android:scaleType="fitCenter"
@@ -141,11 +157,11 @@
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="80dp"
         android:background="@drawable/circle_button"
         android:contentDescription="entertainment"
         android:scaleType="fitCenter"
-        android:src="@drawable/game"
+        android:src="@drawable/game1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
@@ -155,11 +171,11 @@
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="80dp"
         android:background="@drawable/circle_button"
         android:contentDescription="food"
         android:scaleType="fitCenter"
-        android:src="@drawable/food"
+        android:src="@drawable/food1"
         app:layout_constraintStart_toEndOf="@+id/btnGame"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
@@ -170,7 +186,7 @@
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="80dp"
         android:background="@drawable/circle_button"
         android:contentDescription="sport"
         android:scaleType="fitCenter"
