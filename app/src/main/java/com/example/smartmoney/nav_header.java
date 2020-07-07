@@ -21,7 +21,7 @@ public class nav_header extends AppCompatActivity {
         profileImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(nav_header.this, Income.class);
+                Intent intent = new Intent(nav_header.this, Login.class);
                 startActivity(intent);
             }
         });

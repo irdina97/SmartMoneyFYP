@@ -30,7 +30,7 @@
         tools:ignore="HardcodedText" />
     <item
         android:id="@+id/nav_rate"
-        android:icon="@drawable/ic_info"
+        android:icon="@drawable/ic_star"
         android:title="Rate"
         tools:ignore="HardcodedText"/>
     <item

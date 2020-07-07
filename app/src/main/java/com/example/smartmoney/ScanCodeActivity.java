@@ -1,6 +1,7 @@
 package com.example.smartmoney;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
@@ -24,7 +25,7 @@ public class ScanCodeActivity extends AppCompatActivity implements ZXingScannerV
         super.onCreate(savedInstanceState);
         ScannerView = new ZXingScannerView(this);
         setContentView(ScannerView);
-        Objects.requireNonNull(getSupportActionBar()).setTitle("Scan");
+
 
     }
 
