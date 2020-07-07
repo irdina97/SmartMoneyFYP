@@ -15,7 +15,7 @@
 11-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:6:22-62
 12
 13    <application
-13-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:8:5-46:19
+13-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:8:5-49:19
 14        android:allowBackup="true"
 14-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:9:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -31,125 +31,130 @@
 20-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:12:9-43
 21        android:supportsRtl="true"
 21-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:13:9-35
-22        android:theme="@style/AppTheme.NoActionBar" >
-22-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:14:9-52
-23        <activity android:name="com.example.smartmoney.CategoryFragment" />
-23-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:16:9-54
-23-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:16:19-51
-24        <activity android:name="com.example.smartmoney.SettingsFragment" />
-24-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:17:9-54
-24-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:17:19-51
-25        <activity android:name="com.example.smartmoney.ChartFragment" />
-25-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:18:9-51
-25-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:18:19-48
-26        <activity
-26-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:19:9-21:57
-27            android:name="com.example.smartmoney.ChartIncome"
-27-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:20:13-40
-28            android:parentActivityName="com.example.smartmoney.MainActivity" />
-28-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:21:13-55
-29        <activity android:name="com.example.smartmoney.ScanCodeActivity" />
-29-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:22:9-54
-29-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:22:19-51
-30        <activity android:name="com.example.smartmoney.ScanQR" />
-30-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:23:9-44
-30-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:23:19-41
-31        <activity
-31-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:24:9-26:53
-32            android:name="com.example.smartmoney.ListExpenses"
-32-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:25:13-41
-33            android:parentActivityName="com.example.smartmoney.Expenses" />
-33-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:26:13-51
-34        <activity android:name="com.example.smartmoney.CalcFYP" />
-34-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:27:9-45
-34-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:27:19-42
-35        <activity android:name="com.example.smartmoney.Login" />
-35-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:28:9-43
-35-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:28:19-40
-36        <activity android:name="com.example.smartmoney.Chart" />
-36-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:29:9-43
-36-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:29:19-40
-37        <activity android:name="com.example.smartmoney.Calendar" />
-37-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:30:9-46
-37-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:30:19-43
-38        <activity
-38-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:31:9-33:57
-39            android:name="com.example.smartmoney.Expenses"
-39-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:32:13-37
-40            android:parentActivityName="com.example.smartmoney.MainActivity" />
-40-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:33:13-55
-41        <activity
-41-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:34:9-36:57
-42            android:name="com.example.smartmoney.Income"
-42-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:35:13-35
-43            android:parentActivityName="com.example.smartmoney.MainActivity" />
-43-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:36:13-55
-44        <activity
-44-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:37:9-45:20
-45            android:name="com.example.smartmoney.MainActivity"
-45-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:38:13-41
-46            android:theme="@style/AppTheme.NoActionBar" >
-46-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:39:13-56
-47            <intent-filter>
-47-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:40:13-44:29
-48                <action android:name="android.intent.action.MAIN" />
-48-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:41:17-69
-48-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:41:25-66
-49
-50                <category android:name="android.intent.category.LAUNCHER" />
-50-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:43:17-77
-50-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:43:27-74
-51            </intent-filter>
-52        </activity>
-53        <activity
-53-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d6777383efc5d4e7689d28c52832110a\play-services-auth-18.0.0\AndroidManifest.xml:23:9-27:75
-54            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-54-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d6777383efc5d4e7689d28c52832110a\play-services-auth-18.0.0\AndroidManifest.xml:24:13-93
-55            android:excludeFromRecents="true"
-55-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d6777383efc5d4e7689d28c52832110a\play-services-auth-18.0.0\AndroidManifest.xml:25:13-46
-56            android:exported="false"
-56-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d6777383efc5d4e7689d28c52832110a\play-services-auth-18.0.0\AndroidManifest.xml:26:13-37
-57            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-57-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d6777383efc5d4e7689d28c52832110a\play-services-auth-18.0.0\AndroidManifest.xml:27:13-72
-58        <!--
-59            Service handling Google Sign-In user revocation. For apps that do not integrate with
-60            Google Sign-In, this service will never be started.
-61        -->
-62        <service
-62-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d6777383efc5d4e7689d28c52832110a\play-services-auth-18.0.0\AndroidManifest.xml:33:9-36:110
-63            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-63-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d6777383efc5d4e7689d28c52832110a\play-services-auth-18.0.0\AndroidManifest.xml:34:13-89
-64            android:exported="true"
-64-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d6777383efc5d4e7689d28c52832110a\play-services-auth-18.0.0\AndroidManifest.xml:35:13-36
-65            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
-65-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d6777383efc5d4e7689d28c52832110a\play-services-auth-18.0.0\AndroidManifest.xml:36:13-107
-66
-67        <activity
-67-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\593a54ff613c3d9a289e47a60d5f7b29\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
-68            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-68-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\593a54ff613c3d9a289e47a60d5f7b29\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
-69            android:exported="false"
-69-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\593a54ff613c3d9a289e47a60d5f7b29\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
-70            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-70-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\593a54ff613c3d9a289e47a60d5f7b29\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
-71
-72        <meta-data
-72-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\f132036869610bc85cf23488ecb481f1\jetified-play-services-basement-17.1.1\AndroidManifest.xml:23:9-25:69
-73            android:name="com.google.android.gms.version"
-73-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\f132036869610bc85cf23488ecb481f1\jetified-play-services-basement-17.1.1\AndroidManifest.xml:24:13-58
-74            android:value="@integer/google_play_services_version" />
-74-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\f132036869610bc85cf23488ecb481f1\jetified-play-services-basement-17.1.1\AndroidManifest.xml:25:13-66
-75
-76        <provider
-76-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
-77            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-77-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
-78            android:authorities="com.example.smartmoney.lifecycle-process"
-78-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
-79            android:exported="false"
-79-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
-80            android:multiprocess="true" />
-80-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
-81    </application>
-82
-83</manifest>
+22        android:testOnly="true"
+23        android:theme="@style/AppTheme.NoActionBar" >
+23-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:14:9-52
+24        <activity android:name="com.example.smartmoney.SplashScreenActivity" >
+24-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:16:9-22:20
+24-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:16:19-55
+25            <intent-filter>
+25-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:17:13-21:29
+26                <action android:name="android.intent.action.MAIN" />
+26-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:18:17-69
+26-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:18:25-66
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:20:17-77
+28-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:20:27-74
+29            </intent-filter>
+30        </activity>
+31        <activity android:name="com.example.smartmoney.CategoryFragment" />
+31-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:23:9-54
+31-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:23:19-51
+32        <activity android:name="com.example.smartmoney.SettingsFragment" />
+32-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:24:9-54
+32-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:24:19-51
+33        <activity android:name="com.example.smartmoney.ChartFragment" />
+33-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:25:9-51
+33-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:25:19-48
+34        <activity
+34-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:26:9-28:58
+35            android:name="com.example.smartmoney.ChartIncome"
+35-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:27:13-40
+36            android:parentActivityName="com.example.smartmoney.MainActivity" />
+36-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:28:13-55
+37        <activity android:name="com.example.smartmoney.ScanCodeActivity" />
+37-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:29:9-54
+37-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:29:19-51
+38        <activity android:name="com.example.smartmoney.ScanQR" />
+38-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:30:9-44
+38-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:30:19-41
+39        <activity
+39-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:31:9-33:54
+40            android:name="com.example.smartmoney.ListExpenses"
+40-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:32:13-41
+41            android:parentActivityName="com.example.smartmoney.Expenses" />
+41-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:33:13-51
+42        <activity android:name="com.example.smartmoney.CalcFYP" />
+42-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:34:9-45
+42-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:34:19-42
+43        <activity android:name="com.example.smartmoney.Login" />
+43-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:35:9-43
+43-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:35:19-40
+44        <activity android:name="com.example.smartmoney.Chart" />
+44-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:36:9-43
+44-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:36:19-40
+45        <activity android:name="com.example.smartmoney.Calendar" />
+45-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:37:9-46
+45-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:37:19-43
+46        <activity
+46-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:38:9-40:58
+47            android:name="com.example.smartmoney.Expenses"
+47-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:39:13-37
+48            android:parentActivityName="com.example.smartmoney.MainActivity" />
+48-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:40:13-55
+49        <activity
+49-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:41:9-43:58
+50            android:name="com.example.smartmoney.Income"
+50-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:42:13-35
+51            android:parentActivityName="com.example.smartmoney.MainActivity" />
+51-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:43:13-55
+52        <activity
+52-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:44:9-48:20
+53            android:name="com.example.smartmoney.MainActivity"
+53-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:45:13-41
+54            android:theme="@style/AppTheme.NoActionBar" >
+54-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:46:13-56
+55        </activity>
+56        <activity
+56-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d6777383efc5d4e7689d28c52832110a\play-services-auth-18.0.0\AndroidManifest.xml:23:9-27:75
+57            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+57-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d6777383efc5d4e7689d28c52832110a\play-services-auth-18.0.0\AndroidManifest.xml:24:13-93
+58            android:excludeFromRecents="true"
+58-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d6777383efc5d4e7689d28c52832110a\play-services-auth-18.0.0\AndroidManifest.xml:25:13-46
+59            android:exported="false"
+59-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d6777383efc5d4e7689d28c52832110a\play-services-auth-18.0.0\AndroidManifest.xml:26:13-37
+60            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+60-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d6777383efc5d4e7689d28c52832110a\play-services-auth-18.0.0\AndroidManifest.xml:27:13-72
+61        <!--
+62            Service handling Google Sign-In user revocation. For apps that do not integrate with
+63            Google Sign-In, this service will never be started.
+64        -->
+65        <service
+65-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d6777383efc5d4e7689d28c52832110a\play-services-auth-18.0.0\AndroidManifest.xml:33:9-36:110
+66            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+66-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d6777383efc5d4e7689d28c52832110a\play-services-auth-18.0.0\AndroidManifest.xml:34:13-89
+67            android:exported="true"
+67-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d6777383efc5d4e7689d28c52832110a\play-services-auth-18.0.0\AndroidManifest.xml:35:13-36
+68            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+68-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d6777383efc5d4e7689d28c52832110a\play-services-auth-18.0.0\AndroidManifest.xml:36:13-107
+69
+70        <activity
+70-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\593a54ff613c3d9a289e47a60d5f7b29\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+71            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+71-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\593a54ff613c3d9a289e47a60d5f7b29\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+72            android:exported="false"
+72-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\593a54ff613c3d9a289e47a60d5f7b29\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+73            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+73-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\593a54ff613c3d9a289e47a60d5f7b29\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+74
+75        <meta-data
+75-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\f132036869610bc85cf23488ecb481f1\jetified-play-services-basement-17.1.1\AndroidManifest.xml:23:9-25:69
+76            android:name="com.google.android.gms.version"
+76-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\f132036869610bc85cf23488ecb481f1\jetified-play-services-basement-17.1.1\AndroidManifest.xml:24:13-58
+77            android:value="@integer/google_play_services_version" />
+77-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\f132036869610bc85cf23488ecb481f1\jetified-play-services-basement-17.1.1\AndroidManifest.xml:25:13-66
+78
+79        <provider
+79-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+80            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+80-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+81            android:authorities="com.example.smartmoney.lifecycle-process"
+81-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+82            android:exported="false"
+82-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+83            android:multiprocess="true" />
+83-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+84    </application>
+85
+86</manifest>

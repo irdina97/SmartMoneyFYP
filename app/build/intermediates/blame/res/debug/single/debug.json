@@ -224,6 +224,10 @@
         "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-2\\files-2.1\\5d52d9573d8a8f70a8462cc8f8a42ce9\\material-1.1.0\\res\\animator\\design_fab_show_motion_spec.xml"
     },
     {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\SmartMoneyFYP\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_splash_screen.xml.flat",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\SmartMoneyFYP\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
+    },
+    {
         "merged": "C:\\Users\\USER\\AndroidStudioProjects\\SmartMoneyFYP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_background_transition_holo_dark.xml.flat",
         "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
@@ -444,12 +448,12 @@
         "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\color\\abc_hint_foreground_material_light.xml"
     },
     {
-        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\SmartMoneyFYP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_longpressed_holo.9.png.flat",
-        "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_list_longpressed_holo.9.png"
-    },
-    {
         "merged": "C:\\Users\\USER\\AndroidStudioProjects\\SmartMoneyFYP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gift.png.flat",
         "source": "C:\\Users\\USER\\AndroidStudioProjects\\SmartMoneyFYP\\app\\src\\main\\res\\drawable\\gift.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\SmartMoneyFYP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_longpressed_holo.9.png.flat",
+        "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_list_longpressed_holo.9.png"
     },
     {
         "merged": "C:\\Users\\USER\\AndroidStudioProjects\\SmartMoneyFYP\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_fab_transformation_sheet_collapse_spec.xml.flat",
@@ -748,16 +752,16 @@
         "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-2\\files-2.1\\5d52d9573d8a8f70a8462cc8f8a42ce9\\material-1.1.0\\res\\layout\\design_navigation_item_subheader.xml"
     },
     {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\SmartMoneyFYP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gutiar.png.flat",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\SmartMoneyFYP\\app\\src\\main\\res\\drawable\\gutiar.png"
+    },
+    {
         "merged": "C:\\Users\\USER\\AndroidStudioProjects\\SmartMoneyFYP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "C:\\Users\\USER\\AndroidStudioProjects\\SmartMoneyFYP\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_expenses.xml.flat",
         "source": "C:\\Users\\USER\\AndroidStudioProjects\\SmartMoneyFYP\\app\\src\\main\\res\\layout\\activity_expenses.xml"
-    },
-    {
-        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\SmartMoneyFYP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gutiar.png.flat",
-        "source": "C:\\Users\\USER\\AndroidStudioProjects\\SmartMoneyFYP\\app\\src\\main\\res\\drawable\\gutiar.png"
     },
     {
         "merged": "C:\\Users\\USER\\AndroidStudioProjects\\SmartMoneyFYP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_search_api_material.xml.flat",

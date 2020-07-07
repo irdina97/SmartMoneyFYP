@@ -1732,6 +1732,7 @@ id icon_group
 id icon_only
 id ifRoom
 id image
+id imageView
 id imageView3
 id info
 id invisible
@@ -2019,6 +2020,7 @@ layout activity_main
 layout activity_scan_code
 layout activity_scan_qr
 layout activity_settings_fragment
+layout activity_splash_screen
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
