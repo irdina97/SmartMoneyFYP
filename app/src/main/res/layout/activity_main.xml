@@ -10,10 +10,6 @@
     tools:context=".MainActivity"
     tools:openDrawer="start">
 
-    <!--<include
-        layout="@layout/app_bar_navigation_component"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />-->
 
 
     <LinearLayout
@@ -108,7 +104,7 @@
             android:layout_height="match_parent">-->
 
         <ImageButton
-            android:id="@+id/btn"
+            android:id="@+id/btnFB"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginStart="358dp"
@@ -133,7 +129,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
-        app:headerLayout="@layout/nav_header"
+        app:headerLayout="@layout/activity_nav_header"
         app:menu="@menu/drawer_menu" />
 
 

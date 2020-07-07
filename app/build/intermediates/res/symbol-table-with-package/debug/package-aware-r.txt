@@ -1592,7 +1592,6 @@ id before_logo_tv
 id beginning
 id blocking
 id bottom
-id btn
 id btn0
 id btn1
 id btn2
@@ -1615,9 +1614,11 @@ id btnDelete
 id btnDone
 id btnEducation
 id btnElectronic
+id btnFB
 id btnFood
 id btnGame
 id btnGift
+id btnGoogle
 id btnGuitar
 id btnHealth
 id btnHome
@@ -1653,9 +1654,8 @@ id btn_done
 id btn_minus
 id btn_plus
 id btn_scan
-id button2
+id btnclose
 id buttonPanel
-id buttonclose
 id cancel_action
 id cancel_button
 id card_view
@@ -1784,6 +1784,7 @@ id multiply
 id nav_category
 id nav_info
 id nav_piechart
+id nav_profile
 id nav_rate
 id nav_settings
 id nav_view
@@ -2017,6 +2018,7 @@ layout activity_income
 layout activity_list_expenses
 layout activity_login
 layout activity_main
+layout activity_nav_header
 layout activity_scan_code
 layout activity_scan_qr
 layout activity_settings_fragment
@@ -2066,7 +2068,6 @@ layout mtrl_picker_header_title_text
 layout mtrl_picker_header_toggle
 layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
-layout nav_header
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action

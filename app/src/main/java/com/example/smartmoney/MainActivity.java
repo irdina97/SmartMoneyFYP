@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -23,8 +22,6 @@ import com.google.android.material.navigation.NavigationView;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout drawer;
-    private ImageButton btn;
-    //private ImageView profile;
 
 
     @Override
@@ -32,15 +29,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        btn = findViewById(R.id.btn);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Calendar.class);
-                startActivity(intent);
-            }
-        });
 
 
         CardView cardView = findViewById(R.id.card_view);
@@ -99,6 +87,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
+            case R.id.nav_profile:
+                Intent intent14 = new Intent(MainActivity.this, Login.class);
+                startActivity(intent14);
+                Toast.makeText(this, "Profile", Toast.LENGTH_SHORT).show();
+                break;
             case R.id.nav_piechart:
                 Intent intent13 = new Intent(MainActivity.this, ChartIncome.class);
                 startActivity(intent13);
