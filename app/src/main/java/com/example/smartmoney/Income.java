@@ -8,11 +8,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 
-
-
-public class Income extends AppCompatActivity {
+public class Income extends AppCompatActivity implements View.OnClickListener{
 
     private ImageButton btnIncome;
     private ImageButton btnReward;
@@ -31,54 +30,17 @@ public class Income extends AppCompatActivity {
         getSupportActionBar().setTitle("INCOME");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-
-
         ImageButton btnIncome = findViewById(R.id.btnIncome);
-        btnIncome.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Income.this, CalcFYP.class);
-                startActivity(intent);
-            }
-        });
-
         ImageButton btnReward = findViewById(R.id.btnReward);
-        btnReward.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Income.this, CalcFYP.class);
-                startActivity(intent);
-            }
-        });
-
         ImageButton btnSale = findViewById(R.id.btnSale);
-        btnSale.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Income.this, CalcFYP.class);
-                startActivity(intent);
-            }
-        });
-
         ImageButton btnRefund = findViewById(R.id.btnRefund);
-        btnRefund.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Income.this, CalcFYP.class);
-                startActivity(intent);
-            }
-        });
-
         ImageButton btnSaving = findViewById(R.id.btnSaving);
-        btnSaving.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Income.this, CalcFYP.class);
-                startActivity(intent);
-            }
-        });
 
-
+        btnIncome.setOnClickListener(this);
+        btnReward.setOnClickListener(this);
+        btnRefund.setOnClickListener(this);
+        btnSaving.setOnClickListener(this);
+        btnSale.setOnClickListener(this);
 
         // EditText editText = findViewById(R.id.editText);
         // MyKeyboard keyboard = findViewById(R.id.keyboard);
@@ -87,6 +49,38 @@ public class Income extends AppCompatActivity {
 
         //InputConnection ic = editText.onCreateInputConnection(new EditorInfo());
         // keyboard.setInputConnection(ic);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.btnIncome:
+                Intent intent = new Intent(Income.this, CalcFYP.class);
+                startActivity(intent);
+                Toast.makeText(this, "Income is clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btnReward:
+                Intent intent1 = new Intent(Income.this, CalcFYP.class);
+                startActivity(intent1);
+                Toast.makeText(this, "Reward is clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btnRefund:
+                Intent intent2 = new Intent(Income.this, CalcFYP.class);
+                startActivity(intent2);
+                Toast.makeText(this, "Refund is clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btnSale:
+                Intent intent3 = new Intent(Income.this, CalcFYP.class);
+                startActivity(intent3);
+                Toast.makeText(this, "Sale is clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btnSaving:
+                Intent intent4 = new Intent(Income.this, CalcFYP.class);
+                startActivity(intent4);
+                Toast.makeText(this, "Saving is clicked", Toast.LENGTH_SHORT).show();
+                break;
+
+        }
     }
 
 }

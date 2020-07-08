@@ -12,11 +12,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Objects;
 
 
-public class Expenses extends AppCompatActivity {
+public class Expenses extends AppCompatActivity implements View.OnClickListener{
 
     private ImageButton btnShopping;
     private ImageButton btnTravel;
@@ -55,86 +56,68 @@ public class Expenses extends AppCompatActivity {
         });
 
         ImageButton btnShopping = findViewById(R.id.btnShopping);
-        btnShopping.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Expenses.this, CalcFYP.class);
-                startActivity(intent);
-            }
-        });
-
         ImageButton btnTravel = findViewById(R.id.btnTravel);
-        btnTravel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Expenses.this, CalcFYP.class);
-                startActivity(intent);
-            }
-        });
-
         ImageButton btnGame = findViewById(R.id.btnGame);
-        btnGame.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Expenses.this, CalcFYP.class);
-                startActivity(intent);
-            }
-        });
-
         ImageButton btnFood = findViewById(R.id.btnFood);
-        btnFood.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Expenses.this, CalcFYP.class);
-                startActivity(intent);
-            }
-        });
-
         ImageButton btnSport = findViewById(R.id.btnSport);
-        btnSport.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Expenses.this, CalcFYP.class);
-                startActivity(intent);
-            }
-        });
-
         ImageButton btnPet = findViewById(R.id.btnPet);
-        btnPet.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Expenses.this, CalcFYP.class);
-                startActivity(intent);
-            }
-        });
-
         ImageButton btnTransport = findViewById(R.id.btnTransport);
-        btnTransport.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        ImageButton btnAddEx = findViewById(R.id.btnAddEx);
+
+
+        btnShopping.setOnClickListener(this);
+        btnTravel.setOnClickListener(this);
+        btnGame.setOnClickListener(this);
+        btnFood.setOnClickListener(this);
+        btnSport.setOnClickListener(this);
+        btnPet.setOnClickListener(this);
+        btnTransport.setOnClickListener(this);
+        btnAddEx.setOnClickListener(this);
+
+
+    }
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.btnShopping:
                 Intent intent = new Intent(Expenses.this, CalcFYP.class);
                 startActivity(intent);
-            }
-        });
-
-        ImageButton btnAddEx = findViewById(R.id.btnAddEx);
-        btnAddEx.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Expenses.this, ListExpenses.class);
-                startActivity(intent);
-            }
-        });
-
-        /*btnScanQR.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), ScanCodeActivity.class));
-
-            }
-        });*/
-
-
-
+                Toast.makeText(this, "Shopping is clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btnTravel:
+                Intent intent1 = new Intent(Expenses.this, CalcFYP.class);
+                startActivity(intent1);
+                Toast.makeText(this, "Travel is clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btnGame:
+                Intent intent2 = new Intent(Expenses.this, CalcFYP.class);
+                startActivity(intent2);
+                Toast.makeText(this, "Game is clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btnFood:
+                Intent intent3 = new Intent(Expenses.this, CalcFYP.class);
+                startActivity(intent3);
+                Toast.makeText(this, "Food is clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btnSport:
+                Intent intent4 = new Intent(Expenses.this, CalcFYP.class);
+                startActivity(intent4);
+                Toast.makeText(this, "Sport is clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btnPet:
+                Intent intent5 = new Intent(Expenses.this, CalcFYP.class);
+                startActivity(intent5);
+                Toast.makeText(this, "Pet is clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btnTransport:
+                Intent intent6 = new Intent(Expenses.this, CalcFYP.class);
+                startActivity(intent6);
+                Toast.makeText(this, "Transport is clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btnAddEx:
+                Intent intent7 = new Intent(Expenses.this, ListExpenses.class);
+                startActivity(intent7);
+                break;
+        }
     }
 }
