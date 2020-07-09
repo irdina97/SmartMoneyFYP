@@ -6,9 +6,11 @@
     android:layout_height="match_parent"
     android:background="#74FF9800"
     android:id="@+id/login"
-    tools:context=".Login">
+    tools:context=".Login"
+    android:padding="24dp">
 
-    <Button
+
+    <!-- <Button
         android:id="@+id/btnFB"
         android:layout_width="318dp"
         android:layout_height="73dp"
@@ -23,33 +25,33 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,MissingConstraints" />
+        tools:ignore="HardcodedText,MissingConstraints" />-->
 
-    <Button
-        android:id="@+id/btnGoogle"
-        android:layout_width="318dp"
-        android:layout_height="73dp"
-        android:layout_marginTop="480dp"
-        android:background="#F5F5F8"
-        android:clickable="true"
-        android:focusable="true"
-        android:text="Sign In With Google"
-        android:textColor="#474242"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <!-- <Button
+         android:id="@+id/btnGoogle"
+         android:layout_width="318dp"
+         android:layout_height="73dp"
+         android:layout_marginTop="480dp"
+         android:background="#F5F5F8"
+         android:clickable="true"
+         android:focusable="true"
+         android:text="Sign In With Google"
+         android:textColor="#474242"
+         android:textSize="24sp"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.494"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         tools:ignore="HardcodedText,MissingConstraints" />-->
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/image_logo"
         android:layout_width="185dp"
         android:layout_height="198dp"
-        android:layout_marginTop="204dp"
+        android:layout_marginTop="160dp"
         android:contentDescription="icon"
-        app:layout_constraintBottom_toTopOf="@+id/btnFB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -67,6 +69,33 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="357dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="94dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.857" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.637"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Smart Money.iml" filepath="$PROJECT_DIR$/Smart Money.iml" group="Smart Money" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Smart Money/app" />
+      <module fileurl="file://$PROJECT_DIR$/Smart Money.iml" filepath="$PROJECT_DIR$/Smart Money.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
 </project>
