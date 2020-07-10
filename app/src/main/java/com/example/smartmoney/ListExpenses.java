@@ -70,6 +70,12 @@ public class ListExpenses extends AppCompatActivity implements View.OnClickListe
 
     }
 
+    /*public void SendImage(View view) {
+        Intent intent = new Intent(ListExpenses.this, Expenses.class);
+        intent.putExtra("resId", R.id.btnGuitar);
+        startActivity(intent);
+        Toast.makeText(this, "Guitar is clicked", Toast.LENGTH_SHORT).show();
+    }*/
 
     @Override
     public void onClick(View v) {

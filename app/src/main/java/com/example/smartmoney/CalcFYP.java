@@ -241,8 +241,8 @@ public class CalcFYP extends AppCompatActivity {
             public void onClick(View v) {
                 compute();
                 ACTION = EQU;
-                result.setText(result.getText().toString() + "=" + val1);
-               // result.setText(result.getText().toString() + val2 + "=" + val1);
+                //result.setText(result.getText().toString() + "=" + val1);
+                result.setText(result.getText().toString() + val2 + "=" + val1);
                 info.setText(null);
             }
         });

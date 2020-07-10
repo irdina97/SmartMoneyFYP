@@ -14,7 +14,6 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.Objects;
 
 
 public class Expenses extends AppCompatActivity implements View.OnClickListener{
@@ -27,6 +26,8 @@ public class Expenses extends AppCompatActivity implements View.OnClickListener{
     private ImageButton btnPet;
     private ImageButton btnTransport;
     private ImageButton btnAddEx;
+
+    //ImageButton imageButton;
 
     @SuppressLint("StaticFieldLeak")
     public static TextView resultTextView; //scan result
@@ -74,6 +75,12 @@ public class Expenses extends AppCompatActivity implements View.OnClickListener{
         btnTransport.setOnClickListener(this);
         btnAddEx.setOnClickListener(this);
 
+       /* imageButton = findViewById(R.id.btnGuitar);
+        Bundle bundle = getIntent().getExtras();
+        if (bundle != null) {
+            int resId = bundle.getInt("resId");
+            imageButton.setImageResource(resId);
+        }*/
 
     }
     @Override

@@ -206,7 +206,7 @@
         android:layout_marginEnd="32dp"
         android:background="@drawable/circle_button"
         android:scaleType="fitCenter"
-        android:src="@drawable/health1"
+        android:src="@drawable/health"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnSocial"
         app:layout_constraintTop_toTopOf="parent"
@@ -223,7 +223,7 @@
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/gutiar"
+        app:srcCompat="@drawable/guitar"
         tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
 
     <ImageButton
@@ -250,7 +250,7 @@
         android:background="@drawable/circle_button"
         android:contentDescription="art"
         android:scaleType="fitCenter"
-        android:src="@drawable/art1"
+        android:src="@drawable/art"
         app:layout_constraintStart_toEndOf="@+id/btnPiano"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
@@ -278,7 +278,7 @@
         android:background="@drawable/circle_button"
         android:contentDescription="transport"
         android:scaleType="fitCenter"
-        android:src="@drawable/beauty1"
+        android:src="@drawable/beauty"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnGuitar"
         tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
@@ -293,7 +293,7 @@
         android:background="@drawable/circle_button"
         android:contentDescription="book"
         android:scaleType="fitCenter"
-        android:src="@drawable/book1"
+        android:src="@drawable/book"
         app:layout_constraintStart_toEndOf="@+id/btnGift"
         app:layout_constraintTop_toTopOf="@+id/tvArt"
         tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
@@ -307,7 +307,7 @@
         android:background="@drawable/circle_button"
         android:contentDescription="education"
         android:scaleType="fitCenter"
-        android:src="@drawable/education1"
+        android:src="@drawable/education"
         app:layout_constraintStart_toEndOf="@+id/btnBook"
         app:layout_constraintTop_toBottomOf="@+id/btnSocial"
         tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
@@ -322,7 +322,7 @@
         android:background="@drawable/circle_button"
         android:contentDescription="bill"
         android:scaleType="fitCenter"
-        android:src="@drawable/bill1"
+        android:src="@drawable/bill"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnEducation"
         app:layout_constraintTop_toBottomOf="@+id/btnHealth"
@@ -337,7 +337,7 @@
         android:background="@drawable/circle_button"
         android:contentDescription="electronic"
         android:scaleType="fitCenter"
-        android:src="@drawable/electronic1"
+        android:src="@drawable/electronic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tvBeauty"
         tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
