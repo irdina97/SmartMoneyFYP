@@ -14,7 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
-        <activity android:name=".FBLogin"/>
+        <activity android:name=".EditSaving" />
+        <activity android:name=".GoalActivity" />
+        <activity android:name=".FBLogin" />
         <activity android:name=".GoogleLogin" />
         <activity android:name=".nav_header" />
         <activity android:name=".SplashScreenActivity">
@@ -47,9 +49,7 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"

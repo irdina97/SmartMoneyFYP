@@ -1,5 +1,6 @@
 package com.example.smartmoney;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -11,6 +12,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.Objects;
 
@@ -32,7 +40,6 @@ public class CalcFYP extends AppCompatActivity {
     private Button clear;
     private Button equal;
     private TextView info;
-    private TextView result;
     private final char ADDITION = '+';
     private final char SUBTRACTION = '-';
     private final char EQU = 0;
@@ -40,19 +47,53 @@ public class CalcFYP extends AppCompatActivity {
     private double val2;
     private char ACTION;
 
-    //Calendar
     Button selectDate;
+    Button btnsave;
     DatePickerDialog datePickerDialog;
-    TextView date;
+    TextView date, result;
     int year;
     int month;
     int dayOfMonth;
     java.util.Calendar calendar;
 
+    DatabaseReference reff;
+    Calculation calculation;
+    long maxid=0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calc_fyp);
+        Toast.makeText(CalcFYP.this, "Firebase connection success", Toast.LENGTH_LONG).show();
+
+        calculation = new Calculation();
+        reff = FirebaseDatabase.getInstance().getReference().child("Calculation");
+        reff.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if(snapshot.exists())
+                    maxid=(snapshot.getChildrenCount());
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+        btnsave = findViewById(R.id.btnSave);
+        btnsave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Float resultCal = Float.parseFloat((result.getText().toString().trim()));
+                calculation.setResult(result.getText().toString().trim());
+                calculation.setDate(date.getText().toString().trim());
+                //calculation.setResult(resultCal);
+                //reff.push().setValue(calculation);
+                reff.child(String.valueOf(maxid+1)).setValue(calculation);
+                Toast.makeText(CalcFYP.this, "data is inserted", Toast.LENGTH_LONG).show();
+            }
+        });
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -200,7 +241,8 @@ public class CalcFYP extends AppCompatActivity {
             public void onClick(View v) {
                 compute();
                 ACTION = EQU;
-                result.setText(result.getText().toString() + val2 + "=" + val1);
+                result.setText(result.getText().toString() + "=" + val1);
+               // result.setText(result.getText().toString() + val2 + "=" + val1);
                 info.setText(null);
             }
         });
@@ -208,11 +250,10 @@ public class CalcFYP extends AppCompatActivity {
         clear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(info.getText().length() > 0) {
+                if (info.getText().length() > 0) {
                     CharSequence name = info.getText().toString();
-                    info.setText(name.subSequence(0, name.length()-1));
-                }
-                else {
+                    info.setText(name.subSequence(0, name.length() - 1));
+                } else {
                     val1 = Double.NaN;
                     val2 = Double.NaN;
                     info.setText(null);
@@ -245,11 +286,11 @@ public class CalcFYP extends AppCompatActivity {
 
     }
 
-    private void compute (){
-        if(!Double.isNaN(val1)){
+    private void compute() {
+        if (!Double.isNaN(val1)) {
             val2 = Double.parseDouble(info.getText().toString());
 
-            switch(ACTION){
+            switch (ACTION) {
                 case ADDITION:
                     val1 = val1 + val2;
                     break;
@@ -261,10 +302,11 @@ public class CalcFYP extends AppCompatActivity {
 
             }
 
-        }
-        else{
+        } else {
             val1 = Double.parseDouble(info.getText().toString());
         }
 
     }
+
+
 }

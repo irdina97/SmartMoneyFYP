@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -15,13 +17,19 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
-
-
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout drawer;
+    DatabaseReference reff;
+    TextView income, expense, balance;
+    ImageButton btn;
 
 
     @Override
@@ -55,11 +63,35 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivity.this, Income.class);
-                startActivity(intent);
+                //Intent intent = new Intent(MainActivity.this, ConnectFirebase.class);
+                //startActivity(intent);
             }
         });
 
+        //retrieve data from DB
+        income = findViewById(R.id.tvIncome);
+        expense = findViewById(R.id.tvExpenses);
+        balance = findViewById(R.id.tvBalance);
+        btn= findViewById(R.id.btnFB);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                reff = FirebaseDatabase.getInstance().getReference().child("Calculation").child("6");
+                reff.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        String result=snapshot.child("result").getValue().toString();
+                        income.setText(result);
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+            }
+        });
 
         //Toolbar
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -88,26 +120,29 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.nav_profile:
-                Intent intent14 = new Intent(MainActivity.this, Login.class);
-                startActivity(intent14);
+                Intent intent13 = new Intent(MainActivity.this, Login.class);
+                startActivity(intent13);
                 Toast.makeText(this, "Profile", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.nav_piechart:
-                Intent intent13 = new Intent(MainActivity.this, ChartIncome.class);
-                startActivity(intent13);
+                Intent intent14 = new Intent(MainActivity.this, ChartIncome.class);
+                startActivity(intent14);
                 Toast.makeText(this, "Chart", Toast.LENGTH_SHORT).show();
                 break;
+            case R.id.nav_awards:
+                Intent intent15 = new Intent(MainActivity.this, GoalActivity.class);
+                startActivity(intent15);
+                Toast.makeText(this, "Goals", Toast.LENGTH_SHORT).show();
+                break;
             case R.id.nav_category:
-                Intent intent1 = new Intent(MainActivity.this, Income.class);
-                startActivity(intent1);
+                Intent intent16 = new Intent(MainActivity.this, Income.class);
+                startActivity(intent16);
                 Toast.makeText(this, "Chart", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.nav_settings:
                 Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.nav_rate:
-                Toast.makeText(this, "Rate", Toast.LENGTH_SHORT).show();
-                break;
+
             case R.id.nav_info:
                 Toast.makeText(this, "Info", Toast.LENGTH_SHORT).show();
                 break;

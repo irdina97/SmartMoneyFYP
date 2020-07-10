@@ -52,6 +52,14 @@
                     android:text="Income"
                     android:textAlignment="center"
                     tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/tvIncome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    tools:ignore="Autofill,LabelFor" />
+
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -73,6 +81,13 @@
                     android:text="Expense"
                     android:textAlignment="center"
                     tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/tvExpenses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    tools:ignore="Autofill,LabelFor" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -94,7 +109,15 @@
                     android:text="Balance"
                     android:textAlignment="center"
                     tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/tvBalance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    tools:ignore="Autofill,LabelFor" />
             </androidx.cardview.widget.CardView>
+
 
         </androidx.gridlayout.widget.GridLayout>
 
