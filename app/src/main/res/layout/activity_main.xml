@@ -58,6 +58,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="60dp"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
                     tools:ignore="Autofill,LabelFor" />
 
             </androidx.cardview.widget.CardView>
@@ -87,6 +89,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="60dp"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
                     tools:ignore="Autofill,LabelFor" />
             </androidx.cardview.widget.CardView>
 
@@ -103,7 +107,7 @@
                 tools:ignore="KeyboardInaccessibleWidget">
 
                 <TextView
-                    android:id="@+id/text2"
+                    android:id="@+id/balance"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Balance"
@@ -115,6 +119,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="60dp"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
                     tools:ignore="Autofill,LabelFor" />
             </androidx.cardview.widget.CardView>
 
@@ -126,22 +132,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">-->
 
-        <ImageButton
-            android:id="@+id/btnFB"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="358dp"
-            android:layout_marginLeft="39dp"
-            android:layout_marginTop="40dp"
-            android:background="@drawable/circle_button"
-            android:clickable="true"
-            android:contentDescription="add"
-            android:focusable="true"
-            android:tint="#1B1818"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:srcCompat="@android:drawable/ic_input_add"
-            tools:ignore="HardcodedText,RtlHardcoded" />
         <!-- </FrameLayout>-->
 
     </LinearLayout>

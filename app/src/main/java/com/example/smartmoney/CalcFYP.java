@@ -56,7 +56,7 @@ public class CalcFYP extends AppCompatActivity {
     int dayOfMonth;
     java.util.Calendar calendar;
 
-    DatabaseReference reff;
+    DatabaseReference reff,reff1;
     Calculation calculation;
     long maxid=0;
 
@@ -67,8 +67,23 @@ public class CalcFYP extends AppCompatActivity {
         Toast.makeText(CalcFYP.this, "Firebase connection success", Toast.LENGTH_LONG).show();
 
         calculation = new Calculation();
-        reff = FirebaseDatabase.getInstance().getReference().child("Calculation");
-        reff.addValueEventListener(new ValueEventListener() {
+        //reff = FirebaseDatabase.getInstance().getReference().child("Calculation").child("Income");
+        reff1 = FirebaseDatabase.getInstance().getReference().child("Calculation").child("Expense");
+        //reff.setValue("Calculation/Income",0);
+       /* reff.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if(snapshot.exists())
+                    maxid=(snapshot.getChildrenCount());
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });*/
+
+        reff1.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists())
@@ -81,6 +96,21 @@ public class CalcFYP extends AppCompatActivity {
             }
         });
 
+       /* reff1 = FirebaseDatabase.getInstance().getReference().child("Calculation").child("Expense");
+        //reff.setValue("Calculation/Income",0);
+        reff1.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if(snapshot.exists())
+                    maxid=(snapshot.getChildrenCount());
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });*/
+
         btnsave = findViewById(R.id.btnSave);
         btnsave.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,8 +119,9 @@ public class CalcFYP extends AppCompatActivity {
                 calculation.setResult(Double.toString(val1));
                 calculation.setDate(date.getText().toString().trim());
                 //calculation.setResult(resultCal);
-                reff.push().setValue(calculation);
-                reff.child(String.valueOf(maxid+1)).setValue(calculation);
+                //reff.push().setValue(calculation);
+                reff1.push().setValue(calculation);
+                reff1.child(String.valueOf(maxid+1)).setValue(calculation);
                 Toast.makeText(CalcFYP.this, "data is inserted", Toast.LENGTH_LONG).show();
             }
         });

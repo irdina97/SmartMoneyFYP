@@ -26,7 +26,7 @@ import com.google.firebase.database.ValueEventListener;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout drawer;
-    DatabaseReference reff;
+    DatabaseReference reff, reff1;
     TextView income, expense, balance;
     //ImageButton btn;
 
@@ -72,12 +72,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         balance = findViewById(R.id.tvBalance);
         //btn = findViewById(R.id.btnFB);
 
-        reff = FirebaseDatabase.getInstance().getReference().child("Calculation").child("2");
-        reff.addValueEventListener(new ValueEventListener() {
+        //reff = FirebaseDatabase.getInstance().getReference().child("Calculation").child("Income").child("1");
+        reff1 = FirebaseDatabase.getInstance().getReference().child("Calculation").child("Expense").child("4");
+        reff1.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 String result = snapshot.child("result").getValue().toString();
-                income.setText(result);
+                expense.setText(result);
             }
 
             @Override

@@ -127,6 +127,23 @@
                 android:textAlignment="center"
                 android:textSize="14sp"
                 tools:ignore="Autofill,HardcodedText,LabelFor,SmallSp" />
+
+            <ProgressBar
+                android:id="@+id/savingbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="188dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                style="?android:attr/progressBarStyleHorizontal" />
+
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="210dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"/>
         </androidx.cardview.widget.CardView>
 
     </androidx.gridlayout.widget.GridLayout>
