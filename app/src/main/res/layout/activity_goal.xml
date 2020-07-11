@@ -28,32 +28,106 @@
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="320dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/circle_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_edit"
         tools:ignore="ContentDescription" />
 
     <androidx.gridlayout.widget.GridLayout
-        android:layout_width="382dp"
-        android:layout_height="266dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="300dp"
+        android:id="@+id/MGgoal"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:padding="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
 
         <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="205dp"
-            android:background="#fff"
+            android:id="@+id/cvReview"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="20dp"
             app:layout_column="0"
-            app:layout_row="0" />
+            app:layout_columnWeight="1"
+            app:layout_row="1"
+            app:layout_rowWeight="4">
+
+            <TextView
+                android:id="@+id/tvSavingGoal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:text="Your total saving for this month!"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                tools:ignore="Autofill,HardcodedText,LabelFor" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="56dp"
+                android:layout_marginEnd="100dp"
+                android:src="@drawable/ic_goals"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tvDateSaving"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginEnd="180dp"
+                android:textSize="14sp"
+                tools:ignore="Autofill,LabelFor,SmallSp" />
+
+            <TextView
+                android:id="@+id/CurrentSaving"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="120dp"
+                android:text="50"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                tools:ignore="Autofill,HardcodedText,LabelFor,SmallSp" />
+
+            <TextView
+                android:id="@+id/SavingGoal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="160dp"
+                android:layout_marginEnd="180dp"
+                android:text="Saving Goal"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="Autofill,HardcodedText,LabelFor,SmallSp" />
+
+            <TextView
+                android:id="@+id/TotalSaving"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="160dp"
+                android:text="50/100"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                tools:ignore="Autofill,HardcodedText,LabelFor,SmallSp" />
+        </androidx.cardview.widget.CardView>
 
     </androidx.gridlayout.widget.GridLayout>
 

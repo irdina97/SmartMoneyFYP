@@ -29,7 +29,7 @@ public class GoalActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(GoalActivity.this, CalcFYP.class);
+        Intent intent = new Intent(GoalActivity.this, EditSaving.class);
         startActivity(intent);
     }
 }

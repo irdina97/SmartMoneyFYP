@@ -86,10 +86,10 @@ public class CalcFYP extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Float resultCal = Float.parseFloat((result.getText().toString().trim()));
-                calculation.setResult(result.getText().toString().trim());
+                calculation.setResult(Double.toString(val1));
                 calculation.setDate(date.getText().toString().trim());
                 //calculation.setResult(resultCal);
-                //reff.push().setValue(calculation);
+                reff.push().setValue(calculation);
                 reff.child(String.valueOf(maxid+1)).setValue(calculation);
                 Toast.makeText(CalcFYP.this, "data is inserted", Toast.LENGTH_LONG).show();
             }
@@ -241,7 +241,6 @@ public class CalcFYP extends AppCompatActivity {
             public void onClick(View v) {
                 compute();
                 ACTION = EQU;
-                //result.setText(result.getText().toString() + "=" + val1);
                 result.setText(result.getText().toString() + val2 + "=" + val1);
                 info.setText(null);
             }

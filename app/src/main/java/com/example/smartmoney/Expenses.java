@@ -82,6 +82,11 @@ public class Expenses extends AppCompatActivity implements View.OnClickListener{
             imageButton.setImageResource(resId);
         }*/
 
+       //test imagebutton add
+       Intent intent = getIntent();
+       Bundle bundle = this.getIntent().getExtras();
+       String button = intent.getStringExtra("expenses");
+
     }
     @Override
     public void onClick(View v) {

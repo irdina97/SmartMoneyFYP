@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,14 +28,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private DrawerLayout drawer;
     DatabaseReference reff;
     TextView income, expense, balance;
-    ImageButton btn;
+    //ImageButton btn;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
 
         CardView cardView = findViewById(R.id.card_view);
@@ -72,26 +70,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         income = findViewById(R.id.tvIncome);
         expense = findViewById(R.id.tvExpenses);
         balance = findViewById(R.id.tvBalance);
-        btn= findViewById(R.id.btnFB);
+        //btn = findViewById(R.id.btnFB);
 
-        btn.setOnClickListener(new View.OnClickListener() {
+        reff = FirebaseDatabase.getInstance().getReference().child("Calculation").child("2");
+        reff.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onClick(View v) {
-                reff = FirebaseDatabase.getInstance().getReference().child("Calculation").child("6");
-                reff.addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        String result=snapshot.child("result").getValue().toString();
-                        income.setText(result);
-                    }
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                String result = snapshot.child("result").getValue().toString();
+                income.setText(result);
+            }
 
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
 
-                    }
-                });
             }
         });
+
 
         //Toolbar
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -162,7 +156,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
 
     }
-
 
 
 }

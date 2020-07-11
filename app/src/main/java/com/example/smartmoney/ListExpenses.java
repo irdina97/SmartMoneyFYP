@@ -11,8 +11,6 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-import java.util.Objects;
-
 
 public class ListExpenses extends AppCompatActivity implements View.OnClickListener{
 
@@ -29,6 +27,8 @@ public class ListExpenses extends AppCompatActivity implements View.OnClickListe
     private ImageButton btnElectronic;
     private ImageButton btnPhone;
     private ImageButton btnHome;
+
+    String button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,7 +81,11 @@ public class ListExpenses extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnGuitar:
-                Intent intent = new Intent(ListExpenses.this, Expenses.class);
+                Intent intent = new Intent(getApplicationContext(), Expenses.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("expense", button);
+                intent.putExtras(bundle);
+                //Intent intent = new Intent(ListExpenses.this, Expenses.class);
                 startActivity(intent);
                 Toast.makeText(this, "Guitar is clicked", Toast.LENGTH_SHORT).show();
                 break;
