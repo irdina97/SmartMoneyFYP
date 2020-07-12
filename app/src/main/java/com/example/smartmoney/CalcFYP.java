@@ -48,7 +48,11 @@ public class CalcFYP extends AppCompatActivity {
     private char ACTION;
 
     Button selectDate;
-    Button btnsave;
+    Button btnsave, btnsaveexp;
+    DatabaseReference reffIncome;
+    IncomeDB incomeDB;
+    ExpenseDB expenseDB;
+    //long maxid=0;
     DatePickerDialog datePickerDialog;
     TextView date, result;
     int year;
@@ -56,21 +60,15 @@ public class CalcFYP extends AppCompatActivity {
     int dayOfMonth;
     java.util.Calendar calendar;
 
-    DatabaseReference reff,reff1;
-    Calculation calculation;
-    long maxid=0;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calc_fyp);
-        Toast.makeText(CalcFYP.this, "Firebase connection success", Toast.LENGTH_LONG).show();
 
-        calculation = new Calculation();
-        //reff = FirebaseDatabase.getInstance().getReference().child("Calculation").child("Income");
-        reff1 = FirebaseDatabase.getInstance().getReference().child("Calculation").child("Expense");
-        //reff.setValue("Calculation/Income",0);
-       /* reff.addValueEventListener(new ValueEventListener() {
+        /*Toast.makeText(CalcFYP.this, "Firebase connection success", Toast.LENGTH_LONG).show();*/
+
+
+      /*reffIncome.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists())
@@ -83,48 +81,49 @@ public class CalcFYP extends AppCompatActivity {
             }
         });*/
 
-        reff1.addValueEventListener(new ValueEventListener() {
+        btnsave = findViewById(R.id.btnSave); //from calcFYP
+        incomeDB = new IncomeDB();
+        reffIncome = FirebaseDatabase.getInstance().getReference().child("IncomeDB");
+        btnsave.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if(snapshot.exists())
-                    maxid=(snapshot.getChildrenCount());
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
+            public void onClick(View v) {
+                incomeDB.setResult(Double.toString(val1));
+                incomeDB.setDate(date.getText().toString().trim());
+                reffIncome.push().setValue(incomeDB);
+                //reffIncome.child(String.valueOf(maxid + 1)).setValue(incomeDB);
+                reffIncome.child("2").setValue(incomeDB);
+                Toast.makeText(CalcFYP.this, "data is inserted", Toast.LENGTH_LONG).show();
             }
         });
 
-       /* reff1 = FirebaseDatabase.getInstance().getReference().child("Calculation").child("Expense");
-        //reff.setValue("Calculation/Income",0);
-        reff1.addValueEventListener(new ValueEventListener() {
+        /*btnsaveexp = findViewById(R.id.btnSaveExp); //from calcExp
+        expenseDB = new ExpenseDB();
+        reffExpense = FirebaseDatabase.getInstance().getReference().child("ExpenseDB");
+        btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if(snapshot.exists())
-                    maxid=(snapshot.getChildrenCount());
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
+            public void onClick(View v) {
+                expenseDB.setResultt(Double.toString(val1));
+                expenseDB.setDatee(date.getText().toString().trim());
+                reffExpense.push().setValue(expenseDB);
+                //reffIncome.child(String.valueOf(maxid + 1)).setValue(incomeDB);
+                reffExpense.child("expense 1").setValue(expenseDB);
+                Toast.makeText(CalcFYP.this, "data is inserted", Toast.LENGTH_LONG).show();
             }
         });*/
-
-        btnsave = findViewById(R.id.btnSave);
+        /*btnsave = findViewById(R.id.btnSave);
         btnsave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //Float resultCal = Float.parseFloat((result.getText().toString().trim()));
-                calculation.setResult(Double.toString(val1));
-                calculation.setDate(date.getText().toString().trim());
+                incomeDB.setResult(Double.toString(val1));
+                incomeDB.setDate(date.getText().toString().trim());
                 //calculation.setResult(resultCal);
                 //reff.push().setValue(calculation);
-                reff1.push().setValue(calculation);
-                reff1.child(String.valueOf(maxid+1)).setValue(calculation);
+                reff.push().setValue(incomeDB);
+                reff.child(String.valueOf(maxid + 1)).setValue(incomeDB);
                 Toast.makeText(CalcFYP.this, "data is inserted", Toast.LENGTH_LONG).show();
             }
-        });
+        });*/
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

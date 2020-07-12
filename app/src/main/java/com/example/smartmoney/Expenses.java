@@ -2,6 +2,7 @@
 package com.example.smartmoney;
 
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -14,6 +15,11 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 
 public class Expenses extends AppCompatActivity implements View.OnClickListener{
@@ -27,7 +33,7 @@ public class Expenses extends AppCompatActivity implements View.OnClickListener{
     private ImageButton btnTransport;
     private ImageButton btnAddEx;
 
-    //ImageButton imageButton;
+    DatabaseReference reffExpense;
 
     @SuppressLint("StaticFieldLeak")
     public static TextView resultTextView; //scan result
@@ -43,6 +49,20 @@ public class Expenses extends AppCompatActivity implements View.OnClickListener{
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("EXPENSES");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        reffExpense = FirebaseDatabase.getInstance().getReference().child("ExpenseDB");
+        reffExpense.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                //String resultt = snapshot.child("result").getValue().toString();
+                //expense.setText(resultt);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
 
 
         resultTextView = findViewById(R.id.result_text); //scan result
@@ -83,46 +103,46 @@ public class Expenses extends AppCompatActivity implements View.OnClickListener{
         }*/
 
        //test imagebutton add
-       Intent intent = getIntent();
+      /* Intent intent = getIntent();
        Bundle bundle = this.getIntent().getExtras();
-       String button = intent.getStringExtra("expenses");
+       String button = intent.getStringExtra("expenses");*/
 
     }
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnShopping:
-                Intent intent = new Intent(Expenses.this, CalcFYP.class);
+                Intent intent = new Intent(Expenses.this, CalcExp.class);
                 startActivity(intent);
                 Toast.makeText(this, "Shopping is clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnTravel:
-                Intent intent1 = new Intent(Expenses.this, CalcFYP.class);
+                Intent intent1 = new Intent(Expenses.this, CalcExp.class);
                 startActivity(intent1);
                 Toast.makeText(this, "Travel is clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnGame:
-                Intent intent2 = new Intent(Expenses.this, CalcFYP.class);
+                Intent intent2 = new Intent(Expenses.this, CalcExp.class);
                 startActivity(intent2);
                 Toast.makeText(this, "Game is clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnFood:
-                Intent intent3 = new Intent(Expenses.this, CalcFYP.class);
+                Intent intent3 = new Intent(Expenses.this, CalcExp.class);
                 startActivity(intent3);
                 Toast.makeText(this, "Food is clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnSport:
-                Intent intent4 = new Intent(Expenses.this, CalcFYP.class);
+                Intent intent4 = new Intent(Expenses.this, CalcExp.class);
                 startActivity(intent4);
                 Toast.makeText(this, "Sport is clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnPet:
-                Intent intent5 = new Intent(Expenses.this, CalcFYP.class);
+                Intent intent5 = new Intent(Expenses.this, CalcExp.class);
                 startActivity(intent5);
                 Toast.makeText(this, "Pet is clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnTransport:
-                Intent intent6 = new Intent(Expenses.this, CalcFYP.class);
+                Intent intent6 = new Intent(Expenses.this, CalcExp.class);
                 startActivity(intent6);
                 Toast.makeText(this, "Transport is clicked", Toast.LENGTH_SHORT).show();
                 break;

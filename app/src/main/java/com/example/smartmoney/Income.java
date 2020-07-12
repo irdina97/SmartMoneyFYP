@@ -25,6 +25,7 @@ public class Income extends AppCompatActivity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_income);
 
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("INCOME");
@@ -55,27 +56,27 @@ public class Income extends AppCompatActivity implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnIncome:
-                Intent intent = new Intent(Income.this, CalcFYP.class);
+                Intent intent = new Intent(Income.this, CalcExp.class);
                 startActivity(intent);
                 Toast.makeText(this, "Income is clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnReward:
-                Intent intent1 = new Intent(Income.this, CalcFYP.class);
+                Intent intent1 = new Intent(Income.this, CalcExp.class);
                 startActivity(intent1);
                 Toast.makeText(this, "Reward is clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnRefund:
-                Intent intent2 = new Intent(Income.this, CalcFYP.class);
+                Intent intent2 = new Intent(Income.this, CalcExp.class);
                 startActivity(intent2);
                 Toast.makeText(this, "Refund is clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnSale:
-                Intent intent3 = new Intent(Income.this, CalcFYP.class);
+                Intent intent3 = new Intent(Income.this, CalcExp.class);
                 startActivity(intent3);
                 Toast.makeText(this, "Sale is clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnSaving:
-                Intent intent4 = new Intent(Income.this, CalcFYP.class);
+                Intent intent4 = new Intent(Income.this, CalcExp.class);
                 startActivity(intent4);
                 Toast.makeText(this, "Saving is clicked", Toast.LENGTH_SHORT).show();
                 break;

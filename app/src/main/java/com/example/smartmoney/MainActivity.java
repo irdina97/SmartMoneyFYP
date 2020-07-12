@@ -26,7 +26,8 @@ import com.google.firebase.database.ValueEventListener;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout drawer;
-    DatabaseReference reff, reff1;
+    DatabaseReference reffIncome;
+    DatabaseReference reffExpense;
     TextView income, expense, balance;
     //ImageButton btn;
 
@@ -70,11 +71,37 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         income = findViewById(R.id.tvIncome);
         expense = findViewById(R.id.tvExpenses);
         balance = findViewById(R.id.tvBalance);
-        //btn = findViewById(R.id.btnFB);
 
+          reffIncome = FirebaseDatabase.getInstance().getReference().child("IncomeDB").child("incomeDB 1");
+        //reffExpense = FirebaseDatabase.getInstance().getReference().child("ExpenseDB").child("1");
+          reffIncome.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                String result = snapshot.child("result").getValue().toString();
+                income.setText(result);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+       /* reffExpense.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                //String resultt = snapshot.child("result").getValue().toString();
+                //expense.setText(resultt);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });*/
         //reff = FirebaseDatabase.getInstance().getReference().child("Calculation").child("Income").child("1");
-        reff1 = FirebaseDatabase.getInstance().getReference().child("Calculation").child("Expense").child("4");
-        reff1.addValueEventListener(new ValueEventListener() {
+        /*reffIncome = FirebaseDatabase.getInstance().getReference().child("Income");
+        reffIncome.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 String result = snapshot.child("result").getValue().toString();
@@ -85,7 +112,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             public void onCancelled(@NonNull DatabaseError error) {
 
             }
-        });
+        });*/
 
 
         //Toolbar

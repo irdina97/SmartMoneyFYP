@@ -27,7 +27,7 @@
 17-->[com.android.installreferrer:installreferrer:1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\9ef8fba12d1c07863675a257e7c4a21c\jetified-installreferrer-1.0\AndroidManifest.xml:9:22-107
 18
 19    <application
-19-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:9:5-74:19
+19-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:9:5-79:19
 20        android:allowBackup="true"
 20-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:10:9-35
 21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -43,295 +43,305 @@
 26-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:13:9-43
 27        android:supportsRtl="true"
 27-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:14:9-35
-28        android:theme="@style/AppTheme.NoActionBar" >
-28-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:15:9-52
-29        <activity android:name="com.example.smartmoney.EditSaving" />
-29-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:17:9-48
-29-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:17:19-45
-30        <activity android:name="com.example.smartmoney.GoalActivity" />
-30-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:18:9-50
-30-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:18:19-47
-31        <activity android:name="com.example.smartmoney.FBLogin" />
-31-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:19:9-45
-31-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:19:19-42
-32        <activity android:name="com.example.smartmoney.GoogleLogin" />
-32-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:20:9-49
-32-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:20:19-46
-33        <activity android:name="com.example.smartmoney.nav_header" />
-33-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:21:9-48
-33-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:21:19-45
-34        <activity android:name="com.example.smartmoney.SplashScreenActivity" >
-34-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:22:9-28:20
-34-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:22:19-55
-35            <intent-filter>
-35-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:23:13-27:29
-36                <action android:name="android.intent.action.MAIN" />
-36-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:24:17-69
-36-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:24:25-66
-37
-38                <category android:name="android.intent.category.LAUNCHER" />
-38-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:26:17-77
-38-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:26:27-74
-39            </intent-filter>
-40        </activity>
-41        <activity android:name="com.example.smartmoney.CategoryFragment" />
-41-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:29:9-54
-41-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:29:19-51
-42        <activity android:name="com.example.smartmoney.SettingsFragment" />
-42-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:30:9-54
-42-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:30:19-51
-43        <activity android:name="com.example.smartmoney.ChartFragment" />
-43-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:31:9-51
-43-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:31:19-48
-44        <activity
-44-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:32:9-34:58
-45            android:name="com.example.smartmoney.ChartIncome"
-45-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:33:13-40
-46            android:parentActivityName="com.example.smartmoney.MainActivity" />
-46-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:34:13-55
-47        <activity android:name="com.example.smartmoney.ScanCodeActivity" />
-47-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:35:9-54
-47-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:35:19-51
-48        <activity android:name="com.example.smartmoney.ScanQR" />
-48-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:36:9-44
-48-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:36:19-41
-49        <activity
-49-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:37:9-39:54
-50            android:name="com.example.smartmoney.ListExpenses"
-50-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:38:13-41
-51            android:parentActivityName="com.example.smartmoney.Expenses" />
-51-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:39:13-51
-52        <activity android:name="com.example.smartmoney.CalcFYP" />
-52-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:40:9-45
-52-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:40:19-42
-53        <activity android:name="com.example.smartmoney.Login" />
-53-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:41:9-43
-53-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:41:19-40
-54        <activity android:name="com.example.smartmoney.Chart" />
-54-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:42:9-43
-54-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:42:19-40
-55        <activity android:name="com.example.smartmoney.Calendar" />
-55-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:43:9-46
-55-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:43:19-43
-56        <activity
-56-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:44:9-46:58
-57            android:name="com.example.smartmoney.Expenses"
-57-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:45:13-37
-58            android:parentActivityName="com.example.smartmoney.MainActivity" />
-58-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:46:13-55
-59        <activity
-59-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:47:9-49:58
-60            android:name="com.example.smartmoney.Income"
-60-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:48:13-35
-61            android:parentActivityName="com.example.smartmoney.MainActivity" />
-61-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:49:13-55
+28        android:testOnly="true"
+29        android:theme="@style/AppTheme.NoActionBar" >
+29-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:15:9-52
+30        <activity android:name="com.example.smartmoney.CalcExp" />
+30-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:17:9-54
+30-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:17:19-42
+31        <activity
+31-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:18:9-20:58
+32            android:name="com.example.smartmoney.EditSaving"
+32-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:19:13-39
+33            android:parentActivityName="com.example.smartmoney.GoalActivity" />
+33-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:20:13-55
+34        <activity
+34-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:21:9-23:58
+35            android:name="com.example.smartmoney.GoalActivity"
+35-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:22:13-41
+36            android:parentActivityName="com.example.smartmoney.MainActivity" />
+36-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:23:13-55
+37        <activity android:name="com.example.smartmoney.FBLogin" />
+37-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:24:9-45
+37-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:24:19-42
+38        <activity android:name="com.example.smartmoney.GoogleLogin" />
+38-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:25:9-49
+38-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:25:19-46
+39        <activity android:name="com.example.smartmoney.nav_header" />
+39-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:26:9-48
+39-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:26:19-45
+40        <activity android:name="com.example.smartmoney.SplashScreenActivity" >
+40-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:27:9-33:20
+40-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:27:19-55
+41            <intent-filter>
+41-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:28:13-32:29
+42                <action android:name="android.intent.action.MAIN" />
+42-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:29:17-69
+42-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:29:25-66
+43
+44                <category android:name="android.intent.category.LAUNCHER" />
+44-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:31:17-77
+44-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:31:27-74
+45            </intent-filter>
+46        </activity>
+47        <activity android:name="com.example.smartmoney.CategoryFragment" />
+47-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:34:9-54
+47-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:34:19-51
+48        <activity android:name="com.example.smartmoney.SettingsFragment" />
+48-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:35:9-54
+48-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:35:19-51
+49        <activity android:name="com.example.smartmoney.ChartFragment" />
+49-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:36:9-51
+49-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:36:19-48
+50        <activity
+50-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:37:9-39:58
+51            android:name="com.example.smartmoney.ChartIncome"
+51-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:38:13-40
+52            android:parentActivityName="com.example.smartmoney.MainActivity" />
+52-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:39:13-55
+53        <activity android:name="com.example.smartmoney.ScanCodeActivity" />
+53-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:40:9-54
+53-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:40:19-51
+54        <activity android:name="com.example.smartmoney.ScanQR" />
+54-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:41:9-44
+54-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:41:19-41
+55        <activity
+55-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:42:9-44:54
+56            android:name="com.example.smartmoney.ListExpenses"
+56-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:43:13-41
+57            android:parentActivityName="com.example.smartmoney.Expenses" />
+57-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:44:13-51
+58        <activity android:name="com.example.smartmoney.CalcFYP" />
+58-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:45:9-45
+58-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:45:19-42
+59        <activity android:name="com.example.smartmoney.Login" />
+59-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:46:9-43
+59-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:46:19-40
+60        <activity android:name="com.example.smartmoney.Chart" />
+60-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:47:9-43
+60-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:47:19-40
+61        <activity android:name="com.example.smartmoney.Calendar" />
+61-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:48:9-46
+61-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:48:19-43
 62        <activity
-62-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:50:9-52:59
-63            android:name="com.example.smartmoney.MainActivity"
-63-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:51:13-41
-64            android:theme="@style/AppTheme.NoActionBar" />
-64-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:52:13-56
-65
-66        <meta-data
-66-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:54:9-56:55
-67            android:name="com.facebook.sdk.ApplicationId"
-67-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:55:13-58
-68            android:value="@string/facebook_app_id" />
-68-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:56:13-52
-69
-70        <activity
-70-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:58:9-61:48
-71            android:name="com.facebook.FacebookActivity"
-71-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:59:13-57
-72            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-72-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:60:13-96
-73            android:label="@string/app_name"
-73-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:61:13-45
-74            android:theme="@style/com_facebook_activity_theme" />
-74-->[com.facebook.android:facebook-common:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\6e8c240e34d611142d9505c2ff3e4f51\jetified-facebook-common-5.15.3\AndroidManifest.xml:33:13-63
-75        <activity
-75-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:62:9-73:20
-76            android:name="com.facebook.CustomTabActivity"
-76-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:63:13-58
-77            android:exported="true" >
-77-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:64:13-36
-78            <intent-filter>
-78-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:65:13-72:29
-79                <action android:name="android.intent.action.VIEW" />
-79-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:66:17-69
-79-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:66:25-66
-80
-81                <category android:name="android.intent.category.DEFAULT" />
-81-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:68:17-76
-81-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:68:27-73
-82                <category android:name="android.intent.category.BROWSABLE" />
-82-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:69:17-78
-82-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:69:27-75
-83
-84                <data android:scheme="@string/fb_login_protocol_scheme" />
-84-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:71:17-75
-84-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:71:23-72
-85            </intent-filter>
-86            <intent-filter>
-86-->[com.facebook.android:facebook-common:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\6e8c240e34d611142d9505c2ff3e4f51\jetified-facebook-common-5.15.3\AndroidManifest.xml:39:13-48:29
-87                <action android:name="android.intent.action.VIEW" />
-87-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:66:17-69
-87-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:66:25-66
-88
-89                <category android:name="android.intent.category.DEFAULT" />
-89-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:68:17-76
-89-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:68:27-73
-90                <category android:name="android.intent.category.BROWSABLE" />
-90-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:69:17-78
-90-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:69:27-75
-91
-92                <data
-92-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:71:17-75
-93                    android:host="cct.com.example.smartmoney"
-94                    android:scheme="fbconnect" />
-94-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:71:23-72
-95            </intent-filter>
-96        </activity>
-97        <activity android:name="com.facebook.CustomTabMainActivity" />
-97-->[com.facebook.android:facebook-common:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\6e8c240e34d611142d9505c2ff3e4f51\jetified-facebook-common-5.15.3\AndroidManifest.xml:34:9-71
-97-->[com.facebook.android:facebook-common:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\6e8c240e34d611142d9505c2ff3e4f51\jetified-facebook-common-5.15.3\AndroidManifest.xml:34:19-68
-98
-99        <service
-99-->[com.google.firebase:firebase-database:19.3.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\2e51fe1ec983896a73a8eef5e4eee40e\firebase-database-19.3.1\AndroidManifest.xml:29:9-35:19
-100            android:name="com.google.firebase.components.ComponentDiscoveryService"
-100-->[com.google.firebase:firebase-database:19.3.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\2e51fe1ec983896a73a8eef5e4eee40e\firebase-database-19.3.1\AndroidManifest.xml:30:13-84
-101            android:directBootAware="true"
-101-->[com.google.firebase:firebase-common:19.3.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\cdc7d77eb2b08a8290e62032a285617c\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
-102            android:exported="false" >
-102-->[com.google.firebase:firebase-database:19.3.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\2e51fe1ec983896a73a8eef5e4eee40e\firebase-database-19.3.1\AndroidManifest.xml:31:13-37
-103            <meta-data
-103-->[com.google.firebase:firebase-database:19.3.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\2e51fe1ec983896a73a8eef5e4eee40e\firebase-database-19.3.1\AndroidManifest.xml:32:13-34:85
-104                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-104-->[com.google.firebase:firebase-database:19.3.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\2e51fe1ec983896a73a8eef5e4eee40e\firebase-database-19.3.1\AndroidManifest.xml:33:17-109
-105                android:value="com.google.firebase.components.ComponentRegistrar" />
-105-->[com.google.firebase:firebase-database:19.3.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\2e51fe1ec983896a73a8eef5e4eee40e\firebase-database-19.3.1\AndroidManifest.xml:34:17-82
-106            <meta-data
-106-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\12fcd3f12adc60188fb31c01d7d41627\firebase-auth-19.3.2\AndroidManifest.xml:36:13-38:85
-107                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-107-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\12fcd3f12adc60188fb31c01d7d41627\firebase-auth-19.3.2\AndroidManifest.xml:37:17-109
-108                android:value="com.google.firebase.components.ComponentRegistrar" />
-108-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\12fcd3f12adc60188fb31c01d7d41627\firebase-auth-19.3.2\AndroidManifest.xml:38:17-82
-109        </service>
-110
-111        <provider
-111-->[com.squareup.picasso:picasso:2.71828] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\44ab0c5ef7bec556579ab32b077385cc\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
-112            android:name="com.squareup.picasso.PicassoProvider"
-112-->[com.squareup.picasso:picasso:2.71828] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\44ab0c5ef7bec556579ab32b077385cc\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
-113            android:authorities="com.example.smartmoney.com.squareup.picasso"
-113-->[com.squareup.picasso:picasso:2.71828] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\44ab0c5ef7bec556579ab32b077385cc\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
-114            android:exported="false" />
-114-->[com.squareup.picasso:picasso:2.71828] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\44ab0c5ef7bec556579ab32b077385cc\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
-115
-116        <activity
-116-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\12fcd3f12adc60188fb31c01d7d41627\firebase-auth-19.3.2\AndroidManifest.xml:24:9-31:50
-117            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
-117-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\12fcd3f12adc60188fb31c01d7d41627\firebase-auth-19.3.2\AndroidManifest.xml:25:13-85
-118            android:excludeFromRecents="true"
-118-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\12fcd3f12adc60188fb31c01d7d41627\firebase-auth-19.3.2\AndroidManifest.xml:26:13-46
-119            android:exported="true"
-119-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\12fcd3f12adc60188fb31c01d7d41627\firebase-auth-19.3.2\AndroidManifest.xml:27:13-36
-120            android:launchMode="singleTask"
-120-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\12fcd3f12adc60188fb31c01d7d41627\firebase-auth-19.3.2\AndroidManifest.xml:28:13-44
-121            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
-121-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\12fcd3f12adc60188fb31c01d7d41627\firebase-auth-19.3.2\AndroidManifest.xml:29:13-102
-122            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-122-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\12fcd3f12adc60188fb31c01d7d41627\firebase-auth-19.3.2\AndroidManifest.xml:30:13-72
-123        <activity
-123-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\ee22c5fc05e4a11567b274ddf4993f88\play-services-auth-18.0.0\AndroidManifest.xml:23:9-27:75
-124            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-124-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\ee22c5fc05e4a11567b274ddf4993f88\play-services-auth-18.0.0\AndroidManifest.xml:24:13-93
-125            android:excludeFromRecents="true"
-125-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\ee22c5fc05e4a11567b274ddf4993f88\play-services-auth-18.0.0\AndroidManifest.xml:25:13-46
-126            android:exported="false"
-126-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\ee22c5fc05e4a11567b274ddf4993f88\play-services-auth-18.0.0\AndroidManifest.xml:26:13-37
-127            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-127-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\ee22c5fc05e4a11567b274ddf4993f88\play-services-auth-18.0.0\AndroidManifest.xml:27:13-72
-128        <!--
-129            Service handling Google Sign-In user revocation. For apps that do not integrate with
-130            Google Sign-In, this service will never be started.
-131        -->
-132        <service
-132-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\ee22c5fc05e4a11567b274ddf4993f88\play-services-auth-18.0.0\AndroidManifest.xml:33:9-36:110
-133            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-133-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\ee22c5fc05e4a11567b274ddf4993f88\play-services-auth-18.0.0\AndroidManifest.xml:34:13-89
-134            android:exported="true"
-134-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\ee22c5fc05e4a11567b274ddf4993f88\play-services-auth-18.0.0\AndroidManifest.xml:35:13-36
-135            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
-135-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\ee22c5fc05e4a11567b274ddf4993f88\play-services-auth-18.0.0\AndroidManifest.xml:36:13-107
-136
-137        <activity
-137-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\a7dfbb78c47d6fb61939251aeae30df0\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
-138            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-138-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\a7dfbb78c47d6fb61939251aeae30df0\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
-139            android:exported="false"
-139-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\a7dfbb78c47d6fb61939251aeae30df0\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
-140            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-140-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\a7dfbb78c47d6fb61939251aeae30df0\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
-141
-142        <provider
-142-->[com.google.firebase:firebase-common:19.3.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\cdc7d77eb2b08a8290e62032a285617c\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
-143            android:name="com.google.firebase.provider.FirebaseInitProvider"
-143-->[com.google.firebase:firebase-common:19.3.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\cdc7d77eb2b08a8290e62032a285617c\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
-144            android:authorities="com.example.smartmoney.firebaseinitprovider"
-144-->[com.google.firebase:firebase-common:19.3.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\cdc7d77eb2b08a8290e62032a285617c\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+62-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:49:9-51:58
+63            android:name="com.example.smartmoney.Expenses"
+63-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:50:13-37
+64            android:parentActivityName="com.example.smartmoney.MainActivity" />
+64-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:51:13-55
+65        <activity
+65-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:52:9-54:58
+66            android:name="com.example.smartmoney.Income"
+66-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:53:13-35
+67            android:parentActivityName="com.example.smartmoney.MainActivity" />
+67-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:54:13-55
+68        <activity
+68-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:55:9-57:59
+69            android:name="com.example.smartmoney.MainActivity"
+69-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:56:13-41
+70            android:theme="@style/AppTheme.NoActionBar" />
+70-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:57:13-56
+71
+72        <meta-data
+72-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:59:9-61:55
+73            android:name="com.facebook.sdk.ApplicationId"
+73-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:60:13-58
+74            android:value="@string/facebook_app_id" />
+74-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:61:13-52
+75
+76        <activity
+76-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:63:9-66:48
+77            android:name="com.facebook.FacebookActivity"
+77-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:64:13-57
+78            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+78-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:65:13-96
+79            android:label="@string/app_name"
+79-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:66:13-45
+80            android:theme="@style/com_facebook_activity_theme" />
+80-->[com.facebook.android:facebook-common:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\6e8c240e34d611142d9505c2ff3e4f51\jetified-facebook-common-5.15.3\AndroidManifest.xml:33:13-63
+81        <activity
+81-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:67:9-78:20
+82            android:name="com.facebook.CustomTabActivity"
+82-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:68:13-58
+83            android:exported="true" >
+83-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:69:13-36
+84            <intent-filter>
+84-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:70:13-77:29
+85                <action android:name="android.intent.action.VIEW" />
+85-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:71:17-69
+85-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:71:25-66
+86
+87                <category android:name="android.intent.category.DEFAULT" />
+87-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:73:17-76
+87-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:73:27-73
+88                <category android:name="android.intent.category.BROWSABLE" />
+88-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:74:17-78
+88-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:74:27-75
+89
+90                <data android:scheme="@string/fb_login_protocol_scheme" />
+90-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:76:17-75
+90-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:76:23-72
+91            </intent-filter>
+92            <intent-filter>
+92-->[com.facebook.android:facebook-common:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\6e8c240e34d611142d9505c2ff3e4f51\jetified-facebook-common-5.15.3\AndroidManifest.xml:39:13-48:29
+93                <action android:name="android.intent.action.VIEW" />
+93-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:71:17-69
+93-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:71:25-66
+94
+95                <category android:name="android.intent.category.DEFAULT" />
+95-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:73:17-76
+95-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:73:27-73
+96                <category android:name="android.intent.category.BROWSABLE" />
+96-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:74:17-78
+96-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:74:27-75
+97
+98                <data
+98-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:76:17-75
+99                    android:host="cct.com.example.smartmoney"
+100                    android:scheme="fbconnect" />
+100-->C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:76:23-72
+101            </intent-filter>
+102        </activity>
+103        <activity android:name="com.facebook.CustomTabMainActivity" />
+103-->[com.facebook.android:facebook-common:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\6e8c240e34d611142d9505c2ff3e4f51\jetified-facebook-common-5.15.3\AndroidManifest.xml:34:9-71
+103-->[com.facebook.android:facebook-common:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\6e8c240e34d611142d9505c2ff3e4f51\jetified-facebook-common-5.15.3\AndroidManifest.xml:34:19-68
+104
+105        <service
+105-->[com.google.firebase:firebase-database:19.3.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\2e51fe1ec983896a73a8eef5e4eee40e\firebase-database-19.3.1\AndroidManifest.xml:29:9-35:19
+106            android:name="com.google.firebase.components.ComponentDiscoveryService"
+106-->[com.google.firebase:firebase-database:19.3.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\2e51fe1ec983896a73a8eef5e4eee40e\firebase-database-19.3.1\AndroidManifest.xml:30:13-84
+107            android:directBootAware="true"
+107-->[com.google.firebase:firebase-common:19.3.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\cdc7d77eb2b08a8290e62032a285617c\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+108            android:exported="false" >
+108-->[com.google.firebase:firebase-database:19.3.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\2e51fe1ec983896a73a8eef5e4eee40e\firebase-database-19.3.1\AndroidManifest.xml:31:13-37
+109            <meta-data
+109-->[com.google.firebase:firebase-database:19.3.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\2e51fe1ec983896a73a8eef5e4eee40e\firebase-database-19.3.1\AndroidManifest.xml:32:13-34:85
+110                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+110-->[com.google.firebase:firebase-database:19.3.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\2e51fe1ec983896a73a8eef5e4eee40e\firebase-database-19.3.1\AndroidManifest.xml:33:17-109
+111                android:value="com.google.firebase.components.ComponentRegistrar" />
+111-->[com.google.firebase:firebase-database:19.3.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\2e51fe1ec983896a73a8eef5e4eee40e\firebase-database-19.3.1\AndroidManifest.xml:34:17-82
+112            <meta-data
+112-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\12fcd3f12adc60188fb31c01d7d41627\firebase-auth-19.3.2\AndroidManifest.xml:36:13-38:85
+113                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+113-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\12fcd3f12adc60188fb31c01d7d41627\firebase-auth-19.3.2\AndroidManifest.xml:37:17-109
+114                android:value="com.google.firebase.components.ComponentRegistrar" />
+114-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\12fcd3f12adc60188fb31c01d7d41627\firebase-auth-19.3.2\AndroidManifest.xml:38:17-82
+115        </service>
+116
+117        <provider
+117-->[com.squareup.picasso:picasso:2.71828] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\44ab0c5ef7bec556579ab32b077385cc\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+118            android:name="com.squareup.picasso.PicassoProvider"
+118-->[com.squareup.picasso:picasso:2.71828] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\44ab0c5ef7bec556579ab32b077385cc\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+119            android:authorities="com.example.smartmoney.com.squareup.picasso"
+119-->[com.squareup.picasso:picasso:2.71828] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\44ab0c5ef7bec556579ab32b077385cc\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+120            android:exported="false" />
+120-->[com.squareup.picasso:picasso:2.71828] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\44ab0c5ef7bec556579ab32b077385cc\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+121
+122        <activity
+122-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\12fcd3f12adc60188fb31c01d7d41627\firebase-auth-19.3.2\AndroidManifest.xml:24:9-31:50
+123            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+123-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\12fcd3f12adc60188fb31c01d7d41627\firebase-auth-19.3.2\AndroidManifest.xml:25:13-85
+124            android:excludeFromRecents="true"
+124-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\12fcd3f12adc60188fb31c01d7d41627\firebase-auth-19.3.2\AndroidManifest.xml:26:13-46
+125            android:exported="true"
+125-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\12fcd3f12adc60188fb31c01d7d41627\firebase-auth-19.3.2\AndroidManifest.xml:27:13-36
+126            android:launchMode="singleTask"
+126-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\12fcd3f12adc60188fb31c01d7d41627\firebase-auth-19.3.2\AndroidManifest.xml:28:13-44
+127            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+127-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\12fcd3f12adc60188fb31c01d7d41627\firebase-auth-19.3.2\AndroidManifest.xml:29:13-102
+128            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+128-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\12fcd3f12adc60188fb31c01d7d41627\firebase-auth-19.3.2\AndroidManifest.xml:30:13-72
+129        <activity
+129-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\ee22c5fc05e4a11567b274ddf4993f88\play-services-auth-18.0.0\AndroidManifest.xml:23:9-27:75
+130            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+130-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\ee22c5fc05e4a11567b274ddf4993f88\play-services-auth-18.0.0\AndroidManifest.xml:24:13-93
+131            android:excludeFromRecents="true"
+131-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\ee22c5fc05e4a11567b274ddf4993f88\play-services-auth-18.0.0\AndroidManifest.xml:25:13-46
+132            android:exported="false"
+132-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\ee22c5fc05e4a11567b274ddf4993f88\play-services-auth-18.0.0\AndroidManifest.xml:26:13-37
+133            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+133-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\ee22c5fc05e4a11567b274ddf4993f88\play-services-auth-18.0.0\AndroidManifest.xml:27:13-72
+134        <!--
+135            Service handling Google Sign-In user revocation. For apps that do not integrate with
+136            Google Sign-In, this service will never be started.
+137        -->
+138        <service
+138-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\ee22c5fc05e4a11567b274ddf4993f88\play-services-auth-18.0.0\AndroidManifest.xml:33:9-36:110
+139            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+139-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\ee22c5fc05e4a11567b274ddf4993f88\play-services-auth-18.0.0\AndroidManifest.xml:34:13-89
+140            android:exported="true"
+140-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\ee22c5fc05e4a11567b274ddf4993f88\play-services-auth-18.0.0\AndroidManifest.xml:35:13-36
+141            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+141-->[com.google.android.gms:play-services-auth:18.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\ee22c5fc05e4a11567b274ddf4993f88\play-services-auth-18.0.0\AndroidManifest.xml:36:13-107
+142
+143        <activity
+143-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\a7dfbb78c47d6fb61939251aeae30df0\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+144            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+144-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\a7dfbb78c47d6fb61939251aeae30df0\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
 145            android:exported="false"
-145-->[com.google.firebase:firebase-common:19.3.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\cdc7d77eb2b08a8290e62032a285617c\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
-146            android:initOrder="100" />
-146-->[com.google.firebase:firebase-common:19.3.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\cdc7d77eb2b08a8290e62032a285617c\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+145-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\a7dfbb78c47d6fb61939251aeae30df0\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+146            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+146-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\a7dfbb78c47d6fb61939251aeae30df0\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
 147
-148        <meta-data
-148-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\62e8c334ac9de8db49e3e7e6b1312b5c\jetified-play-services-basement-17.1.1\AndroidManifest.xml:23:9-25:69
-149            android:name="com.google.android.gms.version"
-149-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\62e8c334ac9de8db49e3e7e6b1312b5c\jetified-play-services-basement-17.1.1\AndroidManifest.xml:24:13-58
-150            android:value="@integer/google_play_services_version" />
-150-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\62e8c334ac9de8db49e3e7e6b1312b5c\jetified-play-services-basement-17.1.1\AndroidManifest.xml:25:13-66
-151        <!--
-152         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
-153         with the application context. This config is merged in with the host app's manifest,
-154         but there can only be one provider with the same authority activated at any given
-155         point; so if the end user has two or more different apps that use Facebook SDK, only the
-156         first one will be able to use the provider. To work around this problem, we use the
-157         following placeholder in the authority to identify each host application as if it was
-158         a completely different provider.
-159        -->
-160        <provider
-160-->[com.facebook.android:facebook-core:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d5a4042ad06b5c18ecff1313c484002a\jetified-facebook-core-5.15.3\AndroidManifest.xml:39:9-42:40
-161            android:name="com.facebook.internal.FacebookInitProvider"
-161-->[com.facebook.android:facebook-core:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d5a4042ad06b5c18ecff1313c484002a\jetified-facebook-core-5.15.3\AndroidManifest.xml:40:13-70
-162            android:authorities="com.example.smartmoney.FacebookInitProvider"
-162-->[com.facebook.android:facebook-core:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d5a4042ad06b5c18ecff1313c484002a\jetified-facebook-core-5.15.3\AndroidManifest.xml:41:13-72
-163            android:exported="false" />
-163-->[com.facebook.android:facebook-core:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d5a4042ad06b5c18ecff1313c484002a\jetified-facebook-core-5.15.3\AndroidManifest.xml:42:13-37
-164
-165        <receiver
-165-->[com.facebook.android:facebook-core:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d5a4042ad06b5c18ecff1313c484002a\jetified-facebook-core-5.15.3\AndroidManifest.xml:44:9-50:20
-166            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
-166-->[com.facebook.android:facebook-core:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d5a4042ad06b5c18ecff1313c484002a\jetified-facebook-core-5.15.3\AndroidManifest.xml:45:13-86
-167            android:exported="false" >
-167-->[com.facebook.android:facebook-core:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d5a4042ad06b5c18ecff1313c484002a\jetified-facebook-core-5.15.3\AndroidManifest.xml:46:13-37
-168            <intent-filter>
-168-->[com.facebook.android:facebook-core:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d5a4042ad06b5c18ecff1313c484002a\jetified-facebook-core-5.15.3\AndroidManifest.xml:47:13-49:29
-169                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
-169-->[com.facebook.android:facebook-core:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d5a4042ad06b5c18ecff1313c484002a\jetified-facebook-core-5.15.3\AndroidManifest.xml:48:17-95
-169-->[com.facebook.android:facebook-core:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d5a4042ad06b5c18ecff1313c484002a\jetified-facebook-core-5.15.3\AndroidManifest.xml:48:25-92
-170            </intent-filter>
-171        </receiver>
-172
-173        <provider
-173-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\0af15b4380a8429fdc5ee80ba1c4d93c\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
-174            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-174-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\0af15b4380a8429fdc5ee80ba1c4d93c\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
-175            android:authorities="com.example.smartmoney.lifecycle-process"
-175-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\0af15b4380a8429fdc5ee80ba1c4d93c\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
-176            android:exported="false"
-176-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\0af15b4380a8429fdc5ee80ba1c4d93c\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
-177            android:multiprocess="true" />
-177-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\0af15b4380a8429fdc5ee80ba1c4d93c\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
-178    </application>
-179
-180</manifest>
+148        <provider
+148-->[com.google.firebase:firebase-common:19.3.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\cdc7d77eb2b08a8290e62032a285617c\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+149            android:name="com.google.firebase.provider.FirebaseInitProvider"
+149-->[com.google.firebase:firebase-common:19.3.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\cdc7d77eb2b08a8290e62032a285617c\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+150            android:authorities="com.example.smartmoney.firebaseinitprovider"
+150-->[com.google.firebase:firebase-common:19.3.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\cdc7d77eb2b08a8290e62032a285617c\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+151            android:exported="false"
+151-->[com.google.firebase:firebase-common:19.3.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\cdc7d77eb2b08a8290e62032a285617c\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+152            android:initOrder="100" />
+152-->[com.google.firebase:firebase-common:19.3.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\cdc7d77eb2b08a8290e62032a285617c\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+153
+154        <meta-data
+154-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\62e8c334ac9de8db49e3e7e6b1312b5c\jetified-play-services-basement-17.1.1\AndroidManifest.xml:23:9-25:69
+155            android:name="com.google.android.gms.version"
+155-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\62e8c334ac9de8db49e3e7e6b1312b5c\jetified-play-services-basement-17.1.1\AndroidManifest.xml:24:13-58
+156            android:value="@integer/google_play_services_version" />
+156-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\62e8c334ac9de8db49e3e7e6b1312b5c\jetified-play-services-basement-17.1.1\AndroidManifest.xml:25:13-66
+157        <!--
+158         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+159         with the application context. This config is merged in with the host app's manifest,
+160         but there can only be one provider with the same authority activated at any given
+161         point; so if the end user has two or more different apps that use Facebook SDK, only the
+162         first one will be able to use the provider. To work around this problem, we use the
+163         following placeholder in the authority to identify each host application as if it was
+164         a completely different provider.
+165        -->
+166        <provider
+166-->[com.facebook.android:facebook-core:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d5a4042ad06b5c18ecff1313c484002a\jetified-facebook-core-5.15.3\AndroidManifest.xml:39:9-42:40
+167            android:name="com.facebook.internal.FacebookInitProvider"
+167-->[com.facebook.android:facebook-core:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d5a4042ad06b5c18ecff1313c484002a\jetified-facebook-core-5.15.3\AndroidManifest.xml:40:13-70
+168            android:authorities="com.example.smartmoney.FacebookInitProvider"
+168-->[com.facebook.android:facebook-core:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d5a4042ad06b5c18ecff1313c484002a\jetified-facebook-core-5.15.3\AndroidManifest.xml:41:13-72
+169            android:exported="false" />
+169-->[com.facebook.android:facebook-core:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d5a4042ad06b5c18ecff1313c484002a\jetified-facebook-core-5.15.3\AndroidManifest.xml:42:13-37
+170
+171        <receiver
+171-->[com.facebook.android:facebook-core:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d5a4042ad06b5c18ecff1313c484002a\jetified-facebook-core-5.15.3\AndroidManifest.xml:44:9-50:20
+172            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+172-->[com.facebook.android:facebook-core:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d5a4042ad06b5c18ecff1313c484002a\jetified-facebook-core-5.15.3\AndroidManifest.xml:45:13-86
+173            android:exported="false" >
+173-->[com.facebook.android:facebook-core:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d5a4042ad06b5c18ecff1313c484002a\jetified-facebook-core-5.15.3\AndroidManifest.xml:46:13-37
+174            <intent-filter>
+174-->[com.facebook.android:facebook-core:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d5a4042ad06b5c18ecff1313c484002a\jetified-facebook-core-5.15.3\AndroidManifest.xml:47:13-49:29
+175                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+175-->[com.facebook.android:facebook-core:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d5a4042ad06b5c18ecff1313c484002a\jetified-facebook-core-5.15.3\AndroidManifest.xml:48:17-95
+175-->[com.facebook.android:facebook-core:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\d5a4042ad06b5c18ecff1313c484002a\jetified-facebook-core-5.15.3\AndroidManifest.xml:48:25-92
+176            </intent-filter>
+177        </receiver>
+178
+179        <provider
+179-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\0af15b4380a8429fdc5ee80ba1c4d93c\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+180            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+180-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\0af15b4380a8429fdc5ee80ba1c4d93c\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+181            android:authorities="com.example.smartmoney.lifecycle-process"
+181-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\0af15b4380a8429fdc5ee80ba1c4d93c\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+182            android:exported="false"
+182-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\0af15b4380a8429fdc5ee80ba1c4d93c\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+183            android:multiprocess="true" />
+183-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\0af15b4380a8429fdc5ee80ba1c4d93c\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+184    </application>
+185
+186</manifest>

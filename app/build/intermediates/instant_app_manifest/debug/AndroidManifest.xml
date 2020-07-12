@@ -26,9 +26,15 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme.NoActionBar" >
-        <activity android:name="com.example.smartmoney.EditSaving" />
-        <activity android:name="com.example.smartmoney.GoalActivity" />
+        <activity android:name="com.example.smartmoney.CalcExp" />
+        <activity
+            android:name="com.example.smartmoney.EditSaving"
+            android:parentActivityName="com.example.smartmoney.GoalActivity" />
+        <activity
+            android:name="com.example.smartmoney.GoalActivity"
+            android:parentActivityName="com.example.smartmoney.MainActivity" />
         <activity android:name="com.example.smartmoney.FBLogin" />
         <activity android:name="com.example.smartmoney.GoogleLogin" />
         <activity android:name="com.example.smartmoney.nav_header" />

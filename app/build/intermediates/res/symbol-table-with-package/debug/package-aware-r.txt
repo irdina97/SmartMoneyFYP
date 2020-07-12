@@ -1596,13 +1596,18 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id CurrentSaving
 id Expenses
 id FUNCTION
 id META
+id MGgoal
 id SHIFT
 id SYM
+id SavingGoal
+id SavingValue
 id TOP_END
 id TOP_START
+id TotalSaving
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
 id accessibility_custom_action_1
@@ -1669,6 +1674,7 @@ id async
 id auto
 id automatic
 id background_progressbar
+id balance
 id barrier
 id before_logo_tv
 id beginning
@@ -1702,7 +1708,6 @@ id btnDelete
 id btnDone
 id btnEducation
 id btnElectronic
-id btnFB
 id btnFood
 id btnGame
 id btnGift
@@ -1717,6 +1722,7 @@ id btnRefund
 id btnReward
 id btnSale
 id btnSave
+id btnSaveExp
 id btnSaving
 id btnScanQR
 id btnShopping
@@ -1784,6 +1790,8 @@ id coordinator
 id custom
 id customPanel
 id cut
+id cvGoal
+id cvReview
 id dark
 id date_picker_actions
 id decor_content_parent
@@ -1857,6 +1865,7 @@ id login
 id login_button
 id logo
 id mainGrid
+id mainGrid2
 id masked
 id media_actions
 id message
@@ -1928,6 +1937,7 @@ id progress_circular
 id progress_horizontal
 id radio
 id relativeLayout
+id relativeLayout2
 id result_text
 id right
 id right_icon
@@ -1935,6 +1945,7 @@ id right_side
 id rounded
 id save_non_transition_alpha
 id save_overlay_view
+id savingbar
 id scale
 id screen
 id scroll
@@ -1952,6 +1963,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id seekbar
 id select_dialog_listview
 id selected
 id shortcut
@@ -2030,6 +2042,8 @@ id tvBeauty
 id tvBill
 id tvBook
 id tvControl
+id tvDate
+id tvDateSaving
 id tvEducation
 id tvElectronic
 id tvExpenses
@@ -2048,6 +2062,7 @@ id tvResult
 id tvReward
 id tvSale
 id tvSaving
+id tvSavingGoal
 id tvSelectedDate
 id tvShopping
 id tvSocial
@@ -2131,6 +2146,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_calc_exp
 layout activity_calc_fyp
 layout activity_calendar
 layout activity_category_fragment

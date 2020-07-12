@@ -1,6 +1,21 @@
 {
     "logs": [
         {
+            "outputFile": "C:\\Users\\USER\\AndroidStudioProjects\\SmartMoneyFYP\\app\\build\\intermediates\\res\\merged\\debug\\values-xxhdpi-v4_values-xxhdpi-v4.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-2\\files-2.1\\7868f5a2caf45a06a581a924193f52d6\\jetified-core-1.9.8\\res\\values-xxhdpi-v4\\values-xxhdpi-v4.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,114",
+                        "endColumns": "58,55",
+                        "endOffsets": "109,165"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "C:\\Users\\USER\\AndroidStudioProjects\\SmartMoneyFYP\\app\\build\\intermediates\\res\\merged\\debug\\values-bs_values-bs.arsc.flat",
             "map": [
                 {
@@ -69,21 +84,6 @@
                         "startOffsets": "2830,2938,3130,3258,3370,3579,3707,3849,4180,4393,4502,4694,4823,5032,5208,5306,5398",
                         "endColumns": "107,191,127,111,208,127,141,130,212,108,191,128,208,175,97,91,113",
                         "endOffsets": "2933,3125,3253,3365,3574,3702,3844,3975,4388,4497,4689,4818,5027,5203,5301,5393,5507"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\USER\\AndroidStudioProjects\\SmartMoneyFYP\\app\\build\\intermediates\\res\\merged\\debug\\values-xxhdpi-v4_values-xxhdpi-v4.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-2\\files-2.1\\7868f5a2caf45a06a581a924193f52d6\\jetified-core-1.9.8\\res\\values-xxhdpi-v4\\values-xxhdpi-v4.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,114",
-                        "endColumns": "58,55",
-                        "endOffsets": "109,165"
                     }
                 }
             ]
@@ -1878,6 +1878,40 @@
             ]
         },
         {
+            "outputFile": "C:\\Users\\USER\\AndroidStudioProjects\\SmartMoneyFYP\\app\\build\\intermediates\\res\\merged\\debug\\values-hdpi-v4_values-hdpi-v4.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-2\\files-2.1\\53af1f37d65227eb5bcf361cc28c52ea\\appcompat-1.1.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    },
+                    "to": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "169",
+                        "endLines": "8",
+                        "endColumns": "13",
+                        "endOffsets": "441"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-2\\files-2.1\\7868f5a2caf45a06a581a924193f52d6\\jetified-core-1.9.8\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,113",
+                        "endColumns": "57,55",
+                        "endOffsets": "108,164"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "C:\\Users\\USER\\AndroidStudioProjects\\SmartMoneyFYP\\app\\build\\intermediates\\res\\merged\\debug\\values-be_values-be.arsc.flat",
             "map": [
                 {
@@ -1946,40 +1980,6 @@
                         "startOffsets": "5637",
                         "endColumns": "100",
                         "endOffsets": "5733"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\USER\\AndroidStudioProjects\\SmartMoneyFYP\\app\\build\\intermediates\\res\\merged\\debug\\values-hdpi-v4_values-hdpi-v4.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-2\\files-2.1\\53af1f37d65227eb5bcf361cc28c52ea\\appcompat-1.1.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "6",
-                        "endColumns": "13",
-                        "endOffsets": "327"
-                    },
-                    "to": {
-                        "startLines": "4",
-                        "startColumns": "4",
-                        "startOffsets": "169",
-                        "endLines": "8",
-                        "endColumns": "13",
-                        "endOffsets": "441"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-2\\files-2.1\\7868f5a2caf45a06a581a924193f52d6\\jetified-core-1.9.8\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,113",
-                        "endColumns": "57,55",
-                        "endOffsets": "108,164"
                     }
                 }
             ]

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalcExp">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        tools:ignore="UnusedAttribute" />
+
+
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="2"
+        android:backgroundTint="#FFC400"
+        android:textColor="@android:color/white"
+        android:text="Done"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/btnDone"
+        android:layout_weight="2"
+        android:backgroundTint="#FFC400"
+        android:textColor="@android:color/white"
+        android:text="Delete"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+    <Button
+        android:id="@+id/btn0"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/btnDelete"
+        android:layout_weight="2"
+        android:backgroundTint="#FFFFFF"
+        android:text="0"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+    <Button
+        android:id="@+id/btnDec"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/btn0"
+        android:layout_weight="2"
+        android:backgroundTint="#FFFFFF"
+        android:text="."
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnDone"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="2"
+        android:backgroundTint="#FFFFFF"
+        android:text="-"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnDelete"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/btnSub"
+        android:layout_weight="2"
+        android:backgroundTint="#FFFFFF"
+        android:text="3"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn0"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/btn3"
+        android:layout_weight="2"
+        android:backgroundTint="#FFFFFF"
+        android:text="2"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnDec"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/btn2"
+        android:layout_weight="2"
+        android:backgroundTint="#FFFFFF"
+        android:text="1"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+    <Button
+        android:id="@+id/btnAddition"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSub"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="2"
+        android:backgroundTint="#FFFFFF"
+        android:text="+"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn3"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/btnAddition"
+        android:layout_weight="2"
+        android:backgroundTint="#FFFFFF"
+        android:text="6"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn2"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/btn6"
+        android:layout_weight="2"
+        android:backgroundTint="#FFFFFF"
+        android:text="5"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn1"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/btn5"
+        android:layout_weight="2"
+        android:backgroundTint="#FFFFFF"
+        android:text="4"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+    <Button
+        android:id="@+id/btnDate"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnAddition"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="2"
+        android:backgroundTint="#FFFFFF"
+        android:text="Today"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+    <Button
+        android:id="@+id/btn9"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn6"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/btnDate"
+        android:layout_weight="2"
+        android:backgroundTint="#FFFFFF"
+        android:text="9"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+    <Button
+        android:id="@+id/btn8"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn5"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/btn9"
+        android:layout_weight="2"
+        android:backgroundTint="#FFFFFF"
+        android:text="8"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn4"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/btn8"
+        android:layout_weight="2"
+        android:backgroundTint="#FFFFFF"
+        android:text="7"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+    <TextView
+        android:id="@+id/tvControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnDate"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="36dp"
+        android:background="#FFC400"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvControl"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="#FFC400"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvSelectedDate"
+        android:layout_width="21dp"
+        android:layout_height="28dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="237dp"
+        android:layout_marginTop="507dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="192dp"
+        android:textSize="11sp"
+        tools:ignore="SmallSp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/btnSaveExp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvResult"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="318dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="9dp"
+        android:text="SAVE"
+        android:backgroundTint="#FFC400"
+        android:textColor="@android:color/white"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
