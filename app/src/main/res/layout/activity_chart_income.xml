@@ -46,7 +46,7 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:layout_marginBottom="160dp"
+        android:layout_marginBottom="120dp"
         android:indeterminate="false"
         android:max="100"
         android:progress="100"
@@ -63,7 +63,7 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:layout_marginBottom="160dp"
+        android:layout_marginBottom="120dp"
         android:indeterminate="false"
         android:max="100"
         android:progress="75"
@@ -76,7 +76,7 @@
         app:layout_constraintVertical_bias="0.183" />
 
     <TextView
-        android:id="@+id/number_of_calories"
+        android:id="@+id/number_of_income"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="120dp"
@@ -97,35 +97,74 @@
         android:layout_marginTop="18dp"
         android:text="Income"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/number_of_calories"
+        app:layout_constraintBottom_toTopOf="@+id/number_of_income"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/background_progressbar"
         app:layout_constraintVertical_bias="1.0"
         tools:ignore="HardcodedText,MissingConstraints" />
 
-    <FrameLayout
-        android:layout_width="361dp"
-        android:layout_height="247dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="100dp"
-        android:background="#FFF"
-        android:elevation="2dp"
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/GoalList"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="70dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/background_progressbar"
-        app:layout_constraintVertical_bias="0.847"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:text="Income List"
-            android:textSize="20sp"
-            tools:ignore="HardcodedText" />
-    </FrameLayout>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvReview"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="20dp"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="1"
+            app:layout_rowWeight="4">
+
+            <TextView
+                android:id="@+id/tvIncomeList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:text="Income List"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                tools:ignore="Autofill,HardcodedText,LabelFor" />
+
+            <TextView
+                android:id="@+id/CurrentSaving"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="80dp"
+                android:text="50"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                tools:ignore="Autofill,HardcodedText,LabelFor,SmallSp" />
+
+            <TextView
+                android:id="@+id/IncomeList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="180dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="Autofill,HardcodedText,LabelFor,SmallSp" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.gridlayout.widget.GridLayout>
 
     <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
     <!-- Doughnut chart ends here -->

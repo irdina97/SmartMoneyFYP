@@ -38,7 +38,6 @@
             android:name=".ChartIncome"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".ScanCodeActivity" />
-        <activity android:name=".ScanQR" />
         <activity
             android:name=".ListExpenses"
             android:parentActivityName=".Expenses" />

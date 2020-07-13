@@ -30,8 +30,10 @@
         <androidx.gridlayout.widget.GridLayout
             android:id="@+id/mainGrid"
             android:layout_width="match_parent"
-            android:layout_height="179dp"
-            android:padding="10dp">
+            android:layout_height="184dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="30dp"
+            android:paddingRight="10dp">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_view"
@@ -50,15 +52,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Income"
-                    android:textStyle="bold"
+                    android:paddingTop="10dp"
                     android:textAlignment="center"
+                    android:textStyle="bold"
                     tools:ignore="HardcodedText" />
 
                 <TextView
                     android:id="@+id/tvIncome"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="60dp"
+                    android:layout_marginTop="70dp"
                     android:textAlignment="center"
                     android:textSize="14sp"
                     tools:ignore="Autofill,LabelFor" />
@@ -82,15 +85,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Expense"
-                    android:textStyle="bold"
+                    android:paddingTop="10dp"
                     android:textAlignment="center"
+                    android:textStyle="bold"
                     tools:ignore="HardcodedText" />
 
                 <TextView
                     android:id="@+id/tvExpenses"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="60dp"
+                    android:layout_marginTop="70dp"
                     android:textAlignment="center"
                     android:textSize="14sp"
                     tools:ignore="Autofill,LabelFor" />
@@ -113,15 +117,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Balance"
-                    android:textStyle="bold"
+                    android:paddingTop="10dp"
                     android:textAlignment="center"
+                    android:textStyle="bold"
                     tools:ignore="HardcodedText" />
 
                 <TextView
                     android:id="@+id/tvBalance"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="60dp"
+                    android:layout_marginTop="70dp"
                     android:textAlignment="center"
                     android:textSize="14sp"
                     tools:ignore="Autofill,LabelFor" />
@@ -130,12 +135,78 @@
 
         </androidx.gridlayout.widget.GridLayout>
 
-        <!-- <FrameLayout
-            android:id="@+id/fragment_container"
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/SMLis"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">-->
+            android:layout_height="300dp"
+            android:padding="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp">
 
-        <!-- </FrameLayout>-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvReview"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="20dp"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_row="1"
+                app:layout_rowWeight="4">
+
+                <TextView
+                    android:id="@+id/tvSelectedDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="180dp"
+                    android:text="latest date"
+                    android:textSize="12sp"
+                    tools:ignore="Autofill,HardcodedText,LabelFor,SmallSp" />
+
+                <TextView
+                    android:id="@+id/CurrentSaving"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="280dp"
+                    android:layout_marginTop="50dp"
+                    android:text="50"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    tools:ignore="Autofill,HardcodedText,LabelFor,SmallSp" />
+
+                <TextView
+                    android:id="@+id/SavingGoal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="180dp"
+                    android:text="Saving Goal"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="Autofill,HardcodedText,LabelFor,SmallSp" />
+
+                <TextView
+                    android:id="@+id/TotalSaving"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="280dp"
+                    android:layout_marginTop="80dp"
+                    android:text="50/100"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    tools:ignore="Autofill,HardcodedText,LabelFor,SmallSp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.gridlayout.widget.GridLayout>
 
     </LinearLayout>
 
