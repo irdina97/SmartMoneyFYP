@@ -2,41 +2,42 @@ package com.example.smartmoney;
 
 public class ExpenseDB {
 
-    String Name;
-    String Result;
-    String Date;
+    String expensename;
+    String expenseresult;
+    String expensedate;
 
     public ExpenseDB() {
     }
 
-    public ExpenseDB(String Namee, String Resultt, String Datee){
-        this.Name = Namee;
-        this.Result = Resultt;
-        this.Date = Datee;
+    public ExpenseDB(String expensename, String expenseresult, String expensedate){
+
+        this.expensename=expensename;
+        this.expenseresult=expenseresult;
+        this.expensedate=expensedate;
     }
 
-    public String getNamee() {
-        return Name;
+    public String getExpensename() {
+        return expensename;
     }
 
-    public void setNamee(String namee) {
-        Name = namee;
+    public void setExpensename(String expensename) {
+        this.expensename = expensename;
     }
 
-    public String getResultt() {
-        return Result;
+    public String getExpenseresult() {
+        return expenseresult;
     }
 
-    public void setResultt(String resultt) {
-        Result = resultt;
+    public void setExpenseresult(String expenseresult) {
+        this.expenseresult = expenseresult;
     }
 
-    public String getDatee() {
-        return Date;
+    public String getExpensedate() {
+        return expensedate;
     }
 
-    public void setDatee(String datee) {
-        Date = datee;
+    public void setExpensedate(String expensedate) {
+        this.expensedate = expensedate;
     }
 }
 

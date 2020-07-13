@@ -1,8 +1,6 @@
 
 package com.example.smartmoney;
 
-
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -15,11 +13,6 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 
 public class Expenses extends AppCompatActivity implements View.OnClickListener{
@@ -31,9 +24,21 @@ public class Expenses extends AppCompatActivity implements View.OnClickListener{
     private ImageButton btnSport;
     private ImageButton btnPet;
     private ImageButton btnTransport;
-    private ImageButton btnAddEx;
+    private ImageButton btnGuitar;
+    private ImageButton btnPiano;
+    private ImageButton btnArt;
+    private ImageButton btnSocial;
+    private ImageButton btnHealth;
+    private ImageButton btnBeauty;
+    private ImageButton btnGift;
+    private ImageButton btnBook;
+    private ImageButton btnEducation;
+    private ImageButton btnBill;
+    private ImageButton btnElectronic;
+    private ImageButton btnPhone;
+    private ImageButton btnHome;
 
-    DatabaseReference reffExpense;
+   // DatabaseReference reffExpense;
 
     @SuppressLint("StaticFieldLeak")
     public static TextView resultTextView; //scan result
@@ -50,7 +55,7 @@ public class Expenses extends AppCompatActivity implements View.OnClickListener{
         getSupportActionBar().setTitle("EXPENSES");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        reffExpense = FirebaseDatabase.getInstance().getReference().child("ExpenseDB");
+        /*reffExpense = FirebaseDatabase.getInstance().getReference().child("ExpenseDB");
         reffExpense.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -62,7 +67,7 @@ public class Expenses extends AppCompatActivity implements View.OnClickListener{
             public void onCancelled(@NonNull DatabaseError error) {
 
             }
-        });
+        });*/
 
 
         resultTextView = findViewById(R.id.result_text); //scan result
@@ -83,7 +88,19 @@ public class Expenses extends AppCompatActivity implements View.OnClickListener{
         ImageButton btnSport = findViewById(R.id.btnSport);
         ImageButton btnPet = findViewById(R.id.btnPet);
         ImageButton btnTransport = findViewById(R.id.btnTransport);
-        ImageButton btnAddEx = findViewById(R.id.btnAddEx);
+        ImageButton btnGuitar = findViewById(R.id.btnGuitar);
+        ImageButton btnPiano = findViewById(R.id.btnPiano);
+        ImageButton btnArt = findViewById(R.id.btnArt);
+        ImageButton btnSocial = findViewById(R.id.btnSocial);
+        ImageButton btnHealth = findViewById(R.id.btnHealth);
+        ImageButton btnBeauty = findViewById(R.id.btnBeauty);
+        ImageButton btnGift = findViewById(R.id.btnGift);
+        ImageButton btnBook = findViewById(R.id.btnBook);
+        ImageButton btnEducation = findViewById(R.id.btnEducation);
+        ImageButton btnBill = findViewById(R.id.btnBill);
+        ImageButton btnElectronic = findViewById(R.id.btnElectronic);
+        ImageButton btnPhone = findViewById(R.id.btnPhone);
+        ImageButton btnHome = findViewById(R.id.btnHome);
 
 
         btnShopping.setOnClickListener(this);
@@ -93,7 +110,19 @@ public class Expenses extends AppCompatActivity implements View.OnClickListener{
         btnSport.setOnClickListener(this);
         btnPet.setOnClickListener(this);
         btnTransport.setOnClickListener(this);
-        btnAddEx.setOnClickListener(this);
+        btnGuitar.setOnClickListener(this);
+        btnPiano.setOnClickListener(this);
+        btnArt.setOnClickListener(this);
+        btnSocial.setOnClickListener(this);
+        btnHealth.setOnClickListener(this);
+        btnBeauty.setOnClickListener(this);
+        btnGift.setOnClickListener(this);
+        btnBook.setOnClickListener(this);
+        btnEducation.setOnClickListener(this);
+        btnBill.setOnClickListener(this);
+        btnElectronic.setOnClickListener(this);
+        btnPhone.setOnClickListener(this);
+        btnHome.setOnClickListener(this);
 
        /* imageButton = findViewById(R.id.btnGuitar);
         Bundle bundle = getIntent().getExtras();
@@ -146,9 +175,70 @@ public class Expenses extends AppCompatActivity implements View.OnClickListener{
                 startActivity(intent6);
                 Toast.makeText(this, "Transport is clicked", Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.btnAddEx:
-                Intent intent7 = new Intent(Expenses.this, ListExpenses.class);
+            case R.id.btnGuitar:
+                Intent intent7 = new Intent(Expenses.this, CalcExp.class);
                 startActivity(intent7);
+                Toast.makeText(this, "Guitar is clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btnPiano:
+                Intent intent8 = new Intent(Expenses.this, CalcExp.class);
+                startActivity(intent8);
+                Toast.makeText(this, "Piano is clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btnArt:
+                Intent intent9 = new Intent(Expenses.this, CalcExp.class);
+                startActivity(intent9);
+                Toast.makeText(this, "Art is clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btnSocial:
+                Intent intent10 = new Intent(Expenses.this, CalcExp.class);
+                startActivity(intent10);
+                Toast.makeText(this, "Social is clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btnHealth:
+                Intent intent11 = new Intent(Expenses.this, CalcExp.class);
+                startActivity(intent11);
+                Toast.makeText(this, "Health is clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btnBeauty:
+                Intent intent12= new Intent(Expenses.this, CalcExp.class);
+                startActivity(intent12);
+                Toast.makeText(this, "Beauty is clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btnGift:
+                Intent intent13 = new Intent(Expenses.this, CalcExp.class);
+                startActivity(intent13);
+                Toast.makeText(this, "Gift is clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btnBook:
+                Intent intent14 = new Intent(Expenses.this, CalcExp.class);
+                startActivity(intent14);
+                Toast.makeText(this, "Book is clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btnEducation:
+                Intent intent15 = new Intent(Expenses.this, CalcExp.class);
+                startActivity(intent15);
+                Toast.makeText(this, "Education is clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btnBill:
+                Intent intent16 = new Intent(Expenses.this, CalcExp.class);
+                startActivity(intent16);
+                Toast.makeText(this, "Bill is clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btnElectronic:
+                Intent intent17= new Intent(Expenses.this, CalcExp.class);
+                startActivity(intent17);
+                Toast.makeText(this, "Electronic is clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btnPhone:
+                Intent intent18 = new Intent(Expenses.this, CalcExp.class);
+                startActivity(intent18);
+                Toast.makeText(this, "Phone is clicked", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btnHome:
+                Intent intent19 = new Intent(Expenses.this, CalcExp.class);
+                startActivity(intent19);
+                Toast.makeText(this, "Home is clicked", Toast.LENGTH_SHORT).show();
                 break;
         }
     }

@@ -50,6 +50,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Income"
+                    android:textStyle="bold"
                     android:textAlignment="center"
                     tools:ignore="HardcodedText" />
 
@@ -81,6 +82,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Expense"
+                    android:textStyle="bold"
                     android:textAlignment="center"
                     tools:ignore="HardcodedText" />
 
@@ -111,6 +113,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Balance"
+                    android:textStyle="bold"
                     android:textAlignment="center"
                     tools:ignore="HardcodedText" />
 

@@ -18,7 +18,7 @@
 
 
     <Button
-        android:id="@+id/btnDone"
+        android:id="@+id/btnDoneExp"
         android:layout_width="103dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -38,7 +38,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_toStartOf="@+id/btnDone"
+        android:layout_toStartOf="@+id/btnDoneExp"
         android:layout_weight="2"
         android:backgroundTint="#FFC400"
         android:textColor="@android:color/white"
@@ -59,7 +59,7 @@
         tools:ignore="HardcodedText,ObsoleteLayoutParam" />
 
     <Button
-        android:id="@+id/btnDec"
+        android:id="@+id/btnDecExp"
         android:layout_width="103dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -72,10 +72,10 @@
         tools:ignore="HardcodedText,ObsoleteLayoutParam" />
 
     <Button
-        android:id="@+id/btnSub"
+        android:id="@+id/btnSubExp"
         android:layout_width="103dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btnDone"
+        android:layout_above="@+id/btnDoneExp"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="0dp"
@@ -91,7 +91,7 @@
         android:layout_above="@+id/btnDelete"
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_toStartOf="@+id/btnSub"
+        android:layout_toStartOf="@+id/btnSubExp"
         android:layout_weight="2"
         android:backgroundTint="#FFFFFF"
         android:text="3"
@@ -114,7 +114,7 @@
         android:id="@+id/btn1"
         android:layout_width="103dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btnDec"
+        android:layout_above="@+id/btnDecExp"
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="0dp"
         android:layout_toStartOf="@+id/btn2"
@@ -124,10 +124,10 @@
         tools:ignore="HardcodedText,ObsoleteLayoutParam" />
 
     <Button
-        android:id="@+id/btnAddition"
+        android:id="@+id/btnAdditionExp"
         android:layout_width="103dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btnSub"
+        android:layout_above="@+id/btnSubExp"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="0dp"
@@ -143,7 +143,7 @@
         android:layout_above="@+id/btn3"
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_toStartOf="@+id/btnAddition"
+        android:layout_toStartOf="@+id/btnAdditionExp"
         android:layout_weight="2"
         android:backgroundTint="#FFFFFF"
         android:text="6"
@@ -179,7 +179,7 @@
         android:id="@+id/btnDate"
         android:layout_width="103dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btnAddition"
+        android:layout_above="@+id/btnAdditionExp"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="0dp"
@@ -228,7 +228,7 @@
         tools:ignore="HardcodedText,ObsoleteLayoutParam" />
 
     <TextView
-        android:id="@+id/tvControl"
+        android:id="@+id/ControlExp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/btnDate"
@@ -242,10 +242,10 @@
         tools:ignore="HardcodedText" />
 
     <TextView
-        android:id="@+id/tvResult"
+        android:id="@+id/ResultExp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/tvControl"
+        android:layout_above="@+id/ControlExp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="0dp"
@@ -276,7 +276,7 @@
         android:id="@+id/btnSaveExp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/tvResult"
+        android:layout_above="@+id/ResultExp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="318dp"

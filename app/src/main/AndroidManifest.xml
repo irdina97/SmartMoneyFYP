@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
-        <activity android:name=".CalcExp"></activity>
+        <activity android:name=".CalcExp"/>
         <activity
             android:name=".EditSaving"
             android:parentActivityName=".GoalActivity" />

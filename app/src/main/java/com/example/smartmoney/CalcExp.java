@@ -15,7 +15,6 @@ import android.widget.Toast;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-
 public class CalcExp extends AppCompatActivity {
 
     private Button one;
@@ -28,26 +27,26 @@ public class CalcExp extends AppCompatActivity {
     private Button eight;
     private Button nine;
     private Button zero;
-    private Button add;
-    private Button sub;
+    private Button addExp;
+    private Button subExp;
     private Button dec;
     private Button clear;
-    private Button equal;
-    private TextView info;
+    private Button equalExp;
+    private TextView infoExp;
     private final char ADDITION = '+';
     private final char SUBTRACTION = '-';
     private final char EQU = 0;
-    private double val1 = Double.NaN;
-    private double val2;
+    private double vall1 = Double.NaN;
+    private double vall2;
     private char ACTION;
 
-    Button selectDate;
-    Button btnSaveExp;
+    Button selectDateExp;
+    Button btnsave;
     DatabaseReference reffExpense;
     ExpenseDB expenseDB;
     //long maxid=0;
     DatePickerDialog datePickerDialog;
-    TextView date, result;
+    TextView expensedate, expenseresult;
     int year;
     int month;
     int dayOfMonth;
@@ -74,20 +73,21 @@ public class CalcExp extends AppCompatActivity {
             }
         });*/
 
-        btnSaveExp = findViewById(R.id.btnSaveExp);
+        btnsave = findViewById(R.id.btnSaveExp); //from calcExp
         expenseDB = new ExpenseDB();
         reffExpense = FirebaseDatabase.getInstance().getReference().child("ExpenseDB");
-        btnSaveExp.setOnClickListener(new View.OnClickListener() {
+        btnsave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                expenseDB.setResultt(Double.toString(val1));
-                expenseDB.setDatee(date.getText().toString().trim());
+                expenseDB.setExpenseresult(Double.toString(vall1));
+                expenseDB.setExpensedate(expensedate.getText().toString().trim());
                 reffExpense.push().setValue(expenseDB);
                 //reffIncome.child(String.valueOf(maxid + 1)).setValue(incomeDB);
-                reffExpense.child("2").setValue(expenseDB);
+                reffExpense.child("3").setValue(expenseDB);
                 Toast.makeText(CalcExp.this, "data is inserted", Toast.LENGTH_LONG).show();
             }
         });
+
         /*btnsave = findViewById(R.id.btnSave);
         btnsave.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -107,10 +107,10 @@ public class CalcExp extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("CALCULATOR");
 
-        selectDate = findViewById(R.id.btnDate);
-        date = findViewById(R.id.tvSelectedDate);
+        selectDateExp = findViewById(R.id.btnDate);
+        expensedate = findViewById(R.id.tvSelectedDate);
 
-        selectDate.setOnClickListener(new View.OnClickListener() {
+        selectDateExp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 calendar = java.util.Calendar.getInstance();
@@ -121,7 +121,7 @@ public class CalcExp extends AppCompatActivity {
                     @SuppressLint("SetTextI18n")
                     @Override
                     public void onDateSet(DatePicker datePicker, int year, int month, int dayOfMonth) {
-                        date.setText(dayOfMonth + "/" + (month + 1) + "/" + year);
+                        expensedate.setText(dayOfMonth + "/" + (month + 1) + "/" + year);
 
                     }
                 }, year, month, dayOfMonth);
@@ -137,7 +137,7 @@ public class CalcExp extends AppCompatActivity {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
-                info.setText(info.getText().toString() + "0");
+                infoExp.setText(infoExp.getText().toString() + "0");
             }
         });
 
@@ -145,7 +145,7 @@ public class CalcExp extends AppCompatActivity {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
-                info.setText(info.getText().toString() + "1");
+                infoExp.setText(infoExp.getText().toString() + "1");
             }
         });
 
@@ -153,7 +153,7 @@ public class CalcExp extends AppCompatActivity {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
-                info.setText(info.getText().toString() + "2");
+                infoExp.setText(infoExp.getText().toString() + "2");
             }
         });
 
@@ -161,7 +161,7 @@ public class CalcExp extends AppCompatActivity {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
-                info.setText(info.getText().toString() + "3");
+                infoExp.setText(infoExp.getText().toString() + "3");
             }
         });
 
@@ -169,7 +169,7 @@ public class CalcExp extends AppCompatActivity {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
-                info.setText(info.getText().toString() + "4");
+                infoExp.setText(infoExp.getText().toString() + "4");
             }
         });
 
@@ -177,7 +177,7 @@ public class CalcExp extends AppCompatActivity {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
-                info.setText(info.getText().toString() + "5");
+                infoExp.setText(infoExp.getText().toString() + "5");
             }
         });
 
@@ -185,7 +185,7 @@ public class CalcExp extends AppCompatActivity {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
-                info.setText(info.getText().toString() + "6");
+                infoExp.setText(infoExp.getText().toString() + "6");
             }
         });
 
@@ -193,7 +193,7 @@ public class CalcExp extends AppCompatActivity {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
-                info.setText(info.getText().toString() + "7");
+                infoExp.setText(infoExp.getText().toString() + "7");
             }
         });
 
@@ -201,7 +201,7 @@ public class CalcExp extends AppCompatActivity {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
-                info.setText(info.getText().toString() + "8");
+                infoExp.setText(infoExp.getText().toString() + "8");
             }
         });
 
@@ -209,7 +209,7 @@ public class CalcExp extends AppCompatActivity {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
-                info.setText(info.getText().toString() + "9");
+                infoExp.setText(infoExp.getText().toString() + "9");
             }
         });
 
@@ -217,54 +217,54 @@ public class CalcExp extends AppCompatActivity {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
-                info.setText(info.getText().toString() + ".");
+                infoExp.setText(infoExp.getText().toString() + ".");
             }
         });
 
-        sub.setOnClickListener(new View.OnClickListener() {
+        subExp.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
                 compute();
                 ACTION = SUBTRACTION;
-                result.setText(val1 + "-");
-                info.setText(null);
+                expenseresult.setText(vall1 + "-");
+                infoExp.setText(null);
             }
         });
 
-        add.setOnClickListener(new View.OnClickListener() {
+        addExp.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
                 compute();
                 ACTION = ADDITION;
-                result.setText(val1 + "+");
-                info.setText(null);
+                expenseresult.setText(vall1 + "+");
+                infoExp.setText(null);
             }
         });
 
-        equal.setOnClickListener(new View.OnClickListener() {
+        equalExp.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
                 compute();
                 ACTION = EQU;
-                result.setText(result.getText().toString() + val2 + "=" + val1);
-                info.setText(null);
+                expenseresult.setText(expenseresult.getText().toString() + vall2 + "=" + vall1);
+                infoExp.setText(null);
             }
         });
 
         clear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (info.getText().length() > 0) {
-                    CharSequence name = info.getText().toString();
-                    info.setText(name.subSequence(0, name.length() - 1));
+                if (infoExp.getText().length() > 0) {
+                    CharSequence name = infoExp.getText().toString();
+                    infoExp.setText(name.subSequence(0, name.length() - 1));
                 } else {
-                    val1 = Double.NaN;
-                    val2 = Double.NaN;
-                    info.setText(null);
-                    result.setText(null);
+                    vall1 = Double.NaN;
+                    vall2 = Double.NaN;
+                    infoExp.setText(null);
+                    expenseresult.setText(null);
                 }
             }
         });
@@ -283,26 +283,26 @@ public class CalcExp extends AppCompatActivity {
         seven = findViewById(R.id.btn7);
         eight = findViewById(R.id.btn8);
         nine = findViewById(R.id.btn9);
-        add = findViewById(R.id.btnAddition);
-        sub = findViewById(R.id.btnSub);
-        dec = findViewById(R.id.btnDec);
-        equal = findViewById(R.id.btnDone);
-        info = findViewById(R.id.tvControl);
-        result = findViewById(R.id.tvResult);
+        addExp = findViewById(R.id.btnAdditionExp);
+        subExp = findViewById(R.id.btnSubExp);
+        dec = findViewById(R.id.btnDecExp);
+        equalExp = findViewById(R.id.btnDoneExp);
+        infoExp = findViewById(R.id.ControlExp);
+        expenseresult = findViewById(R.id.ResultExp);
         clear = findViewById(R.id.btnDelete);
 
     }
 
     private void compute() {
-        if (!Double.isNaN(val1)) {
-            val2 = Double.parseDouble(info.getText().toString());
+        if (!Double.isNaN(vall1)) {
+            vall2 = Double.parseDouble(infoExp.getText().toString());
 
             switch (ACTION) {
                 case ADDITION:
-                    val1 = val1 + val2;
+                    vall1 = vall1 + vall2;
                     break;
                 case SUBTRACTION:
-                    val1 = val1 - val2;
+                    vall1 = vall1 - vall2;
                     break;
                 case EQU:
                     break;
@@ -310,7 +310,7 @@ public class CalcExp extends AppCompatActivity {
             }
 
         } else {
-            val1 = Double.parseDouble(info.getText().toString());
+            vall1 = Double.parseDouble(infoExp.getText().toString());
         }
 
     }

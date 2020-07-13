@@ -16,20 +16,14 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout drawer;
-    DatabaseReference reffIncome;
-    DatabaseReference reffExpense;
+   // DatabaseReference reffIncome;
+   // DatabaseReference reffExpense;
     TextView income, expense, balance;
-    //ImageButton btn;
 
 
     @Override
@@ -72,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         expense = findViewById(R.id.tvExpenses);
         balance = findViewById(R.id.tvBalance);
 
-          reffIncome = FirebaseDatabase.getInstance().getReference().child("IncomeDB").child("incomeDB 1");
+       /*   reffIncome = FirebaseDatabase.getInstance().getReference().child("IncomeDB").child("incomeDB 1");
         //reffExpense = FirebaseDatabase.getInstance().getReference().child("ExpenseDB").child("1");
           reffIncome.addValueEventListener(new ValueEventListener() {
             @Override
@@ -85,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             public void onCancelled(@NonNull DatabaseError error) {
 
             }
-        });
+        });*/
 
        /* reffExpense.addValueEventListener(new ValueEventListener() {
             @Override
@@ -160,13 +154,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 Intent intent16 = new Intent(MainActivity.this, Income.class);
                 startActivity(intent16);
                 Toast.makeText(this, "Chart", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.nav_settings:
-                Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
-                break;
-
-            case R.id.nav_info:
-                Toast.makeText(this, "Info", Toast.LENGTH_SHORT).show();
                 break;
 
         }

@@ -48,10 +48,9 @@ public class CalcFYP extends AppCompatActivity {
     private char ACTION;
 
     Button selectDate;
-    Button btnsave, btnsaveexp;
+    Button btnsave;
     DatabaseReference reffIncome;
     IncomeDB incomeDB;
-    ExpenseDB expenseDB;
     //long maxid=0;
     DatePickerDialog datePickerDialog;
     TextView date, result;
@@ -91,7 +90,7 @@ public class CalcFYP extends AppCompatActivity {
                 incomeDB.setDate(date.getText().toString().trim());
                 reffIncome.push().setValue(incomeDB);
                 //reffIncome.child(String.valueOf(maxid + 1)).setValue(incomeDB);
-                reffIncome.child("2").setValue(incomeDB);
+                reffIncome.child("3").setValue(incomeDB);
                 Toast.makeText(CalcFYP.this, "data is inserted", Toast.LENGTH_LONG).show();
             }
         });

@@ -184,7 +184,7 @@ MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Users\USER\.gra
 	android:theme
 		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:15:9-52
 activity#com.example.smartmoney.CalcExp
-ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:17:9-54
+ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:17:9-44
 	android:name
 		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:17:19-42
 activity#com.example.smartmoney.EditSaving

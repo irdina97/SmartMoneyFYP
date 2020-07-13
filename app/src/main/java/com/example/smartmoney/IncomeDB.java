@@ -1,29 +1,32 @@
 package com.example.smartmoney;
 
+import java.util.List;
+
 public class IncomeDB {
 
-    String Name;
+    //String Name;
     String Result;
     String Date;
+    List<String> name;
 
 
 public IncomeDB (){
 
 }
 
-public IncomeDB (String Name, String Result, String Date){
-    this.Name = Name;
+public IncomeDB (String Result, String Date){
+    //this.Name = Name;
     this.Result = Result;
     this.Date = Date;
 }
 
-    public String getName() {
+   /* public String getName() {
         return Name;
     }
 
     public void setName(String name) {
         Name = name;
-    }
+    }*/
 
     public String getResult() {
         return Result;
