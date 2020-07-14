@@ -11,9 +11,9 @@ public class ExpenseDB {
 
     public ExpenseDB(String expensename, String expenseresult, String expensedate){
 
-        this.expensename=expensename;
-        this.expenseresult=expenseresult;
-        this.expensedate=expensedate;
+        this.expensename = expensename;
+        this.expenseresult = expenseresult;
+        this.expensedate = expensedate;
     }
 
     public String getExpensename() {

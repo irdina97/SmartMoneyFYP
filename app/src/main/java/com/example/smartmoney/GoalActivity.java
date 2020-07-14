@@ -1,5 +1,6 @@
 package com.example.smartmoney;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -12,12 +13,22 @@ import android.widget.ProgressBar;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 public class GoalActivity extends AppCompatActivity implements View.OnClickListener{
 
     private ImageButton btn_Edit;
     private TextView viewValue;
     private ProgressBar progressBar;
     private SeekBar seekBar;
+
+    DatabaseReference reffSaving;
+    SavingDB savingDB;
+    TextView currentGoal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,13 +48,30 @@ public class GoalActivity extends AppCompatActivity implements View.OnClickListe
         viewValue = findViewById(R.id.TotalSaving);
         progressBar = findViewById(R.id.savingbar);
         seekBar = findViewById(R.id.seekbar);
+        currentGoal = findViewById(R.id.CurrentGoal);
+
+        savingDB = new SavingDB();
+        reffSaving = FirebaseDatabase.getInstance().getReference().child("SavingDB").child("1");
+        reffSaving.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                String savingGoal = snapshot.child("savingGoal").getValue().toString();
+                currentGoal.setText(savingGoal);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
 
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @SuppressLint("SetTextI18n")
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 progressBar.setProgress(progress);
-                viewValue.setText("" + progress + "%");
+                viewValue.setText("" + progress + "");
             }
 
             @Override
@@ -56,6 +84,8 @@ public class GoalActivity extends AppCompatActivity implements View.OnClickListe
 
             }
         });
+
+
     }
 
     @Override

@@ -1,5 +1,6 @@
 package com.example.smartmoney;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -7,17 +8,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class EditSaving extends AppCompatActivity {
 
-    Button save_edit;
+    Button save_saving;
     DatabaseReference reffSaving;
     SavingDB savingDB;
-    EditText NoSaving;
+    EditText NoSaving, NoCurrentSaving;
+    TextView currentSaving;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,33 +35,39 @@ public class EditSaving extends AppCompatActivity {
         getSupportActionBar().setTitle("EDIT SAVING");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        Toast.makeText(EditSaving.this, "Firebase connection success", Toast.LENGTH_LONG).show();
 
-        Button save_edit = findViewById(R.id.SaveGoal); //from editsaving
+        save_saving = findViewById(R.id.SaveGoal); //from editsaving
+        NoSaving = findViewById(R.id.NoGoal);
+        NoCurrentSaving = findViewById(R.id.NoCurrentSaving);
         savingDB = new SavingDB();
         reffSaving = FirebaseDatabase.getInstance().getReference().child("SavingDB");
-        save_edit.setOnClickListener(new View.OnClickListener() {
+        save_saving.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 savingDB.setSavingGoal(NoSaving.getText().toString().trim());
-                //incomeDB.setDate(date.getText().toString().trim());
+                savingDB.setSaving(NoCurrentSaving.getText().toString().trim());
                 reffSaving.push().setValue(savingDB);
-                //reffIncome.child(String.valueOf(maxid + 1)).setValue(incomeDB);
-                reffSaving.child("2").setValue(savingDB);
-                Toast.makeText(EditSaving.this, "Saved!", Toast.LENGTH_LONG).show();
+                reffSaving.child("1").setValue(savingDB);
+                Toast.makeText(EditSaving.this, "Save!", Toast.LENGTH_LONG).show();
             }
         });
 
-
-        /*Button save_edit = findViewById(R.id.SaveGoal);
-        save_edit.setOnClickListener(new View.OnClickListener() {
+        currentSaving = findViewById(R.id.SavingValue);
+        savingDB = new SavingDB();
+        reffSaving = FirebaseDatabase.getInstance().getReference().child("SavingDB").child("1");
+        reffSaving.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(EditSaving.this, Income.class);
-                startActivity(intent);
-                Toast.makeText(EditSaving.this, "Saved!", Toast.LENGTH_SHORT).show();
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                String saving = snapshot.child("saving").getValue().toString();
+                currentSaving.setText(saving);
             }
-        });*/
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
     }
 
 

@@ -67,10 +67,10 @@
                 android:id="@+id/tvSavingGoal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginRight="50dp"
-                android:text="Your total saving for this month!"
+                android:text="Your Saving!"
                 android:textAlignment="center"
                 android:textSize="18sp"
                 tools:ignore="Autofill,HardcodedText,LabelFor" />
@@ -79,29 +79,20 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="150dp"
-                android:layout_marginTop="56dp"
+                android:layout_marginTop="54dp"
                 android:layout_marginEnd="100dp"
                 android:src="@drawable/ic_goals"
                 tools:ignore="ContentDescription" />
 
-            <TextView
-                android:id="@+id/tvDateSaving"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="120dp"
-                android:layout_marginEnd="180dp"
-                android:textSize="14sp"
-                tools:ignore="Autofill,LabelFor,SmallSp" />
 
             <TextView
-                android:id="@+id/CurrentSaving"
+                android:id="@+id/CurrentGoal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="280dp"
                 android:layout_marginTop="120dp"
-                android:text="50"
                 android:textAlignment="center"
+                android:textStyle="bold"
                 android:textSize="14sp"
                 tools:ignore="Autofill,HardcodedText,LabelFor,SmallSp" />
 
@@ -109,8 +100,8 @@
                 android:id="@+id/SavingGoal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="160dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="120dp"
                 android:layout_marginEnd="180dp"
                 android:text="Saving Goal"
                 android:textSize="16sp"
@@ -123,7 +114,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="280dp"
                 android:layout_marginTop="160dp"
-                android:text="50/100"
+                android:text="0"
                 android:textAlignment="center"
                 android:textSize="14sp"
                 tools:ignore="Autofill,HardcodedText,LabelFor,SmallSp" />

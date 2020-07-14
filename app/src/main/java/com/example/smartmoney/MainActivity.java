@@ -16,14 +16,19 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout drawer;
-   // DatabaseReference reffIncome;
-   // DatabaseReference reffExpense;
-    TextView income, expense, balance;
+    DatabaseReference reffIncome;
+    //DatabaseReference reffExpense;
+    TextView income, expense, balance, date;
 
 
     @Override
@@ -56,8 +61,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onClick(View v) {
 
-                //Intent intent = new Intent(MainActivity.this, ConnectFirebase.class);
-                //startActivity(intent);
+
             }
         });
 
@@ -65,12 +69,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         income = findViewById(R.id.tvIncome);
         expense = findViewById(R.id.tvExpenses);
         balance = findViewById(R.id.tvBalance);
+        date = findViewById(R.id.tvSelectedDate);
 
-       /*   reffIncome = FirebaseDatabase.getInstance().getReference().child("IncomeDB").child("incomeDB 1");
-        //reffExpense = FirebaseDatabase.getInstance().getReference().child("ExpenseDB").child("1");
-          reffIncome.addValueEventListener(new ValueEventListener() {
+        reffIncome = FirebaseDatabase.getInstance().getReference().child("IncomeDB").child("1");
+        reffIncome.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+
                 String result = snapshot.child("result").getValue().toString();
                 income.setText(result);
             }
@@ -79,13 +84,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             public void onCancelled(@NonNull DatabaseError error) {
 
             }
-        });*/
+        });
 
-       /* reffExpense.addValueEventListener(new ValueEventListener() {
+        /*reffExpense = FirebaseDatabase.getInstance().getReference().child("ExpenseDB").child("4");
+        reffExpense.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                //String resultt = snapshot.child("result").getValue().toString();
-                //expense.setText(resultt);
+                String expenseresult = snapshot.child("result").getValue().toString();
+                 expense.setText(expenseresult);
             }
 
             @Override
@@ -93,21 +99,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             }
         });*/
-        //reff = FirebaseDatabase.getInstance().getReference().child("Calculation").child("Income").child("1");
-        /*reffIncome = FirebaseDatabase.getInstance().getReference().child("Income");
-        reffIncome.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                String result = snapshot.child("result").getValue().toString();
-                expense.setText(result);
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });*/
-
 
         //Toolbar
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -153,7 +144,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_category:
                 Intent intent16 = new Intent(MainActivity.this, Income.class);
                 startActivity(intent16);
-                Toast.makeText(this, "Chart", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Category", Toast.LENGTH_SHORT).show();
                 break;
 
         }

@@ -28,7 +28,7 @@
         android:layout_weight="2"
         android:backgroundTint="#FFC400"
         android:textColor="@android:color/white"
-        android:text="Done"
+        android:text="="
         tools:ignore="HardcodedText,ObsoleteLayoutParam" />
 
     <Button

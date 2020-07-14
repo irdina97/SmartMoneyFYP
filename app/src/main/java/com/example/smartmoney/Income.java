@@ -11,6 +11,7 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 
+
 public class Income extends AppCompatActivity implements View.OnClickListener{
 
     private ImageButton btnIncome;
@@ -25,11 +26,11 @@ public class Income extends AppCompatActivity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_income);
 
-
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("INCOME");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         ImageButton btnIncome = findViewById(R.id.btnIncome);
         ImageButton btnReward = findViewById(R.id.btnReward);

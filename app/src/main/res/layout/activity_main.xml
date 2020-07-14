@@ -96,8 +96,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="70dp"
                     android:textAlignment="center"
+                    android:text="20.0"
                     android:textSize="14sp"
-                    tools:ignore="Autofill,LabelFor" />
+                    tools:ignore="HardcodedText,Autofill,LabelFor" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -128,8 +129,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="70dp"
                     android:textAlignment="center"
+                    android:text="100.0"
                     android:textSize="14sp"
-                    tools:ignore="Autofill,LabelFor" />
+                    tools:ignore="HardcodedText, Autofill,LabelFor" />
             </androidx.cardview.widget.CardView>
 
 
@@ -153,6 +155,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:padding="20dp"
+                android:background="#F8DFBA"
                 app:layout_column="0"
                 app:layout_columnWeight="1"
                 app:layout_row="1"
@@ -165,17 +168,17 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="180dp"
-                    android:text="latest date"
+                    android:text="1/7/2020"
                     android:textSize="12sp"
                     tools:ignore="Autofill,HardcodedText,LabelFor,SmallSp" />
 
                 <TextView
-                    android:id="@+id/CurrentSaving"
+                    android:id="@+id/tvList"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="280dp"
-                    android:layout_marginTop="50dp"
-                    android:text="50"
+                    android:layout_marginTop="80dp"
+                    android:text="20.0"
                     android:textAlignment="center"
                     android:textSize="14sp"
                     tools:ignore="Autofill,HardcodedText,LabelFor,SmallSp" />
@@ -187,20 +190,32 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="50dp"
                     android:layout_marginEnd="180dp"
-                    android:text="Saving Goal"
-                    android:textSize="16sp"
+                    android:text="Income"
+                    android:textSize="14sp"
                     android:textStyle="bold"
                     tools:ignore="Autofill,HardcodedText,LabelFor,SmallSp" />
 
                 <TextView
-                    android:id="@+id/TotalSaving"
+                    android:id="@+id/Income"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="280dp"
-                    android:layout_marginTop="80dp"
-                    android:text="50/100"
+                    android:layout_marginTop="50dp"
+                    android:text="120.0"
                     android:textAlignment="center"
                     android:textSize="14sp"
+                    tools:ignore="Autofill,HardcodedText,LabelFor,SmallSp" />
+
+                <TextView
+                    android:id="@+id/tvList2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginEnd="180dp"
+                    android:text="Game"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
                     tools:ignore="Autofill,HardcodedText,LabelFor,SmallSp" />
 
 

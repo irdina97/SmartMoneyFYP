@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:2:1-81:12
-INJECTED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:2:1-81:12
-INJECTED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:2:1-81:12
-INJECTED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:2:1-81:12
+ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:2:1-80:12
+INJECTED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:2:1-80:12
+INJECTED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:2:1-80:12
+INJECTED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:2:1-80:12
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\e6237e593c9bb5837f34475ce79f09f9\material-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [gr.pantrif:easy-android-splash-screen:0.0.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\12fe7ef323e4f81a53c323889790639d\easy-android-splash-screen-0.0.1\AndroidManifest.xml:2:1-19:12
 MERGED from [com.facebook.android:facebook-android-sdk:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\a791eed3499126623f463545843a0f28\facebook-android-sdk-5.15.3\AndroidManifest.xml:21:1-31:12
@@ -76,22 +76,22 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\USER\.gradle\cac
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\5e16f5c1b50d3925eacca3aafb488976\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\f15566ac99d93f31d0227f09e1f27c57\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\9ef8fba12d1c07863675a257e7c4a21c\jetified-installreferrer-1.0\AndroidManifest.xml:2:1-13:12
-INJECTED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:2:1-81:12
-INJECTED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:2:1-81:12
-INJECTED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:2:1-81:12
+INJECTED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:2:1-80:12
+INJECTED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:2:1-80:12
+INJECTED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:2:1-80:12
 	package
 		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:4:5-37
 		INJECTED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:2:1-81:12
+		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:2:1-80:12
 		INJECTED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:2:1-81:12
+		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:2:1-80:12
 		INJECTED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:2:11-69
@@ -106,7 +106,7 @@ MERGED from [com.google.firebase:firebase-database:19.3.1] C:\Users\USER\.gradle
 	android:name
 		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:7:22-64
 application
-ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:9:5-79:19
+ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:9:5-78:19
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\e6237e593c9bb5837f34475ce79f09f9\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\e6237e593c9bb5837f34475ce79f09f9\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [gr.pantrif:easy-android-splash-screen:0.0.1] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\12fe7ef323e4f81a53c323889790639d\easy-android-splash-screen-0.0.1\AndroidManifest.xml:12:5-17:19
@@ -247,96 +247,92 @@ activity#com.example.smartmoney.ScanCodeActivity
 ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:40:9-54
 	android:name
 		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:40:19-51
-activity#com.example.smartmoney.ScanQR
-ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:41:9-44
-	android:name
-		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:41:19-41
 activity#com.example.smartmoney.ListExpenses
-ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:42:9-44:54
+ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:41:9-43:54
 	android:parentActivityName
-		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:44:13-51
+		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:43:13-51
 	android:name
-		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:43:13-41
+		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:42:13-41
 activity#com.example.smartmoney.CalcFYP
-ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:45:9-45
+ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:44:9-45
 	android:name
-		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:45:19-42
+		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:44:19-42
 activity#com.example.smartmoney.Login
+ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:45:9-43
+	android:name
+		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:45:19-40
+activity#com.example.smartmoney.Chart
 ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:46:9-43
 	android:name
 		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:46:19-40
-activity#com.example.smartmoney.Chart
-ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:47:9-43
-	android:name
-		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:47:19-40
 activity#com.example.smartmoney.Calendar
-ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:48:9-46
+ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:47:9-46
 	android:name
-		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:48:19-43
+		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:47:19-43
 activity#com.example.smartmoney.Expenses
-ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:49:9-51:58
+ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:48:9-50:58
 	android:parentActivityName
-		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:51:13-55
+		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:50:13-55
 	android:name
-		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:50:13-37
+		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:49:13-37
 activity#com.example.smartmoney.Income
-ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:52:9-54:58
+ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:51:9-53:58
 	android:parentActivityName
-		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:54:13-55
+		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:53:13-55
 	android:name
-		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:53:13-35
+		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:52:13-35
 activity#com.example.smartmoney.MainActivity
-ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:55:9-57:59
+ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:54:9-56:59
 	android:theme
-		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:57:13-56
+		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:56:13-56
 	android:name
-		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:56:13-41
+		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:55:13-41
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:59:9-61:55
+ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:58:9-60:55
 	android:value
-		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:61:13-52
+		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:60:13-52
 	android:name
-		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:60:13-58
+		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:59:13-58
 activity#com.facebook.FacebookActivity
-ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:63:9-66:48
+ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:62:9-65:48
 MERGED from [com.facebook.android:facebook-common:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\6e8c240e34d611142d9505c2ff3e4f51\jetified-facebook-common-5.15.3\AndroidManifest.xml:30:9-33:66
 MERGED from [com.facebook.android:facebook-common:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\6e8c240e34d611142d9505c2ff3e4f51\jetified-facebook-common-5.15.3\AndroidManifest.xml:30:9-33:66
 	android:label
-		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:66:13-45
+		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:65:13-45
 	android:configChanges
-		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:65:13-96
+		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:64:13-96
 	android:theme
 		ADDED from [com.facebook.android:facebook-common:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\6e8c240e34d611142d9505c2ff3e4f51\jetified-facebook-common-5.15.3\AndroidManifest.xml:33:13-63
 	android:name
-		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:64:13-57
+		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:63:13-57
 activity#com.facebook.CustomTabActivity
-ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:67:9-78:20
+ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:66:9-77:20
 MERGED from [com.facebook.android:facebook-common:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\6e8c240e34d611142d9505c2ff3e4f51\jetified-facebook-common-5.15.3\AndroidManifest.xml:35:9-49:20
 MERGED from [com.facebook.android:facebook-common:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\6e8c240e34d611142d9505c2ff3e4f51\jetified-facebook-common-5.15.3\AndroidManifest.xml:35:9-49:20
 	tools:node
 		ADDED from [com.facebook.android:facebook-common:5.15.3] C:\Users\USER\.gradle\caches\transforms-2\files-2.1\6e8c240e34d611142d9505c2ff3e4f51\jetified-facebook-common-5.15.3\AndroidManifest.xml:38:13-31
 	android:exported
-		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:69:13-36
+		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:68:13-36
 	android:name
-		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:68:13-58
+		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:67:13-58
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:@string/fb_login_protocol_scheme
-ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:70:13-77:29
+ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:69:13-76:29
 action#android.intent.action.VIEW
-ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:71:17-69
+ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:70:17-69
 	android:name
-		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:71:25-66
+		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:70:25-66
 category#android.intent.category.DEFAULT
-ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:73:17-76
+ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:72:17-76
 	android:name
-		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:73:27-73
+		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:72:27-73
 category#android.intent.category.BROWSABLE
-ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:74:17-78
+ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:73:17-78
 	android:name
-		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:74:27-75
+		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:73:27-75
 data
-ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:76:17-75
+ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:75:17-75
 	android:scheme
-		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:76:23-72
+		ADDED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml:75:23-72
 uses-sdk
 INJECTED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\USER\AndroidStudioProjects\SmartMoneyFYP\app\src\main\AndroidManifest.xml

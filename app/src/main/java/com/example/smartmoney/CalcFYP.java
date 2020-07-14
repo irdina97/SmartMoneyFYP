@@ -51,7 +51,7 @@ public class CalcFYP extends AppCompatActivity {
     Button btnsave;
     DatabaseReference reffIncome;
     IncomeDB incomeDB;
-    //long maxid=0;
+    //long maxid =0;
     DatePickerDialog datePickerDialog;
     TextView date, result;
     int year;
@@ -64,10 +64,23 @@ public class CalcFYP extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calc_fyp);
 
-        /*Toast.makeText(CalcFYP.this, "Firebase connection success", Toast.LENGTH_LONG).show();*/
 
+        btnsave = findViewById(R.id.btnSave); //from calcFYP
+        incomeDB = new IncomeDB();
+        reffIncome = FirebaseDatabase.getInstance().getReference().child("IncomeDB");
+        btnsave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                incomeDB.setResult(Double.toString(val1));
+                incomeDB.setDate(date.getText().toString().trim());
+                reffIncome.push().setValue(incomeDB);
+                //reffIncome.child(String.valueOf(maxid + 1)).setValue(incomeDB);
+                reffIncome.child("1").setValue(incomeDB);
+                Toast.makeText(CalcFYP.this, "Save!", Toast.LENGTH_LONG).show();
+            }
+        });
 
-      /*reffIncome.addValueEventListener(new ValueEventListener() {
+     /* reffIncome.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists())
@@ -80,20 +93,6 @@ public class CalcFYP extends AppCompatActivity {
             }
         });*/
 
-        btnsave = findViewById(R.id.btnSave); //from calcFYP
-        incomeDB = new IncomeDB();
-        reffIncome = FirebaseDatabase.getInstance().getReference().child("IncomeDB");
-        btnsave.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                incomeDB.setResult(Double.toString(val1));
-                incomeDB.setDate(date.getText().toString().trim());
-                reffIncome.push().setValue(incomeDB);
-                //reffIncome.child(String.valueOf(maxid + 1)).setValue(incomeDB);
-                reffIncome.child("3").setValue(incomeDB);
-                Toast.makeText(CalcFYP.this, "data is inserted", Toast.LENGTH_LONG).show();
-            }
-        });
 
         /*btnsaveexp = findViewById(R.id.btnSaveExp); //from calcExp
         expenseDB = new ExpenseDB();
@@ -109,20 +108,7 @@ public class CalcFYP extends AppCompatActivity {
                 Toast.makeText(CalcFYP.this, "data is inserted", Toast.LENGTH_LONG).show();
             }
         });*/
-        /*btnsave = findViewById(R.id.btnSave);
-        btnsave.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //Float resultCal = Float.parseFloat((result.getText().toString().trim()));
-                incomeDB.setResult(Double.toString(val1));
-                incomeDB.setDate(date.getText().toString().trim());
-                //calculation.setResult(resultCal);
-                //reff.push().setValue(calculation);
-                reff.push().setValue(incomeDB);
-                reff.child(String.valueOf(maxid + 1)).setValue(incomeDB);
-                Toast.makeText(CalcFYP.this, "data is inserted", Toast.LENGTH_LONG).show();
-            }
-        });*/
+
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

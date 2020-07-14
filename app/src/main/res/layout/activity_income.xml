@@ -32,10 +32,11 @@
         android:background="@drawable/circle_button"
         android:focusable="true"
         android:scaleType="fitCenter"
+        android:contentDescription="@string/Income"
         app:layout_constraintStart_toEndOf="@+id/btnReward"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/income"
-        tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded" />
+        tools:ignore="MissingConstraints,RtlHardcoded" />
 
     <ImageButton
         android:id="@+id/btnReward"

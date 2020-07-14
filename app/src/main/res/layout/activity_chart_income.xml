@@ -21,6 +21,74 @@
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             tools:ignore="UnusedAttribute" />
 
+        <ProgressBar
+            android:id="@+id/background_progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_below="@+id/toolbar"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="162dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="216dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="100"
+            android:progressDrawable="@drawable/stats_full" />
+
+        <ProgressBar
+            android:id="@+id/stats_progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_below="@+id/toolbar"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="62dp"
+            android:layout_marginTop="97dp"
+            android:layout_marginEnd="66dp"
+            android:layout_marginBottom="156dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="75"
+            android:progressDrawable="@drawable/stats_progress" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/number_of_income"
+            android:layout_alignStart="@+id/background_progressbar"
+            android:layout_alignTop="@+id/background_progressbar"
+            android:layout_alignEnd="@+id/background_progressbar"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="101dp"
+            android:layout_marginEnd="106dp"
+            android:layout_marginBottom="4dp"
+            android:text="Income"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/number_of_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="294dp"
+            android:layout_marginEnd="186dp"
+            android:layout_marginBottom="344dp"
+            android:text="120"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
     </RelativeLayout>
     <!-- Title above the chart -->
 
@@ -40,131 +108,6 @@
     <!-- ProgressBar that represents a chart slice, where "android:progress" is the % value of the slice -->
 
     <!-- The text that goes in a center of the chart -->
-
-    <ProgressBar
-        android:id="@+id/background_progressbar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_marginBottom="120dp"
-        android:indeterminate="false"
-        android:max="100"
-        android:progress="100"
-        android:progressDrawable="@drawable/stats_full"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.183" />
-
-    <ProgressBar
-        android:id="@+id/stats_progressbar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_marginBottom="120dp"
-        android:indeterminate="false"
-        android:max="100"
-        android:progress="75"
-        android:progressDrawable="@drawable/stats_progress"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.183" />
-
-    <TextView
-        android:id="@+id/number_of_income"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="120dp"
-        android:text="1500/2000"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.318"
-        tools:ignore="HardcodedText" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        android:text="Income"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/number_of_income"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/background_progressbar"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="HardcodedText,MissingConstraints" />
-
-    <androidx.gridlayout.widget.GridLayout
-        android:id="@+id/GoalList"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_marginBottom="70dp"
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
-        android:paddingBottom="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp">
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cvReview"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:padding="20dp"
-            app:layout_column="0"
-            app:layout_columnWeight="1"
-            app:layout_row="1"
-            app:layout_rowWeight="4">
-
-            <TextView
-                android:id="@+id/tvIncomeList"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="50dp"
-                android:text="Income List"
-                android:textAlignment="center"
-                android:textSize="18sp"
-                tools:ignore="Autofill,HardcodedText,LabelFor" />
-
-            <TextView
-                android:id="@+id/CurrentSaving"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="280dp"
-                android:layout_marginTop="80dp"
-                android:text="50"
-                android:textAlignment="center"
-                android:textSize="14sp"
-                tools:ignore="Autofill,HardcodedText,LabelFor,SmallSp" />
-
-            <TextView
-                android:id="@+id/IncomeList"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="80dp"
-                android:layout_marginEnd="180dp"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                tools:ignore="Autofill,HardcodedText,LabelFor,SmallSp" />
-
-        </androidx.cardview.widget.CardView>
-
-    </androidx.gridlayout.widget.GridLayout>
 
     <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
     <!-- Doughnut chart ends here -->
