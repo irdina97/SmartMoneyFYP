@@ -2,6 +2,7 @@ package com.example.smartmoney;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
@@ -20,7 +21,10 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
+
+import java.util.Objects;
 
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -71,13 +75,25 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         balance = findViewById(R.id.tvBalance);
         date = findViewById(R.id.tvSelectedDate);
 
-        reffIncome = FirebaseDatabase.getInstance().getReference().child("IncomeDB").child("1");
-        reffIncome.addValueEventListener(new ValueEventListener() {
+        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
+        Query lastQuery  = databaseReference.child("IncomeDB").orderByKey().limitToLast(1);;
+        lastQuery.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 
-                String result = snapshot.child("result").getValue().toString();
+                String result = null;
+                String date = null;
+                for (DataSnapshot child: snapshot.getChildren()) {
+                    Log.d("User key", child.getKey());
+                    Log.d("User val", Objects.requireNonNull(child.child("result").getValue()).toString());
+                    result = Objects.requireNonNull(child.child("result").getValue()).toString();
+
+                    Log.d("User date", Objects.requireNonNull(child.child("date").getValue()).toString());
+                    date = Objects.requireNonNull(child.child("date").getValue()).toString();
+                }
                 income.setText(result);
+                Log.d("DEBUG=main,result", result);
+                Log.d("DEBUG=main,date", date);
             }
 
             @Override
@@ -86,6 +102,27 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             }
         });
 
+        DatabaseReference databaseReference1 = FirebaseDatabase.getInstance().getReference();
+        Query lastQuery1  = databaseReference1.child("ExpenseDB").orderByKey().limitToLast(1);;
+        lastQuery1.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+                String expenseresult = null;
+                for (DataSnapshot child: snapshot.getChildren()) {
+                    Log.d("User key", child.getKey());
+                    Log.d("User val", Objects.requireNonNull(child.child("expenseresult").getValue()).toString());
+                    expenseresult = Objects.requireNonNull(child.child("expenseresult").getValue()).toString();
+                }
+                expense.setText(expenseresult);
+                Log.d("DEBUG=main,result", expenseresult);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
         /*reffExpense = FirebaseDatabase.getInstance().getReference().child("ExpenseDB").child("4");
         reffExpense.addValueEventListener(new ValueEventListener() {
             @Override

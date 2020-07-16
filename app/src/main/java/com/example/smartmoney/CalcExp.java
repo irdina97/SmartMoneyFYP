@@ -17,6 +17,10 @@ import android.widget.Toast;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
 public class CalcExp extends AppCompatActivity {
 
     private Button one;
@@ -43,7 +47,7 @@ public class CalcExp extends AppCompatActivity {
     private char ACTION;
 
     Button selectDateExp;
-    Button btnsave;
+    Button btnSave;
     DatabaseReference reffExpense;
     ExpenseDB expenseDB;
     //long maxId=0;
@@ -60,30 +64,26 @@ public class CalcExp extends AppCompatActivity {
         setContentView(R.layout.activity_calc_exp);
 
 
-      /*reffExpense.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if(snapshot.exists())
-                    maxId=(snapshot.getChildrenCount());
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });*/
-
-        btnsave = findViewById(R.id.btnSaveExp); //from calcExp
+        final String dateNow = new SimpleDateFormat("dd/M/yyyy", Locale.getDefault()).format(new Date());
+        btnSave = findViewById(R.id.btnSaveExp); //from calcFYP
         expenseDB = new ExpenseDB();
         reffExpense = FirebaseDatabase.getInstance().getReference().child("ExpenseDB");
-        btnsave.setOnClickListener(new View.OnClickListener() {
+        btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                expenseDB.setExpenseresult(Double.toString(vall1));
-                expenseDB.setExpensedate(expensedate.getText().toString().trim());
+                if (Double.isNaN(Double.parseDouble(Double.toString(vall1)))){
+                    expenseDB.setExpenseresult(infoExp.getText().toString());
+                }else {
+                    expenseDB.setExpenseresult(Double.toString(vall1));
+                }
+                if (expensedate.getText().toString().trim()==""){
+                    expenseDB.setExpensedate(dateNow);
+                }else {
+                    expenseDB.setExpensedate(expensedate.getText().toString().trim());
+                }
                 reffExpense.push().setValue(expenseDB);
-                //reffExpense.child(String.valueOf(maxId + 1)).setValue(expenseDB);
-                reffExpense.child("4").setValue(expenseDB);
+                //reffIncome.child(String.valueOf(maxid + 1)).setValue(incomeDB);
+//                reffIncome.child("1").setValue(incomeDB);
                 Toast.makeText(CalcExp.this, "Save!", Toast.LENGTH_LONG).show();
             }
         });

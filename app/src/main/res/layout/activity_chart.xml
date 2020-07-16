@@ -25,6 +25,22 @@
     <!-- ProgressBar that represents a chart slice, where "android:progress" is the % value of the slice -->
 
     <!-- The text that goes in a center of the chart -->
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            tools:ignore="UnusedAttribute" />
+    </RelativeLayout>
+
 
     <ProgressBar
         android:id="@+id/background_progressbar"

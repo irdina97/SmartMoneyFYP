@@ -8,6 +8,7 @@ import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
 //import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -20,6 +21,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
 import java.util.Objects;
 
 public class CalcFYP extends AppCompatActivity {
@@ -64,18 +68,26 @@ public class CalcFYP extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calc_fyp);
 
-
+        final String dateNow = new SimpleDateFormat("dd/M/yyyy",Locale.getDefault()).format(new Date());
         btnsave = findViewById(R.id.btnSave); //from calcFYP
         incomeDB = new IncomeDB();
         reffIncome = FirebaseDatabase.getInstance().getReference().child("IncomeDB");
         btnsave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                incomeDB.setResult(Double.toString(val1));
-                incomeDB.setDate(date.getText().toString().trim());
+                if (Double.isNaN(Double.parseDouble(Double.toString(val1)))){
+                    incomeDB.setResult(info.getText().toString());
+                }else {
+                    incomeDB.setResult(Double.toString(val1));
+                }
+                if (date.getText().toString().trim()==""){
+                    incomeDB.setDate(dateNow);
+                }else {
+                    incomeDB.setDate(date.getText().toString().trim());
+                }
                 reffIncome.push().setValue(incomeDB);
                 //reffIncome.child(String.valueOf(maxid + 1)).setValue(incomeDB);
-                reffIncome.child("1").setValue(incomeDB);
+//                reffIncome.child("1").setValue(incomeDB);
                 Toast.makeText(CalcFYP.this, "Save!", Toast.LENGTH_LONG).show();
             }
         });
